@@ -1,0 +1,1457 @@
+{
+  "analysis_scope": {
+    "coverage_threshold_ranking": "Cumulative submitted function-group denominator within each contract subset.",
+    "testcase_effectiveness": "Per-model unique (benchmark_id, signature) evaluations actually replayed. No cross-model pooling or deduplication is performed."
+  },
+  "benchmark": {
+    "case_composition": {
+      "by_case_kind": {
+        "branch_boundary:moderate_threshold": 8153,
+        "branch_boundary:one_true": 8157,
+        "branch_boundary:small_threshold": 8158,
+        "branch_boundary:zero_empty": 7836,
+        "deterministic_random": 91454,
+        "stateful_setup": 26556,
+        "static_hint:literal": 77069
+      },
+      "by_category": {
+        "boundary": {
+          "case_share": 0.1420686682821495,
+          "case_share_percent": 14.20686682821495,
+          "cases": 32304,
+          "contracts_with_category": 586,
+          "function_groups_with_category": 8175
+        },
+        "random": {
+          "case_share": 0.40220245137059496,
+          "case_share_percent": 40.2202451370595,
+          "cases": 91454,
+          "contracts_with_category": 600,
+          "function_groups_with_category": 14553
+        },
+        "stateful": {
+          "case_share": 0.11678973362124698,
+          "case_share_percent": 11.678973362124697,
+          "cases": 26556,
+          "contracts_with_category": 524,
+          "function_groups_with_category": 13754
+        },
+        "static": {
+          "case_share": 0.33893914672600856,
+          "case_share_percent": 33.89391467260086,
+          "cases": 77069,
+          "contracts_with_category": 572,
+          "function_groups_with_category": 7153
+        }
+      }
+    },
+    "contracts": 600,
+    "coverage": {
+      "available_contracts": 500,
+      "available_without_line_ratio": 1,
+      "by_difficulty": {
+        "easy": {
+          "branches": {
+            "covered": 450,
+            "measurable_contracts": 113,
+            "per_contract_ratio": {
+              "count": 113,
+              "max": 1.0,
+              "mean": 0.4351129726363604,
+              "median": 0.4444444444444444,
+              "min": 0.0,
+              "p05": 0.0,
+              "p10": 0.0,
+              "p25": 0.16666666666666666,
+              "p75": 0.6666666666666666,
+              "p90": 0.8733333333333333,
+              "p95": 1.0
+            },
+            "pooled_percent": 39.50834064969271,
+            "pooled_ratio": 0.39508340649692714,
+            "total": 1139
+          },
+          "contracts": 200,
+          "coverage_available": 188,
+          "functions": {
+            "covered": 1053,
+            "measurable_contracts": 188,
+            "per_contract_ratio": {
+              "count": 188,
+              "max": 1.0,
+              "mean": 0.8797411953600198,
+              "median": 1.0,
+              "min": 0.0,
+              "p05": 0.3333333333333333,
+              "p10": 0.5,
+              "p25": 0.8705357142857143,
+              "p75": 1.0,
+              "p90": 1.0,
+              "p95": 1.0
+            },
+            "pooled_percent": 86.24078624078624,
+            "pooled_ratio": 0.8624078624078624,
+            "total": 1221
+          },
+          "line_coverage_measurable": 188,
+          "lines": {
+            "covered": 6907,
+            "measurable_contracts": 188,
+            "per_contract_ratio": {
+              "count": 188,
+              "max": 1.0,
+              "mean": 0.7649631888236009,
+              "median": 0.875,
+              "min": 0.0,
+              "p05": 0.19242424242424241,
+              "p10": 0.3333333333333333,
+              "p25": 0.5870098039215687,
+              "p75": 1.0,
+              "p90": 1.0,
+              "p95": 1.0
+            },
+            "pooled_percent": 83.61985472154964,
+            "pooled_ratio": 0.8361985472154964,
+            "total": 8260
+          }
+        },
+        "hard": {
+          "branches": {
+            "covered": 762,
+            "measurable_contracts": 99,
+            "per_contract_ratio": {
+              "count": 99,
+              "max": 1.0,
+              "mean": 0.24811680544796488,
+              "median": 0.18181818181818182,
+              "min": 0.0,
+              "p05": 0.0,
+              "p10": 0.0,
+              "p25": 0.03925619834710744,
+              "p75": 0.3693181818181818,
+              "p90": 0.6133333333333335,
+              "p95": 0.75
+            },
+            "pooled_percent": 22.746268656716417,
+            "pooled_ratio": 0.22746268656716417,
+            "total": 3350
+          },
+          "contracts": 200,
+          "coverage_available": 172,
+          "functions": {
+            "covered": 2840,
+            "measurable_contracts": 170,
+            "per_contract_ratio": {
+              "count": 170,
+              "max": 1.0,
+              "mean": 0.8092352783501872,
+              "median": 1.0,
+              "min": 0.0,
+              "p05": 0.039761904761904776,
+              "p10": 0.25,
+              "p25": 0.7439516129032258,
+              "p75": 1.0,
+              "p90": 1.0,
+              "p95": 1.0
+            },
+            "pooled_percent": 81.91520046149408,
+            "pooled_ratio": 0.8191520046149409,
+            "total": 3467
+          },
+          "line_coverage_measurable": 172,
+          "lines": {
+            "covered": 28237,
+            "measurable_contracts": 172,
+            "per_contract_ratio": {
+              "count": 172,
+              "max": 1.0,
+              "mean": 0.6672788431705194,
+              "median": 0.7447478991596639,
+              "min": 0.0,
+              "p05": 0.021135972461273675,
+              "p10": 0.071602787456446,
+              "p25": 0.3996751166834447,
+              "p75": 1.0,
+              "p90": 1.0,
+              "p95": 1.0
+            },
+            "pooled_percent": 81.22950348081238,
+            "pooled_ratio": 0.8122950348081238,
+            "total": 34762
+          }
+        },
+        "medium": {
+          "branches": {
+            "covered": 1115,
+            "measurable_contracts": 114,
+            "per_contract_ratio": {
+              "count": 114,
+              "max": 1.0,
+              "mean": 0.3987128605600914,
+              "median": 0.41843501326259946,
+              "min": 0.0,
+              "p05": 0.0,
+              "p10": 0.0,
+              "p25": 0.19583333333333336,
+              "p75": 0.5704633204633205,
+              "p90": 0.7272727272727273,
+              "p95": 0.7822727272727271
+            },
+            "pooled_percent": 36.93275919178536,
+            "pooled_ratio": 0.3693275919178536,
+            "total": 3019
+          },
+          "contracts": 200,
+          "coverage_available": 140,
+          "functions": {
+            "covered": 1633,
+            "measurable_contracts": 139,
+            "per_contract_ratio": {
+              "count": 139,
+              "max": 1.0,
+              "mean": 0.8469391074380231,
+              "median": 0.9210526315789473,
+              "min": 0.0,
+              "p05": 0.15096153846153848,
+              "p10": 0.6666666666666666,
+              "p25": 0.7875939849624061,
+              "p75": 1.0,
+              "p90": 1.0,
+              "p95": 1.0
+            },
+            "pooled_percent": 83.74358974358974,
+            "pooled_ratio": 0.8374358974358974,
+            "total": 1950
+          },
+          "line_coverage_measurable": 139,
+          "lines": {
+            "covered": 6963,
+            "measurable_contracts": 139,
+            "per_contract_ratio": {
+              "count": 139,
+              "max": 1.0,
+              "mean": 0.6365932738050065,
+              "median": 0.6666666666666666,
+              "min": 0.0,
+              "p05": 0.0902797202797203,
+              "p10": 0.25628915662650603,
+              "p25": 0.4463946869070209,
+              "p75": 0.8411315865246185,
+              "p90": 1.0,
+              "p95": 1.0
+            },
+            "pooled_percent": 62.729729729729726,
+            "pooled_ratio": 0.6272972972972973,
+            "total": 11100
+          }
+        }
+      },
+      "line_coverage_measurable_contracts": 499,
+      "overall": {
+        "branches": {
+          "covered": 2327,
+          "measurable_contracts": 326,
+          "per_contract_ratio": {
+            "count": 326,
+            "max": 1.0,
+            "mean": 0.36559691948192535,
+            "median": 0.3333333333333333,
+            "min": 0.0,
+            "p05": 0.0,
+            "p10": 0.0,
+            "p25": 0.12764550264550265,
+            "p75": 0.5607638888888888,
+            "p90": 0.75,
+            "p95": 0.8729166666666667
+          },
+          "pooled_percent": 30.99360681939265,
+          "pooled_ratio": 0.3099360681939265,
+          "total": 7508
+        },
+        "functions": {
+          "covered": 5526,
+          "measurable_contracts": 497,
+          "per_contract_ratio": {
+            "count": 497,
+            "max": 1.0,
+            "mean": 0.8464504587144884,
+            "median": 1.0,
+            "min": 0.0,
+            "p05": 0.1392857142857143,
+            "p10": 0.4688259109311741,
+            "p25": 0.8,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0
+          },
+          "pooled_percent": 83.24796625489606,
+          "pooled_ratio": 0.8324796625489606,
+          "total": 6638
+        },
+        "lines": {
+          "covered": 42107,
+          "measurable_contracts": 499,
+          "per_contract_ratio": {
+            "count": 499,
+            "max": 1.0,
+            "mean": 0.695534079324774,
+            "median": 0.7647058823529411,
+            "min": 0.0,
+            "p05": 0.06606060606060607,
+            "p10": 0.18398813936249073,
+            "p25": 0.47776679841897235,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0
+          },
+          "pooled_percent": 77.80015520490743,
+          "pooled_ratio": 0.7780015520490743,
+          "total": 54122
+        }
+      },
+      "unavailable_contracts": 100,
+      "unavailable_reasons": {
+        "forge_coverage_failed": 43,
+        "forge_coverage_ir_minimum_timed_out_after_300s": 1,
+        "foundry_coverage_parser_failed": 29,
+        "legacy_solidity_0_4_coverage_skipped": 17,
+        "synthetic_constructor_arg_literal_unsupported:string[4]": 1,
+        "synthetic_constructor_arg_literal_unsupported:tuple": 1,
+        "target_contract_no_executable_lines": 8
+      }
+    },
+    "entry_types": {
+      "fallback": 101,
+      "function": 14346,
+      "receive": 106
+    },
+    "function_groups": 14553,
+    "test_cases": 227383
+  },
+  "coverage_threshold_ranking": {
+    "denominator_note": "Unlike testcase-effectiveness results, ranking sensitivity is cumulative over every submitted function group in selected contracts. Missing, non-compiling, or unrecovered functions contribute zero equivalent functions.",
+    "subsets": {
+      "all_contracts": {
+        "contracts": 600,
+        "coverage_selector": null,
+        "function_group_denominator": 14553,
+        "model_scores": {
+          "glm_high_repair": {
+            "cumulative_semantic_consistency": 0.20717377860235003,
+            "cumulative_semantic_consistency_percent": 20.717377860235004,
+            "equivalent_function_groups": 3015,
+            "function_group_denominator": 14553
+          },
+          "glm_instruct_repair": {
+            "cumulative_semantic_consistency": 0.17659589088160516,
+            "cumulative_semantic_consistency_percent": 17.659589088160516,
+            "equivalent_function_groups": 2570,
+            "function_group_denominator": 14553
+          },
+          "gpt_repair": {
+            "cumulative_semantic_consistency": 0.2802171373599945,
+            "cumulative_semantic_consistency_percent": 28.02171373599945,
+            "equivalent_function_groups": 4078,
+            "function_group_denominator": 14553
+          },
+          "opus_repair": {
+            "cumulative_semantic_consistency": 0.2943722943722944,
+            "cumulative_semantic_consistency_percent": 29.437229437229437,
+            "equivalent_function_groups": 4284,
+            "function_group_denominator": 14553
+          }
+        },
+        "ranking": [
+          "opus_repair",
+          "gpt_repair",
+          "glm_high_repair",
+          "glm_instruct_repair"
+        ]
+      },
+      "coverage_ge_25pct": {
+        "contracts": 441,
+        "coverage_selector": 0.25,
+        "function_group_denominator": 10301,
+        "model_scores": {
+          "glm_high_repair": {
+            "cumulative_semantic_consistency": 0.20075720803805455,
+            "cumulative_semantic_consistency_percent": 20.075720803805456,
+            "equivalent_function_groups": 2068,
+            "function_group_denominator": 10301
+          },
+          "glm_instruct_repair": {
+            "cumulative_semantic_consistency": 0.17124551014464615,
+            "cumulative_semantic_consistency_percent": 17.124551014464615,
+            "equivalent_function_groups": 1764,
+            "function_group_denominator": 10301
+          },
+          "gpt_repair": {
+            "cumulative_semantic_consistency": 0.2901660033006504,
+            "cumulative_semantic_consistency_percent": 29.016600330065042,
+            "equivalent_function_groups": 2989,
+            "function_group_denominator": 10301
+          },
+          "opus_repair": {
+            "cumulative_semantic_consistency": 0.31006698378798175,
+            "cumulative_semantic_consistency_percent": 31.006698378798173,
+            "equivalent_function_groups": 3194,
+            "function_group_denominator": 10301
+          }
+        },
+        "ranking": [
+          "opus_repair",
+          "gpt_repair",
+          "glm_high_repair",
+          "glm_instruct_repair"
+        ]
+      },
+      "coverage_ge_50pct": {
+        "contracts": 369,
+        "coverage_selector": 0.5,
+        "function_group_denominator": 8812,
+        "model_scores": {
+          "glm_high_repair": {
+            "cumulative_semantic_consistency": 0.19859282796187017,
+            "cumulative_semantic_consistency_percent": 19.859282796187017,
+            "equivalent_function_groups": 1750,
+            "function_group_denominator": 8812
+          },
+          "glm_instruct_repair": {
+            "cumulative_semantic_consistency": 0.17544257830231502,
+            "cumulative_semantic_consistency_percent": 17.5442578302315,
+            "equivalent_function_groups": 1546,
+            "function_group_denominator": 8812
+          },
+          "gpt_repair": {
+            "cumulative_semantic_consistency": 0.2791647753064004,
+            "cumulative_semantic_consistency_percent": 27.916477530640037,
+            "equivalent_function_groups": 2460,
+            "function_group_denominator": 8812
+          },
+          "opus_repair": {
+            "cumulative_semantic_consistency": 0.30469813890149794,
+            "cumulative_semantic_consistency_percent": 30.469813890149794,
+            "equivalent_function_groups": 2685,
+            "function_group_denominator": 8812
+          }
+        },
+        "ranking": [
+          "opus_repair",
+          "gpt_repair",
+          "glm_high_repair",
+          "glm_instruct_repair"
+        ]
+      },
+      "coverage_ge_75pct": {
+        "contracts": 257,
+        "coverage_selector": 0.75,
+        "function_group_denominator": 6253,
+        "model_scores": {
+          "glm_high_repair": {
+            "cumulative_semantic_consistency": 0.21109867263713417,
+            "cumulative_semantic_consistency_percent": 21.10986726371342,
+            "equivalent_function_groups": 1320,
+            "function_group_denominator": 6253
+          },
+          "glm_instruct_repair": {
+            "cumulative_semantic_consistency": 0.16871901487286103,
+            "cumulative_semantic_consistency_percent": 16.871901487286102,
+            "equivalent_function_groups": 1055,
+            "function_group_denominator": 6253
+          },
+          "gpt_repair": {
+            "cumulative_semantic_consistency": 0.28834159603390375,
+            "cumulative_semantic_consistency_percent": 28.834159603390372,
+            "equivalent_function_groups": 1803,
+            "function_group_denominator": 6253
+          },
+          "opus_repair": {
+            "cumulative_semantic_consistency": 0.30001599232368464,
+            "cumulative_semantic_consistency_percent": 30.001599232368463,
+            "equivalent_function_groups": 1876,
+            "function_group_denominator": 6253
+          }
+        },
+        "ranking": [
+          "opus_repair",
+          "gpt_repair",
+          "glm_high_repair",
+          "glm_instruct_repair"
+        ]
+      },
+      "coverage_ge_80pct": {
+        "contracts": 239,
+        "coverage_selector": 0.8,
+        "function_group_denominator": 5770,
+        "model_scores": {
+          "glm_high_repair": {
+            "cumulative_semantic_consistency": 0.21386481802426344,
+            "cumulative_semantic_consistency_percent": 21.386481802426342,
+            "equivalent_function_groups": 1234,
+            "function_group_denominator": 5770
+          },
+          "glm_instruct_repair": {
+            "cumulative_semantic_consistency": 0.17209705372616985,
+            "cumulative_semantic_consistency_percent": 17.209705372616984,
+            "equivalent_function_groups": 993,
+            "function_group_denominator": 5770
+          },
+          "gpt_repair": {
+            "cumulative_semantic_consistency": 0.29462738301559793,
+            "cumulative_semantic_consistency_percent": 29.462738301559792,
+            "equivalent_function_groups": 1700,
+            "function_group_denominator": 5770
+          },
+          "opus_repair": {
+            "cumulative_semantic_consistency": 0.29653379549393416,
+            "cumulative_semantic_consistency_percent": 29.653379549393414,
+            "equivalent_function_groups": 1711,
+            "function_group_denominator": 5770
+          }
+        },
+        "ranking": [
+          "opus_repair",
+          "gpt_repair",
+          "glm_high_repair",
+          "glm_instruct_repair"
+        ]
+      },
+      "coverage_measurable": {
+        "contracts": 499,
+        "coverage_selector": "measurable",
+        "function_group_denominator": 11732,
+        "model_scores": {
+          "glm_high_repair": {
+            "cumulative_semantic_consistency": 0.1930617115581316,
+            "cumulative_semantic_consistency_percent": 19.30617115581316,
+            "equivalent_function_groups": 2265,
+            "function_group_denominator": 11732
+          },
+          "glm_instruct_repair": {
+            "cumulative_semantic_consistency": 0.16902488919195363,
+            "cumulative_semantic_consistency_percent": 16.902488919195363,
+            "equivalent_function_groups": 1983,
+            "function_group_denominator": 11732
+          },
+          "gpt_repair": {
+            "cumulative_semantic_consistency": 0.2848619161268326,
+            "cumulative_semantic_consistency_percent": 28.48619161268326,
+            "equivalent_function_groups": 3342,
+            "function_group_denominator": 11732
+          },
+          "opus_repair": {
+            "cumulative_semantic_consistency": 0.3040402318445278,
+            "cumulative_semantic_consistency_percent": 30.40402318445278,
+            "equivalent_function_groups": 3567,
+            "function_group_denominator": 11732
+          }
+        },
+        "ranking": [
+          "opus_repair",
+          "gpt_repair",
+          "glm_high_repair",
+          "glm_instruct_repair"
+        ]
+      }
+    }
+  },
+  "models": {
+    "glm_high_repair": {
+      "case_mismatch_detection": {
+        "by_case_kind": {
+          "branch_boundary:moderate_threshold": {
+            "matched_cases": 1708,
+            "mismatch_rate": 0.6324510436840972,
+            "mismatch_rate_percent": 63.24510436840973,
+            "mismatched_cases": 2939,
+            "replayed_cases": 4647
+          },
+          "branch_boundary:one_true": {
+            "matched_cases": 1632,
+            "mismatch_rate": 0.6492585428755642,
+            "mismatch_rate_percent": 64.92585428755642,
+            "mismatched_cases": 3021,
+            "replayed_cases": 4653
+          },
+          "branch_boundary:small_threshold": {
+            "matched_cases": 1605,
+            "mismatch_rate": 0.6550612508059317,
+            "mismatch_rate_percent": 65.50612508059316,
+            "mismatched_cases": 3048,
+            "replayed_cases": 4653
+          },
+          "branch_boundary:zero_empty": {
+            "matched_cases": 1638,
+            "mismatch_rate": 0.6342117016525235,
+            "mismatch_rate_percent": 63.42117016525234,
+            "mismatched_cases": 2840,
+            "replayed_cases": 4478
+          },
+          "deterministic_random": {
+            "matched_cases": 18344,
+            "mismatch_rate": 0.6420403543691215,
+            "mismatch_rate_percent": 64.20403543691215,
+            "mismatched_cases": 32902,
+            "replayed_cases": 51246
+          },
+          "stateful_setup": {
+            "matched_cases": 6296,
+            "mismatch_rate": 0.593202817083414,
+            "mismatch_rate_percent": 59.32028170834141,
+            "mismatched_cases": 9181,
+            "replayed_cases": 15477
+          },
+          "static_hint:literal": {
+            "matched_cases": 12962,
+            "mismatch_rate": 0.690067428626082,
+            "mismatch_rate_percent": 69.00674286260819,
+            "mismatched_cases": 28860,
+            "replayed_cases": 41822
+          }
+        },
+        "by_category": {
+          "boundary": {
+            "matched_cases": 6583,
+            "mismatch_rate": 0.6428300146492323,
+            "mismatch_rate_percent": 64.28300146492323,
+            "mismatched_cases": 11848,
+            "replayed_cases": 18431
+          },
+          "random": {
+            "matched_cases": 18344,
+            "mismatch_rate": 0.6420403543691215,
+            "mismatch_rate_percent": 64.20403543691215,
+            "mismatched_cases": 32902,
+            "replayed_cases": 51246
+          },
+          "stateful": {
+            "matched_cases": 6296,
+            "mismatch_rate": 0.593202817083414,
+            "mismatch_rate_percent": 59.32028170834141,
+            "mismatched_cases": 9181,
+            "replayed_cases": 15477
+          },
+          "static": {
+            "matched_cases": 12962,
+            "mismatch_rate": 0.690067428626082,
+            "mismatch_rate_percent": 69.00674286260819,
+            "mismatched_cases": 28860,
+            "replayed_cases": 41822
+          }
+        }
+      },
+      "denominators": {
+        "equivalent_model_function_evaluations": 3015,
+        "failing_model_function_evaluations": 5287,
+        "replayed_cases": 126976,
+        "replayed_contracts": 397,
+        "replayed_model_function_evaluations": 8302,
+        "scope_note": "Mismatch effectiveness is evaluated separately for this model over unique (benchmark_id, signature) pairs that were actually replayed. Missing or non-compiling functions have no case-level observations and are excluded here."
+      },
+      "function_detection_contribution": {
+        "by_category": {
+          "boundary": {
+            "additional_detections_beyond_random": 153,
+            "detection_rate_among_category_bearing_functions": 0.6906906906906907,
+            "detection_rate_among_category_bearing_functions_percent": 69.06906906906907,
+            "exclusive_detection_removal_loss": 74,
+            "failing_function_evaluations_detected": 3220,
+            "order_independent_shapley_credit": 926.0833333333334,
+            "replayed_function_evaluations_with_category": 4662
+          },
+          "random": {
+            "additional_detections_beyond_random": null,
+            "detection_rate_among_category_bearing_functions": 0.5905805829920501,
+            "detection_rate_among_category_bearing_functions_percent": 59.05805829920501,
+            "exclusive_detection_removal_loss": 92,
+            "failing_function_evaluations_detected": 4903,
+            "order_independent_shapley_credit": 1775.4166666666667,
+            "replayed_function_evaluations_with_category": 8302
+          },
+          "stateful": {
+            "additional_detections_beyond_random": 196,
+            "detection_rate_among_category_bearing_functions": 0.6096403596403597,
+            "detection_rate_among_category_bearing_functions_percent": 60.964035964035965,
+            "exclusive_detection_removal_loss": 192,
+            "failing_function_evaluations_detected": 4882,
+            "order_independent_shapley_credit": 1831.75,
+            "replayed_function_evaluations_with_category": 8008
+          },
+          "static": {
+            "additional_detections_beyond_random": 116,
+            "detection_rate_among_category_bearing_functions": 0.6986198243412798,
+            "detection_rate_among_category_bearing_functions_percent": 69.86198243412798,
+            "exclusive_detection_removal_loss": 39,
+            "failing_function_evaluations_detected": 2784,
+            "order_independent_shapley_credit": 753.75,
+            "replayed_function_evaluations_with_category": 3985
+          }
+        },
+        "definitions": {
+          "additional_detections_beyond_random": "Failing model-function evaluations detected by this category for which random cases did not detect a mismatch. Augmented categories may overlap each other.",
+          "exclusive_detection_removal_loss": "Failing model-function evaluations detected by this category and no other; these failures would be missed if the category were removed.",
+          "order_independent_shapley_credit": "For each failing model-function evaluation detected by k categories, each detecting category receives 1/k credit. Credits sum to all detected failures."
+        },
+        "random_vs_augmented": {
+          "any_failing_function_evaluations": 5287,
+          "detected_by_any_augmented_category": 5195,
+          "detected_by_augmentation_but_not_random": 384,
+          "detected_by_both_random_and_augmentation": 4811,
+          "detected_by_random": 4903,
+          "detected_only_by_random": 92
+        }
+      },
+      "label": "GLM-5 high + repair",
+      "mismatch_modalities": {
+        "case_level": {
+          "cases_by_modality_with_overlaps": {
+            "logs": 12945,
+            "returndata": 69428,
+            "status": 33507,
+            "storage": 22760
+          },
+          "exclusive_and_overlap_combinations": {
+            "logs": 888,
+            "logs+storage": 1011,
+            "returndata": 41354,
+            "returndata+logs": 504,
+            "returndata+logs+storage": 136,
+            "returndata+storage": 527,
+            "status": 1282,
+            "status+logs": 681,
+            "status+logs+storage": 2235,
+            "status+returndata": 14231,
+            "status+returndata+logs": 1091,
+            "status+returndata+logs+storage": 6399,
+            "status+returndata+storage": 5186,
+            "status+storage": 2402,
+            "storage": 4864
+          },
+          "mismatched_cases": 82791,
+          "returndata_mismatch_contexts": {
+            "revert_bytes": 36355,
+            "status_disagrees": 26907,
+            "successful_return_bytes": 6166
+          }
+        },
+        "comparison_note": "Modalities reconstruct the evaluator exactly: success/revert status, returned or revert bytes, ordered logs, and storage_changes for non-view/non-pure calls.",
+        "function_level": {
+          "exclusive_and_overlap_combinations": {
+            "logs": 35,
+            "logs+storage": 40,
+            "returndata": 2355,
+            "returndata+logs": 55,
+            "returndata+logs+storage": 18,
+            "returndata+storage": 62,
+            "status": 64,
+            "status+logs": 30,
+            "status+logs+storage": 128,
+            "status+returndata": 1215,
+            "status+returndata+logs": 107,
+            "status+returndata+logs+storage": 499,
+            "status+returndata+storage": 325,
+            "status+storage": 112,
+            "storage": 242
+          },
+          "failing_model_function_evaluations": 5287,
+          "functions_by_modality_with_overlaps": {
+            "logs": 912,
+            "returndata": 4636,
+            "status": 2480,
+            "storage": 1426
+          }
+        }
+      },
+      "result_errors": {},
+      "source_path": "runs/semantic/semantic_replay_glm5_reasoning_high_after_repair.json",
+      "stored_replay_summary": {
+        "calls_matched": 44185,
+        "calls_total": 126976,
+        "contracts": 397,
+        "functions_equivalent": 3015,
+        "functions_total": 8302,
+        "valid_contracts": 397
+      }
+    },
+    "glm_instruct_repair": {
+      "case_mismatch_detection": {
+        "by_case_kind": {
+          "branch_boundary:moderate_threshold": {
+            "matched_cases": 1560,
+            "mismatch_rate": 0.6398891966759003,
+            "mismatch_rate_percent": 63.988919667590025,
+            "mismatched_cases": 2772,
+            "replayed_cases": 4332
+          },
+          "branch_boundary:one_true": {
+            "matched_cases": 1406,
+            "mismatch_rate": 0.6756632064590542,
+            "mismatch_rate_percent": 67.56632064590542,
+            "mismatched_cases": 2929,
+            "replayed_cases": 4335
+          },
+          "branch_boundary:small_threshold": {
+            "matched_cases": 1360,
+            "mismatch_rate": 0.6863468634686347,
+            "mismatch_rate_percent": 68.63468634686348,
+            "mismatched_cases": 2976,
+            "replayed_cases": 4336
+          },
+          "branch_boundary:zero_empty": {
+            "matched_cases": 1532,
+            "mismatch_rate": 0.6336681013868962,
+            "mismatch_rate_percent": 63.36681013868962,
+            "mismatched_cases": 2650,
+            "replayed_cases": 4182
+          },
+          "deterministic_random": {
+            "matched_cases": 15767,
+            "mismatch_rate": 0.669593461860855,
+            "mismatch_rate_percent": 66.9593461860855,
+            "mismatched_cases": 31953,
+            "replayed_cases": 47720
+          },
+          "stateful_setup": {
+            "matched_cases": 5471,
+            "mismatch_rate": 0.6220902120605097,
+            "mismatch_rate_percent": 62.20902120605098,
+            "mismatched_cases": 9006,
+            "replayed_cases": 14477
+          },
+          "static_hint:literal": {
+            "matched_cases": 11488,
+            "mismatch_rate": 0.7101332256762213,
+            "mismatch_rate_percent": 71.01332256762213,
+            "mismatched_cases": 28144,
+            "replayed_cases": 39632
+          }
+        },
+        "by_category": {
+          "boundary": {
+            "matched_cases": 5858,
+            "mismatch_rate": 0.6591213267384347,
+            "mismatch_rate_percent": 65.91213267384347,
+            "mismatched_cases": 11327,
+            "replayed_cases": 17185
+          },
+          "random": {
+            "matched_cases": 15767,
+            "mismatch_rate": 0.669593461860855,
+            "mismatch_rate_percent": 66.9593461860855,
+            "mismatched_cases": 31953,
+            "replayed_cases": 47720
+          },
+          "stateful": {
+            "matched_cases": 5471,
+            "mismatch_rate": 0.6220902120605097,
+            "mismatch_rate_percent": 62.20902120605098,
+            "mismatched_cases": 9006,
+            "replayed_cases": 14477
+          },
+          "static": {
+            "matched_cases": 11488,
+            "mismatch_rate": 0.7101332256762213,
+            "mismatch_rate_percent": 71.01332256762213,
+            "mismatched_cases": 28144,
+            "replayed_cases": 39632
+          }
+        }
+      },
+      "denominators": {
+        "equivalent_model_function_evaluations": 2570,
+        "failing_model_function_evaluations": 5187,
+        "replayed_cases": 119014,
+        "replayed_contracts": 380,
+        "replayed_model_function_evaluations": 7757,
+        "scope_note": "Mismatch effectiveness is evaluated separately for this model over unique (benchmark_id, signature) pairs that were actually replayed. Missing or non-compiling functions have no case-level observations and are excluded here."
+      },
+      "function_detection_contribution": {
+        "by_category": {
+          "boundary": {
+            "additional_detections_beyond_random": 114,
+            "detection_rate_among_category_bearing_functions": 0.7130694891854579,
+            "detection_rate_among_category_bearing_functions_percent": 71.30694891854579,
+            "exclusive_detection_removal_loss": 55,
+            "failing_function_evaluations_detected": 3099,
+            "order_independent_shapley_credit": 879.4166666666666,
+            "replayed_function_evaluations_with_category": 4346
+          },
+          "random": {
+            "additional_detections_beyond_random": null,
+            "detection_rate_among_category_bearing_functions": 0.6278200335181127,
+            "detection_rate_among_category_bearing_functions_percent": 62.78200335181127,
+            "exclusive_detection_removal_loss": 98,
+            "failing_function_evaluations_detected": 4870,
+            "order_independent_shapley_credit": 1785.4166666666667,
+            "replayed_function_evaluations_with_category": 7757
+          },
+          "stateful": {
+            "additional_detections_beyond_random": 176,
+            "detection_rate_among_category_bearing_functions": 0.6387148380215971,
+            "detection_rate_among_category_bearing_functions_percent": 63.87148380215971,
+            "exclusive_detection_removal_loss": 170,
+            "failing_function_evaluations_detected": 4791,
+            "order_independent_shapley_credit": 1802.4166666666667,
+            "replayed_function_evaluations_with_category": 7501
+          },
+          "static": {
+            "additional_detections_beyond_random": 86,
+            "detection_rate_among_category_bearing_functions": 0.7115180467091295,
+            "detection_rate_among_category_bearing_functions_percent": 71.15180467091295,
+            "exclusive_detection_removal_loss": 33,
+            "failing_function_evaluations_detected": 2681,
+            "order_independent_shapley_credit": 719.75,
+            "replayed_function_evaluations_with_category": 3768
+          }
+        },
+        "definitions": {
+          "additional_detections_beyond_random": "Failing model-function evaluations detected by this category for which random cases did not detect a mismatch. Augmented categories may overlap each other.",
+          "exclusive_detection_removal_loss": "Failing model-function evaluations detected by this category and no other; these failures would be missed if the category were removed.",
+          "order_independent_shapley_credit": "For each failing model-function evaluation detected by k categories, each detecting category receives 1/k credit. Credits sum to all detected failures."
+        },
+        "random_vs_augmented": {
+          "any_failing_function_evaluations": 5187,
+          "detected_by_any_augmented_category": 5089,
+          "detected_by_augmentation_but_not_random": 317,
+          "detected_by_both_random_and_augmentation": 4772,
+          "detected_by_random": 4870,
+          "detected_only_by_random": 98
+        }
+      },
+      "label": "GLM-5 instruct + repair",
+      "mismatch_modalities": {
+        "case_level": {
+          "cases_by_modality_with_overlaps": {
+            "logs": 12339,
+            "returndata": 65280,
+            "status": 30267,
+            "storage": 23064
+          },
+          "exclusive_and_overlap_combinations": {
+            "logs": 544,
+            "logs+storage": 1119,
+            "returndata": 39560,
+            "returndata+logs": 485,
+            "returndata+logs+storage": 112,
+            "returndata+storage": 580,
+            "status": 1128,
+            "status+logs": 688,
+            "status+logs+storage": 2091,
+            "status+returndata": 13877,
+            "status+returndata+logs": 1084,
+            "status+returndata+logs+storage": 6216,
+            "status+returndata+storage": 3366,
+            "status+storage": 1817,
+            "storage": 7763
+          },
+          "mismatched_cases": 80430,
+          "returndata_mismatch_contexts": {
+            "revert_bytes": 34183,
+            "status_disagrees": 24543,
+            "successful_return_bytes": 6554
+          }
+        },
+        "comparison_note": "Modalities reconstruct the evaluator exactly: success/revert status, returned or revert bytes, ordered logs, and storage_changes for non-view/non-pure calls.",
+        "function_level": {
+          "exclusive_and_overlap_combinations": {
+            "logs": 16,
+            "logs+storage": 46,
+            "returndata": 2351,
+            "returndata+logs": 61,
+            "returndata+logs+storage": 10,
+            "returndata+storage": 71,
+            "status": 51,
+            "status+logs": 27,
+            "status+logs+storage": 116,
+            "status+returndata": 1100,
+            "status+returndata+logs": 135,
+            "status+returndata+logs+storage": 518,
+            "status+returndata+storage": 221,
+            "status+storage": 90,
+            "storage": 374
+          },
+          "failing_model_function_evaluations": 5187,
+          "functions_by_modality_with_overlaps": {
+            "logs": 929,
+            "returndata": 4467,
+            "status": 2258,
+            "storage": 1446
+          }
+        }
+      },
+      "result_errors": {},
+      "source_path": "runs/semantic/semantic_replay_glm5_reasoning_none_after_repair.json",
+      "stored_replay_summary": {
+        "calls_matched": 38584,
+        "calls_total": 119014,
+        "contracts": 380,
+        "functions_equivalent": 2570,
+        "functions_total": 7757,
+        "valid_contracts": 380
+      }
+    },
+    "gpt_repair": {
+      "case_mismatch_detection": {
+        "by_case_kind": {
+          "branch_boundary:moderate_threshold": {
+            "matched_cases": 2521,
+            "mismatch_rate": 0.6277868005315222,
+            "mismatch_rate_percent": 62.77868005315222,
+            "mismatched_cases": 4252,
+            "replayed_cases": 6773
+          },
+          "branch_boundary:one_true": {
+            "matched_cases": 2440,
+            "mismatch_rate": 0.6396396396396397,
+            "mismatch_rate_percent": 63.96396396396396,
+            "mismatched_cases": 4331,
+            "replayed_cases": 6771
+          },
+          "branch_boundary:small_threshold": {
+            "matched_cases": 2411,
+            "mismatch_rate": 0.6441328413284133,
+            "mismatch_rate_percent": 64.41328413284133,
+            "mismatched_cases": 4364,
+            "replayed_cases": 6775
+          },
+          "branch_boundary:zero_empty": {
+            "matched_cases": 2430,
+            "mismatch_rate": 0.628042247053421,
+            "mismatch_rate_percent": 62.80422470534211,
+            "mismatched_cases": 4103,
+            "replayed_cases": 6533
+          },
+          "deterministic_random": {
+            "matched_cases": 27157,
+            "mismatch_rate": 0.6361358611911302,
+            "mismatch_rate_percent": 63.613586119113016,
+            "mismatched_cases": 47478,
+            "replayed_cases": 74635
+          },
+          "stateful_setup": {
+            "matched_cases": 8462,
+            "mismatch_rate": 0.6303350661832161,
+            "mismatch_rate_percent": 63.03350661832161,
+            "mismatched_cases": 14429,
+            "replayed_cases": 22891
+          },
+          "static_hint:literal": {
+            "matched_cases": 21114,
+            "mismatch_rate": 0.6663822525597269,
+            "mismatch_rate_percent": 66.6382252559727,
+            "mismatched_cases": 42174,
+            "replayed_cases": 63288
+          }
+        },
+        "by_category": {
+          "boundary": {
+            "matched_cases": 9802,
+            "mismatch_rate": 0.6349620140026814,
+            "mismatch_rate_percent": 63.496201400268134,
+            "mismatched_cases": 17050,
+            "replayed_cases": 26852
+          },
+          "random": {
+            "matched_cases": 27157,
+            "mismatch_rate": 0.6361358611911302,
+            "mismatch_rate_percent": 63.613586119113016,
+            "mismatched_cases": 47478,
+            "replayed_cases": 74635
+          },
+          "stateful": {
+            "matched_cases": 8462,
+            "mismatch_rate": 0.6303350661832161,
+            "mismatch_rate_percent": 63.03350661832161,
+            "mismatched_cases": 14429,
+            "replayed_cases": 22891
+          },
+          "static": {
+            "matched_cases": 21114,
+            "mismatch_rate": 0.6663822525597269,
+            "mismatch_rate_percent": 66.6382252559727,
+            "mismatched_cases": 42174,
+            "replayed_cases": 63288
+          }
+        }
+      },
+      "denominators": {
+        "equivalent_model_function_evaluations": 4078,
+        "failing_model_function_evaluations": 8149,
+        "replayed_cases": 187666,
+        "replayed_contracts": 536,
+        "replayed_model_function_evaluations": 12227,
+        "scope_note": "Mismatch effectiveness is evaluated separately for this model over unique (benchmark_id, signature) pairs that were actually replayed. Missing or non-compiling functions have no case-level observations and are excluded here."
+      },
+      "function_detection_contribution": {
+        "by_category": {
+          "boundary": {
+            "additional_detections_beyond_random": 176,
+            "detection_rate_among_category_bearing_functions": 0.668728826042127,
+            "detection_rate_among_category_bearing_functions_percent": 66.87288260421269,
+            "exclusive_detection_removal_loss": 85,
+            "failing_function_evaluations_detected": 4540,
+            "order_independent_shapley_credit": 1279.0,
+            "replayed_function_evaluations_with_category": 6789
+          },
+          "random": {
+            "additional_detections_beyond_random": null,
+            "detection_rate_among_category_bearing_functions": 0.6236198576919931,
+            "detection_rate_among_category_bearing_functions_percent": 62.361985769199315,
+            "exclusive_detection_removal_loss": 103,
+            "failing_function_evaluations_detected": 7625,
+            "order_independent_shapley_credit": 2829.6666666666665,
+            "replayed_function_evaluations_with_category": 12227
+          },
+          "stateful": {
+            "additional_detections_beyond_random": 295,
+            "detection_rate_among_category_bearing_functions": 0.6463887951400608,
+            "detection_rate_among_category_bearing_functions_percent": 64.63887951400608,
+            "exclusive_detection_removal_loss": 293,
+            "failing_function_evaluations_detected": 7661,
+            "order_independent_shapley_credit": 2963.3333333333335,
+            "replayed_function_evaluations_with_category": 11852
+          },
+          "static": {
+            "additional_detections_beyond_random": 145,
+            "detection_rate_among_category_bearing_functions": 0.6790437436419126,
+            "detection_rate_among_category_bearing_functions_percent": 67.90437436419126,
+            "exclusive_detection_removal_loss": 55,
+            "failing_function_evaluations_detected": 4005,
+            "order_independent_shapley_credit": 1077.0,
+            "replayed_function_evaluations_with_category": 5898
+          }
+        },
+        "definitions": {
+          "additional_detections_beyond_random": "Failing model-function evaluations detected by this category for which random cases did not detect a mismatch. Augmented categories may overlap each other.",
+          "exclusive_detection_removal_loss": "Failing model-function evaluations detected by this category and no other; these failures would be missed if the category were removed.",
+          "order_independent_shapley_credit": "For each failing model-function evaluation detected by k categories, each detecting category receives 1/k credit. Credits sum to all detected failures."
+        },
+        "random_vs_augmented": {
+          "any_failing_function_evaluations": 8149,
+          "detected_by_any_augmented_category": 8046,
+          "detected_by_augmentation_but_not_random": 524,
+          "detected_by_both_random_and_augmentation": 7522,
+          "detected_by_random": 7625,
+          "detected_only_by_random": 103
+        }
+      },
+      "label": "GPT-5.3-Codex + repair",
+      "mismatch_modalities": {
+        "case_level": {
+          "cases_by_modality_with_overlaps": {
+            "logs": 16392,
+            "returndata": 104292,
+            "status": 50923,
+            "storage": 26043
+          },
+          "exclusive_and_overlap_combinations": {
+            "logs": 869,
+            "logs+storage": 753,
+            "returndata": 61407,
+            "returndata+logs": 550,
+            "returndata+logs+storage": 69,
+            "status": 1646,
+            "status+logs": 822,
+            "status+logs+storage": 3165,
+            "status+returndata": 28424,
+            "status+returndata+logs": 1370,
+            "status+returndata+logs+storage": 8794,
+            "status+returndata+storage": 3678,
+            "status+storage": 3024,
+            "storage": 6560
+          },
+          "mismatched_cases": 121131,
+          "returndata_mismatch_contexts": {
+            "revert_bytes": 58602,
+            "status_disagrees": 42266,
+            "successful_return_bytes": 3424
+          }
+        },
+        "comparison_note": "Modalities reconstruct the evaluator exactly: success/revert status, returned or revert bytes, ordered logs, and storage_changes for non-view/non-pure calls.",
+        "function_level": {
+          "exclusive_and_overlap_combinations": {
+            "logs": 40,
+            "logs+storage": 34,
+            "returndata": 3011,
+            "returndata+logs": 62,
+            "returndata+logs+storage": 7,
+            "returndata+storage": 52,
+            "status": 85,
+            "status+logs": 29,
+            "status+logs+storage": 174,
+            "status+returndata": 3048,
+            "status+returndata+logs": 221,
+            "status+returndata+logs+storage": 623,
+            "status+returndata+storage": 262,
+            "status+storage": 146,
+            "storage": 355
+          },
+          "failing_model_function_evaluations": 8149,
+          "functions_by_modality_with_overlaps": {
+            "logs": 1190,
+            "returndata": 7286,
+            "status": 4588,
+            "storage": 1653
+          }
+        }
+      },
+      "result_errors": {},
+      "source_path": "runs/semantic/semantic_replay_gpt53_codex_reasoning_high_after_repair.json",
+      "stored_replay_summary": {
+        "calls_matched": 66535,
+        "calls_total": 187666,
+        "contracts": 536,
+        "functions_equivalent": 4078,
+        "functions_total": 12227,
+        "valid_contracts": 536
+      }
+    },
+    "opus_repair": {
+      "case_mismatch_detection": {
+        "by_case_kind": {
+          "branch_boundary:moderate_threshold": {
+            "matched_cases": 2697,
+            "mismatch_rate": 0.43541971948921915,
+            "mismatch_rate_percent": 43.54197194892192,
+            "mismatched_cases": 2080,
+            "replayed_cases": 4777
+          },
+          "branch_boundary:one_true": {
+            "matched_cases": 2612,
+            "mismatch_rate": 0.45367078017151224,
+            "mismatch_rate_percent": 45.36707801715122,
+            "mismatched_cases": 2169,
+            "replayed_cases": 4781
+          },
+          "branch_boundary:small_threshold": {
+            "matched_cases": 2600,
+            "mismatch_rate": 0.4564081120635584,
+            "mismatch_rate_percent": 45.64081120635584,
+            "mismatched_cases": 2183,
+            "replayed_cases": 4783
+          },
+          "branch_boundary:zero_empty": {
+            "matched_cases": 2662,
+            "mismatch_rate": 0.41953772350632357,
+            "mismatch_rate_percent": 41.953772350632356,
+            "mismatched_cases": 1924,
+            "replayed_cases": 4586
+          },
+          "deterministic_random": {
+            "matched_cases": 28586,
+            "mismatch_rate": 0.4562608182907576,
+            "mismatch_rate_percent": 45.62608182907576,
+            "mismatched_cases": 23987,
+            "replayed_cases": 52573
+          },
+          "stateful_setup": {
+            "matched_cases": 8527,
+            "mismatch_rate": 0.45911830003171583,
+            "mismatch_rate_percent": 45.91183000317158,
+            "mismatched_cases": 7238,
+            "replayed_cases": 15765
+          },
+          "static_hint:literal": {
+            "matched_cases": 23218,
+            "mismatch_rate": 0.4642824180895247,
+            "mismatch_rate_percent": 46.42824180895247,
+            "mismatched_cases": 20122,
+            "replayed_cases": 43340
+          }
+        },
+        "by_category": {
+          "boundary": {
+            "matched_cases": 10571,
+            "mismatch_rate": 0.4414857082474771,
+            "mismatch_rate_percent": 44.148570824747715,
+            "mismatched_cases": 8356,
+            "replayed_cases": 18927
+          },
+          "random": {
+            "matched_cases": 28586,
+            "mismatch_rate": 0.4562608182907576,
+            "mismatch_rate_percent": 45.62608182907576,
+            "mismatched_cases": 23987,
+            "replayed_cases": 52573
+          },
+          "stateful": {
+            "matched_cases": 8527,
+            "mismatch_rate": 0.45911830003171583,
+            "mismatch_rate_percent": 45.91183000317158,
+            "mismatched_cases": 7238,
+            "replayed_cases": 15765
+          },
+          "static": {
+            "matched_cases": 23218,
+            "mismatch_rate": 0.4642824180895247,
+            "mismatch_rate_percent": 46.42824180895247,
+            "mismatched_cases": 20122,
+            "replayed_cases": 43340
+          }
+        }
+      },
+      "denominators": {
+        "equivalent_model_function_evaluations": 4284,
+        "failing_model_function_evaluations": 4214,
+        "replayed_cases": 130605,
+        "replayed_contracts": 410,
+        "replayed_model_function_evaluations": 8498,
+        "scope_note": "Mismatch effectiveness is evaluated separately for this model over unique (benchmark_id, signature) pairs that were actually replayed. Missing or non-compiling functions have no case-level observations and are excluded here."
+      },
+      "function_detection_contribution": {
+        "by_category": {
+          "boundary": {
+            "additional_detections_beyond_random": 99,
+            "detection_rate_among_category_bearing_functions": 0.4791318864774624,
+            "detection_rate_among_category_bearing_functions_percent": 47.913188647746246,
+            "exclusive_detection_removal_loss": 44,
+            "failing_function_evaluations_detected": 2296,
+            "order_independent_shapley_credit": 660.6666666666666,
+            "replayed_function_evaluations_with_category": 4792
+          },
+          "random": {
+            "additional_detections_beyond_random": null,
+            "detection_rate_among_category_bearing_functions": 0.4596375617792422,
+            "detection_rate_among_category_bearing_functions_percent": 45.96375617792422,
+            "exclusive_detection_removal_loss": 72,
+            "failing_function_evaluations_detected": 3906,
+            "order_independent_shapley_credit": 1478.5,
+            "replayed_function_evaluations_with_category": 8498
+          },
+          "stateful": {
+            "additional_detections_beyond_random": 161,
+            "detection_rate_among_category_bearing_functions": 0.4730788056779246,
+            "detection_rate_among_category_bearing_functions_percent": 47.30788056779246,
+            "exclusive_detection_removal_loss": 160,
+            "failing_function_evaluations_detected": 3866,
+            "order_independent_shapley_credit": 1519.5,
+            "replayed_function_evaluations_with_category": 8172
+          },
+          "static": {
+            "additional_detections_beyond_random": 104,
+            "detection_rate_among_category_bearing_functions": 0.4838630806845966,
+            "detection_rate_among_category_bearing_functions_percent": 48.386308068459655,
+            "exclusive_detection_removal_loss": 49,
+            "failing_function_evaluations_detected": 1979,
+            "order_independent_shapley_credit": 555.3333333333334,
+            "replayed_function_evaluations_with_category": 4090
+          }
+        },
+        "definitions": {
+          "additional_detections_beyond_random": "Failing model-function evaluations detected by this category for which random cases did not detect a mismatch. Augmented categories may overlap each other.",
+          "exclusive_detection_removal_loss": "Failing model-function evaluations detected by this category and no other; these failures would be missed if the category were removed.",
+          "order_independent_shapley_credit": "For each failing model-function evaluation detected by k categories, each detecting category receives 1/k credit. Credits sum to all detected failures."
+        },
+        "random_vs_augmented": {
+          "any_failing_function_evaluations": 4214,
+          "detected_by_any_augmented_category": 4142,
+          "detected_by_augmentation_but_not_random": 308,
+          "detected_by_both_random_and_augmentation": 3834,
+          "detected_by_random": 3906,
+          "detected_only_by_random": 72
+        }
+      },
+      "label": "Claude Opus 4.7 + repair",
+      "mismatch_modalities": {
+        "case_level": {
+          "cases_by_modality_with_overlaps": {
+            "logs": 8993,
+            "returndata": 49999,
+            "status": 24935,
+            "storage": 15432
+          },
+          "exclusive_and_overlap_combinations": {
+            "logs": 736,
+            "logs+storage": 476,
+            "returndata": 28490,
+            "returndata+logs": 541,
+            "returndata+logs+storage": 44,
+            "returndata+storage": 4,
+            "status": 590,
+            "status+logs": 369,
+            "status+logs+storage": 1586,
+            "status+returndata": 12689,
+            "status+returndata+logs": 856,
+            "status+returndata+logs+storage": 4385,
+            "status+returndata+storage": 2990,
+            "status+storage": 1470,
+            "storage": 4477
+          },
+          "mismatched_cases": 59703,
+          "returndata_mismatch_contexts": {
+            "revert_bytes": 25987,
+            "status_disagrees": 20920,
+            "successful_return_bytes": 3092
+          }
+        },
+        "comparison_note": "Modalities reconstruct the evaluator exactly: success/revert status, returned or revert bytes, ordered logs, and storage_changes for non-view/non-pure calls.",
+        "function_level": {
+          "exclusive_and_overlap_combinations": {
+            "logs": 49,
+            "logs+storage": 27,
+            "returndata": 1780,
+            "returndata+logs": 40,
+            "returndata+logs+storage": 4,
+            "returndata+storage": 5,
+            "status": 26,
+            "status+logs": 16,
+            "status+logs+storage": 99,
+            "status+returndata": 1213,
+            "status+returndata+logs": 98,
+            "status+returndata+logs+storage": 324,
+            "status+returndata+storage": 192,
+            "status+storage": 70,
+            "storage": 271
+          },
+          "failing_model_function_evaluations": 4214,
+          "functions_by_modality_with_overlaps": {
+            "logs": 657,
+            "returndata": 3656,
+            "status": 2038,
+            "storage": 992
+          }
+        }
+      },
+      "result_errors": {},
+      "source_path": "runs/semantic/semantic_replay_claude_opus47_reasoning_high_after_repair.json",
+      "stored_replay_summary": {
+        "calls_matched": 70902,
+        "calls_total": 130605,
+        "contracts": 410,
+        "functions_equivalent": 4284,
+        "functions_total": 8498,
+        "valid_contracts": 410
+      }
+    }
+  },
+  "provenance": {
+    "benchmark": {
+      "bytes": 279163566,
+      "path": "data/scdbench_complete.jsonl",
+      "sha256": "9a7e328916376cdf452518be225966983c57f24a3e9ebd2f3c2a9f493007e221"
+    },
+    "replays": {
+      "glm_high_repair": {
+        "bytes": 426993507,
+        "path": "runs/semantic/semantic_replay_glm5_reasoning_high_after_repair.json",
+        "sha256": "862980aee0aa4b1f687df1e1d017495824a87a0fe37e1306f4233946df5bbf38"
+      },
+      "glm_instruct_repair": {
+        "bytes": 407233881,
+        "path": "runs/semantic/semantic_replay_glm5_reasoning_none_after_repair.json",
+        "sha256": "fe103af22d4ea22a6103acac670d0c2375df6971422fab2912de3b05c117153c"
+      },
+      "gpt_repair": {
+        "bytes": 761157520,
+        "path": "runs/semantic/semantic_replay_gpt53_codex_reasoning_high_after_repair.json",
+        "sha256": "af85bec000bc1f02e53cc756e4b0aaa635cf1d9da11c176cfa5e3f45b979a253"
+      },
+      "opus_repair": {
+        "bytes": 442053427,
+        "path": "runs/semantic/semantic_replay_claude_opus47_reasoning_high_after_repair.json",
+        "sha256": "fb09c8bcf28ee27451abe9f6c3ca36e07737987d01fb0a87039ca5c575d573b3"
+      }
+    }
+  },
+  "schema": "scdbench-rebuttal-semantic-effectiveness-v1"
+}

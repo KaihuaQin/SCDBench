@@ -1,0 +1,582 @@
+{
+  "budgets_seconds": {
+    "easy": 4,
+    "hard": 16,
+    "medium": 9
+  },
+  "cases": [
+    {
+      "benchmark_id": "scdbench-easy-013",
+      "difficulty": "easy",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured_zero_no_fuzzable_abi_entry",
+      "line_total": 135,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 135
+    },
+    {
+      "benchmark_id": "scdbench-easy-018",
+      "difficulty": "easy",
+      "ityfuzz_covered": 2,
+      "ityfuzz_status": "measured",
+      "line_total": 11,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 10
+    },
+    {
+      "benchmark_id": "scdbench-easy-022",
+      "difficulty": "easy",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured_zero_no_fuzzable_abi_entry",
+      "line_total": 15,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 14
+    },
+    {
+      "benchmark_id": "scdbench-easy-048",
+      "difficulty": "easy",
+      "ityfuzz_covered": 3,
+      "ityfuzz_status": "measured",
+      "line_total": 14,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 14
+    },
+    {
+      "benchmark_id": "scdbench-easy-053",
+      "difficulty": "easy",
+      "ityfuzz_covered": 42,
+      "ityfuzz_status": "measured",
+      "line_total": 89,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 89
+    },
+    {
+      "benchmark_id": "scdbench-easy-071",
+      "difficulty": "easy",
+      "ityfuzz_covered": 50,
+      "ityfuzz_status": "measured",
+      "line_total": 91,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 91
+    },
+    {
+      "benchmark_id": "scdbench-easy-076",
+      "difficulty": "easy",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured",
+      "line_total": 19,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 8
+    },
+    {
+      "benchmark_id": "scdbench-easy-081",
+      "difficulty": "easy",
+      "ityfuzz_covered": 14,
+      "ityfuzz_status": "measured",
+      "line_total": 26,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 24
+    },
+    {
+      "benchmark_id": "scdbench-easy-091",
+      "difficulty": "easy",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured",
+      "line_total": 14,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 12
+    },
+    {
+      "benchmark_id": "scdbench-easy-092",
+      "difficulty": "easy",
+      "ityfuzz_covered": 13,
+      "ityfuzz_status": "measured",
+      "line_total": 52,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 31
+    },
+    {
+      "benchmark_id": "scdbench-easy-096",
+      "difficulty": "easy",
+      "ityfuzz_covered": 2,
+      "ityfuzz_status": "measured",
+      "line_total": 14,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 2
+    },
+    {
+      "benchmark_id": "scdbench-easy-104",
+      "difficulty": "easy",
+      "ityfuzz_covered": 16,
+      "ityfuzz_status": "measured",
+      "line_total": 49,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 22
+    },
+    {
+      "benchmark_id": "scdbench-easy-114",
+      "difficulty": "easy",
+      "ityfuzz_covered": 3,
+      "ityfuzz_status": "measured_partial_ityfuzz_failure",
+      "line_total": 5,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 5
+    },
+    {
+      "benchmark_id": "scdbench-easy-119",
+      "difficulty": "easy",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured_zero_no_fuzzable_abi_entry",
+      "line_total": 40,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 35
+    },
+    {
+      "benchmark_id": "scdbench-easy-123",
+      "difficulty": "easy",
+      "ityfuzz_covered": 27,
+      "ityfuzz_status": "measured",
+      "line_total": 92,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 92
+    },
+    {
+      "benchmark_id": "scdbench-easy-145",
+      "difficulty": "easy",
+      "ityfuzz_covered": 28,
+      "ityfuzz_status": "measured",
+      "line_total": 134,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 134
+    },
+    {
+      "benchmark_id": "scdbench-easy-154",
+      "difficulty": "easy",
+      "ityfuzz_covered": 8,
+      "ityfuzz_status": "measured",
+      "line_total": 15,
+      "scdbench_budget_capped": true,
+      "scdbench_covered": 3
+    },
+    {
+      "benchmark_id": "scdbench-easy-158",
+      "difficulty": "easy",
+      "ityfuzz_covered": 1,
+      "ityfuzz_status": "measured",
+      "line_total": 13,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 13
+    },
+    {
+      "benchmark_id": "scdbench-easy-160",
+      "difficulty": "easy",
+      "ityfuzz_covered": 69,
+      "ityfuzz_status": "measured",
+      "line_total": 127,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 127
+    },
+    {
+      "benchmark_id": "scdbench-easy-176",
+      "difficulty": "easy",
+      "ityfuzz_covered": 26,
+      "ityfuzz_status": "measured",
+      "line_total": 51,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 32
+    },
+    {
+      "benchmark_id": "scdbench-medium-011",
+      "difficulty": "medium",
+      "ityfuzz_covered": 5,
+      "ityfuzz_status": "measured",
+      "line_total": 102,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 102
+    },
+    {
+      "benchmark_id": "scdbench-medium-020",
+      "difficulty": "medium",
+      "ityfuzz_covered": 2,
+      "ityfuzz_status": "measured",
+      "line_total": 61,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 61
+    },
+    {
+      "benchmark_id": "scdbench-medium-032",
+      "difficulty": "medium",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured_zero_ityfuzz_failure",
+      "line_total": 150,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 27
+    },
+    {
+      "benchmark_id": "scdbench-medium-057",
+      "difficulty": "medium",
+      "ityfuzz_covered": 41,
+      "ityfuzz_status": "measured",
+      "line_total": 75,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 19
+    },
+    {
+      "benchmark_id": "scdbench-medium-060",
+      "difficulty": "medium",
+      "ityfuzz_covered": 15,
+      "ityfuzz_status": "measured",
+      "line_total": 46,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 37
+    },
+    {
+      "benchmark_id": "scdbench-medium-086",
+      "difficulty": "medium",
+      "ityfuzz_covered": 6,
+      "ityfuzz_status": "measured",
+      "line_total": 93,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 46
+    },
+    {
+      "benchmark_id": "scdbench-medium-103",
+      "difficulty": "medium",
+      "ityfuzz_covered": 57,
+      "ityfuzz_status": "measured",
+      "line_total": 134,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 77
+    },
+    {
+      "benchmark_id": "scdbench-medium-105",
+      "difficulty": "medium",
+      "ityfuzz_covered": 11,
+      "ityfuzz_status": "measured",
+      "line_total": 22,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 11
+    },
+    {
+      "benchmark_id": "scdbench-medium-110",
+      "difficulty": "medium",
+      "ityfuzz_covered": 62,
+      "ityfuzz_status": "measured",
+      "line_total": 144,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 103
+    },
+    {
+      "benchmark_id": "scdbench-medium-130",
+      "difficulty": "medium",
+      "ityfuzz_covered": 3,
+      "ityfuzz_status": "measured",
+      "line_total": 64,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 19
+    },
+    {
+      "benchmark_id": "scdbench-medium-142",
+      "difficulty": "medium",
+      "ityfuzz_covered": 8,
+      "ityfuzz_status": "measured",
+      "line_total": 48,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 32
+    },
+    {
+      "benchmark_id": "scdbench-medium-163",
+      "difficulty": "medium",
+      "ityfuzz_covered": 4,
+      "ityfuzz_status": "measured",
+      "line_total": 34,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 28
+    },
+    {
+      "benchmark_id": "scdbench-medium-164",
+      "difficulty": "medium",
+      "ityfuzz_covered": 129,
+      "ityfuzz_status": "measured",
+      "line_total": 177,
+      "scdbench_budget_capped": true,
+      "scdbench_covered": 12
+    },
+    {
+      "benchmark_id": "scdbench-medium-174",
+      "difficulty": "medium",
+      "ityfuzz_covered": 18,
+      "ityfuzz_status": "measured",
+      "line_total": 249,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 64
+    },
+    {
+      "benchmark_id": "scdbench-medium-183",
+      "difficulty": "medium",
+      "ityfuzz_covered": 5,
+      "ityfuzz_status": "measured",
+      "line_total": 24,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 13
+    },
+    {
+      "benchmark_id": "scdbench-hard-018",
+      "difficulty": "hard",
+      "ityfuzz_covered": 3,
+      "ityfuzz_status": "measured",
+      "line_total": 43,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 43
+    },
+    {
+      "benchmark_id": "scdbench-hard-021",
+      "difficulty": "hard",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured",
+      "line_total": 97,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 19
+    },
+    {
+      "benchmark_id": "scdbench-hard-044",
+      "difficulty": "hard",
+      "ityfuzz_covered": 10,
+      "ityfuzz_status": "measured",
+      "line_total": 151,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 151
+    },
+    {
+      "benchmark_id": "scdbench-hard-046",
+      "difficulty": "hard",
+      "ityfuzz_covered": 21,
+      "ityfuzz_status": "measured",
+      "line_total": 126,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 58
+    },
+    {
+      "benchmark_id": "scdbench-hard-049",
+      "difficulty": "hard",
+      "ityfuzz_covered": 2,
+      "ityfuzz_status": "measured",
+      "line_total": 74,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 34
+    },
+    {
+      "benchmark_id": "scdbench-hard-073",
+      "difficulty": "hard",
+      "ityfuzz_covered": 5,
+      "ityfuzz_status": "measured",
+      "line_total": 165,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 5
+    },
+    {
+      "benchmark_id": "scdbench-hard-087",
+      "difficulty": "hard",
+      "ityfuzz_covered": 0,
+      "ityfuzz_status": "measured",
+      "line_total": 10,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 10
+    },
+    {
+      "benchmark_id": "scdbench-hard-092",
+      "difficulty": "hard",
+      "ityfuzz_covered": 276,
+      "ityfuzz_status": "measured",
+      "line_total": 667,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 667
+    },
+    {
+      "benchmark_id": "scdbench-hard-103",
+      "difficulty": "hard",
+      "ityfuzz_covered": 5,
+      "ityfuzz_status": "measured",
+      "line_total": 53,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 53
+    },
+    {
+      "benchmark_id": "scdbench-hard-112",
+      "difficulty": "hard",
+      "ityfuzz_covered": 33,
+      "ityfuzz_status": "measured_partial_ityfuzz_failure",
+      "line_total": 107,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 107
+    },
+    {
+      "benchmark_id": "scdbench-hard-122",
+      "difficulty": "hard",
+      "ityfuzz_covered": 6,
+      "ityfuzz_status": "measured",
+      "line_total": 197,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 55
+    },
+    {
+      "benchmark_id": "scdbench-hard-135",
+      "difficulty": "hard",
+      "ityfuzz_covered": 27,
+      "ityfuzz_status": "measured",
+      "line_total": 47,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 46
+    },
+    {
+      "benchmark_id": "scdbench-hard-143",
+      "difficulty": "hard",
+      "ityfuzz_covered": 2,
+      "ityfuzz_status": "measured",
+      "line_total": 207,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 50
+    },
+    {
+      "benchmark_id": "scdbench-hard-164",
+      "difficulty": "hard",
+      "ityfuzz_covered": 15,
+      "ityfuzz_status": "measured",
+      "line_total": 43,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 30
+    },
+    {
+      "benchmark_id": "scdbench-hard-172",
+      "difficulty": "hard",
+      "ityfuzz_covered": 21,
+      "ityfuzz_status": "measured_partial_ityfuzz_failure",
+      "line_total": 88,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 42
+    },
+    {
+      "benchmark_id": "scdbench-hard-183",
+      "difficulty": "hard",
+      "ityfuzz_covered": 96,
+      "ityfuzz_status": "measured",
+      "line_total": 456,
+      "scdbench_budget_capped": false,
+      "scdbench_covered": 456
+    }
+  ],
+  "comparable_contracts": 51,
+  "ityfuzz_status_counts": {
+    "measured": 53,
+    "measured_partial_ityfuzz_failure": 3,
+    "measured_zero_ityfuzz_failure": 1,
+    "measured_zero_no_fuzzable_abi_entry": 3
+  },
+  "schema": "scdbench-ityfuzz-matched-target-line-coverage-v1",
+  "selected_contracts": 60,
+  "submission_line_universe_unavailable": [
+    {
+      "benchmark_id": "scdbench-medium-065",
+      "difficulty": "medium",
+      "reason": "forge_coverage_failed"
+    },
+    {
+      "benchmark_id": "scdbench-medium-069",
+      "difficulty": "medium",
+      "reason": "legacy_solidity_0_4_coverage_skipped"
+    },
+    {
+      "benchmark_id": "scdbench-medium-117",
+      "difficulty": "medium",
+      "reason": "forge_coverage_failed"
+    },
+    {
+      "benchmark_id": "scdbench-medium-120",
+      "difficulty": "medium",
+      "reason": "foundry_coverage_parser_failed"
+    },
+    {
+      "benchmark_id": "scdbench-medium-132",
+      "difficulty": "medium",
+      "reason": "legacy_solidity_0_4_coverage_skipped"
+    },
+    {
+      "benchmark_id": "scdbench-hard-014",
+      "difficulty": "hard",
+      "reason": "foundry_coverage_parser_failed"
+    },
+    {
+      "benchmark_id": "scdbench-hard-104",
+      "difficulty": "hard",
+      "reason": "forge_coverage_failed"
+    },
+    {
+      "benchmark_id": "scdbench-hard-142",
+      "difficulty": "hard",
+      "reason": "budget_capped_target_line_coverage_unavailable"
+    },
+    {
+      "benchmark_id": "scdbench-hard-162",
+      "difficulty": "hard",
+      "reason": "forge_coverage_failed"
+    }
+  ],
+  "summary": {
+    "all": {
+      "ityfuzz": {
+        "contracts": 51,
+        "covered": 1192,
+        "ratio": 0.2403225806451613,
+        "total": 4960
+      },
+      "scdbench": {
+        "contracts": 51,
+        "covered": 3370,
+        "ratio": 0.6794354838709677,
+        "total": 4960
+      }
+    },
+    "easy": {
+      "ityfuzz": {
+        "contracts": 20,
+        "covered": 304,
+        "ratio": 0.30218687872763417,
+        "total": 1006
+      },
+      "scdbench": {
+        "contracts": 20,
+        "covered": 893,
+        "ratio": 0.8876739562624254,
+        "total": 1006
+      }
+    },
+    "hard": {
+      "ityfuzz": {
+        "contracts": 16,
+        "covered": 522,
+        "ratio": 0.20624259186092453,
+        "total": 2531
+      },
+      "scdbench": {
+        "contracts": 16,
+        "covered": 1826,
+        "ratio": 0.7214539707625445,
+        "total": 2531
+      }
+    },
+    "medium": {
+      "ityfuzz": {
+        "contracts": 15,
+        "covered": 366,
+        "ratio": 0.2572030920590302,
+        "total": 1423
+      },
+      "scdbench": {
+        "contracts": 15,
+        "covered": 651,
+        "ratio": 0.45748418833450455,
+        "total": 1423
+      }
+    }
+  }
+}

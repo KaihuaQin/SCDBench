@@ -1,0 +1,3 @@
+py-solc-x
+eth-abi
+eth-utils

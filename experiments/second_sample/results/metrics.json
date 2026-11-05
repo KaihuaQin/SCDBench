@@ -1,0 +1,1367 @@
+{
+  "claude_opus47_high": {
+    "repair_validation": {
+      "contracts": 600,
+      "repair_candidates": 105,
+      "unrepaired_contracts_verified_unchanged": 495,
+      "repair_rows_whose_re_evaluated_format_status_differed": 0,
+      "format_stage_policy": "Original stage-1 format result is preserved for every repair candidate; stages 2-4 use the after-repair artifact."
+    },
+    "initial": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 180,
+        "format_rate": 0.9,
+        "compile_ok": 159,
+        "compile_rate": 0.795,
+        "semantic_eligible_contracts": 157,
+        "replayed_contracts": 157,
+        "abi": {
+          "true_positive": 1686,
+          "false_positive": 122,
+          "ground_truth": 2201,
+          "precision": 0.9325221238938053,
+          "recall": 0.7660154475238528,
+          "f1": 0.8411075081067598,
+          "conditional_recall": 0.9645308924485125,
+          "conditional_f1": 0.9482564679415073
+        },
+        "semantic": {
+          "equivalent": 810,
+          "ground_truth": 2261,
+          "rate": 0.3582485625829279,
+          "reached": 1686,
+          "conditional_rate": 0.4804270462633452
+        },
+        "perfect": {
+          "contracts": 22,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-030",
+            "scdbench-holdout-easy-039",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-056",
+            "scdbench-holdout-easy-060",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-080",
+            "scdbench-holdout-easy-092",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-140",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-171"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 146,
+        "format_rate": 0.73,
+        "compile_ok": 114,
+        "compile_rate": 0.57,
+        "semantic_eligible_contracts": 112,
+        "replayed_contracts": 112,
+        "abi": {
+          "true_positive": 2506,
+          "false_positive": 213,
+          "ground_truth": 4555,
+          "precision": 0.9216623758734829,
+          "recall": 0.5501646542261251,
+          "f1": 0.689029419851526,
+          "conditional_recall": 0.9623655913978495,
+          "conditional_f1": 0.9415743002066503
+        },
+        "semantic": {
+          "equivalent": 1366,
+          "ground_truth": 4623,
+          "rate": 0.2954791261085875,
+          "reached": 2506,
+          "conditional_rate": 0.5450917797286512
+        },
+        "perfect": {
+          "contracts": 8,
+          "benchmark_ids": [
+            "scdbench-holdout-medium-021",
+            "scdbench-holdout-medium-026",
+            "scdbench-holdout-medium-086",
+            "scdbench-holdout-medium-116",
+            "scdbench-holdout-medium-123",
+            "scdbench-holdout-medium-161",
+            "scdbench-holdout-medium-173",
+            "scdbench-holdout-medium-191"
+          ]
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 129,
+        "format_rate": 0.645,
+        "compile_ok": 77,
+        "compile_rate": 0.385,
+        "semantic_eligible_contracts": 77,
+        "replayed_contracts": 77,
+        "abi": {
+          "true_positive": 2679,
+          "false_positive": 219,
+          "ground_truth": 7625,
+          "precision": 0.9244306418219461,
+          "recall": 0.351344262295082,
+          "f1": 0.5091703886724318,
+          "conditional_recall": 0.94,
+          "conditional_f1": 0.9321503131524007
+        },
+        "semantic": {
+          "equivalent": 1216,
+          "ground_truth": 7694,
+          "rate": 0.15804523004938914,
+          "reached": 2679,
+          "conditional_rate": 0.45390070921985815
+        },
+        "perfect": {
+          "contracts": 1,
+          "benchmark_ids": [
+            "scdbench-holdout-hard-063"
+          ]
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 455,
+        "format_rate": 0.7583333333333333,
+        "compile_ok": 350,
+        "compile_rate": 0.5833333333333334,
+        "semantic_eligible_contracts": 346,
+        "replayed_contracts": 346,
+        "abi": {
+          "true_positive": 6871,
+          "false_positive": 554,
+          "ground_truth": 14381,
+          "precision": 0.9253872053872054,
+          "recall": 0.4777831861483902,
+          "f1": 0.6301935247179675,
+          "conditional_recall": 0.9540405442932519,
+          "conditional_f1": 0.9394954536131811
+        },
+        "semantic": {
+          "equivalent": 3392,
+          "ground_truth": 14578,
+          "rate": 0.2326793798875017,
+          "reached": 6871,
+          "conditional_rate": 0.4936690438073061
+        },
+        "perfect": {
+          "contracts": 31,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-030",
+            "scdbench-holdout-easy-039",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-056",
+            "scdbench-holdout-easy-060",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-080",
+            "scdbench-holdout-easy-092",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-140",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-171",
+            "scdbench-holdout-hard-063",
+            "scdbench-holdout-medium-021",
+            "scdbench-holdout-medium-026",
+            "scdbench-holdout-medium-086",
+            "scdbench-holdout-medium-116",
+            "scdbench-holdout-medium-123",
+            "scdbench-holdout-medium-161",
+            "scdbench-holdout-medium-173",
+            "scdbench-holdout-medium-191"
+          ]
+        }
+      }
+    },
+    "repaired": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 180,
+        "format_rate": 0.9,
+        "compile_ok": 176,
+        "compile_rate": 0.88,
+        "semantic_eligible_contracts": 173,
+        "replayed_contracts": 173,
+        "abi": {
+          "true_positive": 1828,
+          "false_positive": 131,
+          "ground_truth": 2201,
+          "precision": 0.933129147524247,
+          "recall": 0.8305315765561109,
+          "f1": 0.8788461538461538,
+          "conditional_recall": 0.9636267791249341,
+          "conditional_f1": 0.9481327800829875
+        },
+        "semantic": {
+          "equivalent": 889,
+          "ground_truth": 2261,
+          "rate": 0.3931888544891641,
+          "reached": 1828,
+          "conditional_rate": 0.4863238512035011
+        },
+        "perfect": {
+          "contracts": 25,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-030",
+            "scdbench-holdout-easy-039",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-056",
+            "scdbench-holdout-easy-060",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-080",
+            "scdbench-holdout-easy-092",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-122",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-129",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-140",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-169",
+            "scdbench-holdout-easy-171"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 146,
+        "format_rate": 0.73,
+        "compile_ok": 143,
+        "compile_rate": 0.715,
+        "semantic_eligible_contracts": 141,
+        "replayed_contracts": 141,
+        "abi": {
+          "true_positive": 3199,
+          "false_positive": 294,
+          "ground_truth": 4555,
+          "precision": 0.9158316633266533,
+          "recall": 0.7023051591657519,
+          "f1": 0.7949801192842944,
+          "conditional_recall": 0.954070981210856,
+          "conditional_f1": 0.934560327198364
+        },
+        "semantic": {
+          "equivalent": 1725,
+          "ground_truth": 4623,
+          "rate": 0.373134328358209,
+          "reached": 3199,
+          "conditional_rate": 0.5392310096905283
+        },
+        "perfect": {
+          "contracts": 10,
+          "benchmark_ids": [
+            "scdbench-holdout-medium-021",
+            "scdbench-holdout-medium-026",
+            "scdbench-holdout-medium-038",
+            "scdbench-holdout-medium-086",
+            "scdbench-holdout-medium-116",
+            "scdbench-holdout-medium-123",
+            "scdbench-holdout-medium-124",
+            "scdbench-holdout-medium-161",
+            "scdbench-holdout-medium-173",
+            "scdbench-holdout-medium-191"
+          ]
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 129,
+        "format_rate": 0.645,
+        "compile_ok": 119,
+        "compile_rate": 0.595,
+        "semantic_eligible_contracts": 119,
+        "replayed_contracts": 119,
+        "abi": {
+          "true_positive": 4183,
+          "false_positive": 348,
+          "ground_truth": 7625,
+          "precision": 0.9231957625248289,
+          "recall": 0.5485901639344263,
+          "f1": 0.6882198091477459,
+          "conditional_recall": 0.9362130707251567,
+          "conditional_f1": 0.9296588509834426
+        },
+        "semantic": {
+          "equivalent": 2047,
+          "ground_truth": 7694,
+          "rate": 0.26605146867689106,
+          "reached": 4183,
+          "conditional_rate": 0.48936170212765956
+        },
+        "perfect": {
+          "contracts": 1,
+          "benchmark_ids": [
+            "scdbench-holdout-hard-063"
+          ]
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 455,
+        "format_rate": 0.7583333333333333,
+        "compile_ok": 438,
+        "compile_rate": 0.73,
+        "semantic_eligible_contracts": 433,
+        "replayed_contracts": 433,
+        "abi": {
+          "true_positive": 9210,
+          "false_positive": 773,
+          "ground_truth": 14381,
+          "precision": 0.9225683662225784,
+          "recall": 0.6404283429525068,
+          "f1": 0.7560334920374323,
+          "conditional_recall": 0.9477258695204774,
+          "conditional_f1": 0.934977919902543
+        },
+        "semantic": {
+          "equivalent": 4661,
+          "ground_truth": 14578,
+          "rate": 0.31972835779942377,
+          "reached": 9210,
+          "conditional_rate": 0.5060803474484257
+        },
+        "perfect": {
+          "contracts": 36,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-030",
+            "scdbench-holdout-easy-039",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-056",
+            "scdbench-holdout-easy-060",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-080",
+            "scdbench-holdout-easy-092",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-122",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-129",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-140",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-169",
+            "scdbench-holdout-easy-171",
+            "scdbench-holdout-hard-063",
+            "scdbench-holdout-medium-021",
+            "scdbench-holdout-medium-026",
+            "scdbench-holdout-medium-038",
+            "scdbench-holdout-medium-086",
+            "scdbench-holdout-medium-116",
+            "scdbench-holdout-medium-123",
+            "scdbench-holdout-medium-124",
+            "scdbench-holdout-medium-161",
+            "scdbench-holdout-medium-173",
+            "scdbench-holdout-medium-191"
+          ]
+        }
+      }
+    }
+  },
+  "gpt53_codex_high": {
+    "repair_validation": {
+      "contracts": 600,
+      "repair_candidates": 184,
+      "unrepaired_contracts_verified_unchanged": 416,
+      "repair_rows_whose_re_evaluated_format_status_differed": 0,
+      "format_stage_policy": "Original stage-1 format result is preserved for every repair candidate; stages 2-4 use the after-repair artifact."
+    },
+    "initial": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 198,
+        "format_rate": 0.99,
+        "compile_ok": 151,
+        "compile_rate": 0.755,
+        "semantic_eligible_contracts": 150,
+        "replayed_contracts": 150,
+        "abi": {
+          "true_positive": 1675,
+          "false_positive": 40,
+          "ground_truth": 2201,
+          "precision": 0.9766763848396501,
+          "recall": 0.761017719218537,
+          "f1": 0.855464759959142,
+          "conditional_recall": 0.9710144927536232,
+          "conditional_f1": 0.9738372093023255
+        },
+        "semantic": {
+          "equivalent": 654,
+          "ground_truth": 2261,
+          "rate": 0.28925254312251214,
+          "reached": 1675,
+          "conditional_rate": 0.39044776119402985
+        },
+        "perfect": {
+          "contracts": 26,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-014",
+            "scdbench-holdout-easy-019",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-022",
+            "scdbench-holdout-easy-023",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-050",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-087",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-097",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-116",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-150",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-170"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 199,
+        "format_rate": 0.995,
+        "compile_ok": 136,
+        "compile_rate": 0.68,
+        "semantic_eligible_contracts": 135,
+        "replayed_contracts": 135,
+        "abi": {
+          "true_positive": 2910,
+          "false_positive": 90,
+          "ground_truth": 4555,
+          "precision": 0.97,
+          "recall": 0.6388583973655324,
+          "f1": 0.7703507610853739,
+          "conditional_recall": 0.9654943596549436,
+          "conditional_f1": 0.967741935483871
+        },
+        "semantic": {
+          "equivalent": 886,
+          "ground_truth": 4623,
+          "rate": 0.19165044343499893,
+          "reached": 2910,
+          "conditional_rate": 0.30446735395189
+        },
+        "perfect": {
+          "contracts": 4,
+          "benchmark_ids": [
+            "scdbench-holdout-medium-096",
+            "scdbench-holdout-medium-106",
+            "scdbench-holdout-medium-158",
+            "scdbench-holdout-medium-173"
+          ]
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 198,
+        "format_rate": 0.99,
+        "compile_ok": 124,
+        "compile_rate": 0.62,
+        "semantic_eligible_contracts": 123,
+        "replayed_contracts": 123,
+        "abi": {
+          "true_positive": 4420,
+          "false_positive": 274,
+          "ground_truth": 7625,
+          "precision": 0.9416276097145292,
+          "recall": 0.579672131147541,
+          "f1": 0.7175907135319426,
+          "conditional_recall": 0.9181553801412546,
+          "conditional_f1": 0.9297433740008414
+        },
+        "semantic": {
+          "equivalent": 1416,
+          "ground_truth": 7694,
+          "rate": 0.18403951130751234,
+          "reached": 4420,
+          "conditional_rate": 0.32036199095022627
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 595,
+        "format_rate": 0.9916666666666667,
+        "compile_ok": 411,
+        "compile_rate": 0.685,
+        "semantic_eligible_contracts": 408,
+        "replayed_contracts": 408,
+        "abi": {
+          "true_positive": 9005,
+          "false_positive": 404,
+          "ground_truth": 14381,
+          "precision": 0.9570623870762036,
+          "recall": 0.6261734232668104,
+          "f1": 0.7570407734342159,
+          "conditional_recall": 0.9426358212079975,
+          "conditional_f1": 0.9497943254930914
+        },
+        "semantic": {
+          "equivalent": 2956,
+          "ground_truth": 14578,
+          "rate": 0.20277129921799972,
+          "reached": 9005,
+          "conditional_rate": 0.32826207662409773
+        },
+        "perfect": {
+          "contracts": 30,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-014",
+            "scdbench-holdout-easy-019",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-022",
+            "scdbench-holdout-easy-023",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-050",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-087",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-097",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-116",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-150",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-170",
+            "scdbench-holdout-medium-096",
+            "scdbench-holdout-medium-106",
+            "scdbench-holdout-medium-158",
+            "scdbench-holdout-medium-173"
+          ]
+        }
+      }
+    },
+    "repaired": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 198,
+        "format_rate": 0.99,
+        "compile_ok": 187,
+        "compile_rate": 0.935,
+        "semantic_eligible_contracts": 185,
+        "replayed_contracts": 185,
+        "abi": {
+          "true_positive": 2044,
+          "false_positive": 57,
+          "ground_truth": 2201,
+          "precision": 0.9728700618752975,
+          "recall": 0.9286687869150386,
+          "f1": 0.9502556950255694,
+          "conditional_recall": 0.9646059462010382,
+          "conditional_f1": 0.9687203791469193
+        },
+        "semantic": {
+          "equivalent": 822,
+          "ground_truth": 2261,
+          "rate": 0.3635559486952676,
+          "reached": 2044,
+          "conditional_rate": 0.4021526418786693
+        },
+        "perfect": {
+          "contracts": 30,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-006",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-014",
+            "scdbench-holdout-easy-019",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-022",
+            "scdbench-holdout-easy-023",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-050",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-087",
+            "scdbench-holdout-easy-092",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-095",
+            "scdbench-holdout-easy-097",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-116",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-150",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-169",
+            "scdbench-holdout-easy-170"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 199,
+        "format_rate": 0.995,
+        "compile_ok": 190,
+        "compile_rate": 0.95,
+        "semantic_eligible_contracts": 187,
+        "replayed_contracts": 187,
+        "abi": {
+          "true_positive": 4233,
+          "false_positive": 157,
+          "ground_truth": 4555,
+          "precision": 0.9642369020501139,
+          "recall": 0.9293084522502745,
+          "f1": 0.9464505310229179,
+          "conditional_recall": 0.9576923076923077,
+          "conditional_f1": 0.9609534619750285
+        },
+        "semantic": {
+          "equivalent": 1453,
+          "ground_truth": 4623,
+          "rate": 0.3142980748431754,
+          "reached": 4233,
+          "conditional_rate": 0.3432553744389322
+        },
+        "perfect": {
+          "contracts": 6,
+          "benchmark_ids": [
+            "scdbench-holdout-medium-046",
+            "scdbench-holdout-medium-096",
+            "scdbench-holdout-medium-106",
+            "scdbench-holdout-medium-116",
+            "scdbench-holdout-medium-158",
+            "scdbench-holdout-medium-173"
+          ]
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 198,
+        "format_rate": 0.99,
+        "compile_ok": 183,
+        "compile_rate": 0.915,
+        "semantic_eligible_contracts": 182,
+        "replayed_contracts": 182,
+        "abi": {
+          "true_positive": 6438,
+          "false_positive": 430,
+          "ground_truth": 7625,
+          "precision": 0.9373907979033197,
+          "recall": 0.844327868852459,
+          "f1": 0.8884288967087559,
+          "conditional_recall": 0.9220853623603552,
+          "conditional_f1": 0.9296750902527076
+        },
+        "semantic": {
+          "equivalent": 2096,
+          "ground_truth": 7694,
+          "rate": 0.27242006758513126,
+          "reached": 6438,
+          "conditional_rate": 0.32556694625660143
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 595,
+        "format_rate": 0.9916666666666667,
+        "compile_ok": 560,
+        "compile_rate": 0.9333333333333333,
+        "semantic_eligible_contracts": 554,
+        "replayed_contracts": 554,
+        "abi": {
+          "true_positive": 12715,
+          "false_positive": 644,
+          "ground_truth": 14381,
+          "precision": 0.9517927988621903,
+          "recall": 0.8841527014811209,
+          "f1": 0.9167267483777938,
+          "conditional_recall": 0.9403890244804378,
+          "conditional_f1": 0.9460565476190476
+        },
+        "semantic": {
+          "equivalent": 4371,
+          "ground_truth": 14578,
+          "rate": 0.29983536836328717,
+          "reached": 12715,
+          "conditional_rate": 0.3437672040896579
+        },
+        "perfect": {
+          "contracts": 36,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-006",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-013",
+            "scdbench-holdout-easy-014",
+            "scdbench-holdout-easy-019",
+            "scdbench-holdout-easy-021",
+            "scdbench-holdout-easy-022",
+            "scdbench-holdout-easy-023",
+            "scdbench-holdout-easy-026",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-045",
+            "scdbench-holdout-easy-050",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-078",
+            "scdbench-holdout-easy-087",
+            "scdbench-holdout-easy-092",
+            "scdbench-holdout-easy-093",
+            "scdbench-holdout-easy-095",
+            "scdbench-holdout-easy-097",
+            "scdbench-holdout-easy-108",
+            "scdbench-holdout-easy-114",
+            "scdbench-holdout-easy-116",
+            "scdbench-holdout-easy-125",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-150",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-169",
+            "scdbench-holdout-easy-170",
+            "scdbench-holdout-medium-046",
+            "scdbench-holdout-medium-096",
+            "scdbench-holdout-medium-106",
+            "scdbench-holdout-medium-116",
+            "scdbench-holdout-medium-158",
+            "scdbench-holdout-medium-173"
+          ]
+        }
+      }
+    }
+  },
+  "glm5_high": {
+    "repair_validation": {
+      "contracts": 600,
+      "repair_candidates": 194,
+      "unrepaired_contracts_verified_unchanged": 406,
+      "repair_rows_whose_re_evaluated_format_status_differed": 17,
+      "format_stage_policy": "Original stage-1 format result is preserved for every repair candidate; stages 2-4 use the after-repair artifact."
+    },
+    "initial": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 116,
+        "format_rate": 0.58,
+        "compile_ok": 81,
+        "compile_rate": 0.405,
+        "semantic_eligible_contracts": 81,
+        "replayed_contracts": 81,
+        "abi": {
+          "true_positive": 812,
+          "false_positive": 29,
+          "ground_truth": 2201,
+          "precision": 0.9655172413793104,
+          "recall": 0.3689232167196729,
+          "f1": 0.5338593030900723,
+          "conditional_recall": 0.970131421744325,
+          "conditional_f1": 0.9678188319427892
+        },
+        "semantic": {
+          "equivalent": 346,
+          "ground_truth": 2261,
+          "rate": 0.15302963290579388,
+          "reached": 812,
+          "conditional_rate": 0.42610837438423643
+        },
+        "perfect": {
+          "contracts": 10,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-043",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-061",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-187"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 120,
+        "format_rate": 0.6,
+        "compile_ok": 54,
+        "compile_rate": 0.27,
+        "semantic_eligible_contracts": 54,
+        "replayed_contracts": 54,
+        "abi": {
+          "true_positive": 1161,
+          "false_positive": 117,
+          "ground_truth": 4555,
+          "precision": 0.9084507042253521,
+          "recall": 0.2548847420417124,
+          "f1": 0.3980798902794445,
+          "conditional_recall": 0.9416058394160584,
+          "conditional_f1": 0.9247311827956989
+        },
+        "semantic": {
+          "equivalent": 512,
+          "ground_truth": 4623,
+          "rate": 0.11075059485182782,
+          "reached": 1161,
+          "conditional_rate": 0.4409991386735573
+        },
+        "perfect": {
+          "contracts": 1,
+          "benchmark_ids": [
+            "scdbench-holdout-medium-046"
+          ]
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 135,
+        "format_rate": 0.675,
+        "compile_ok": 42,
+        "compile_rate": 0.21,
+        "semantic_eligible_contracts": 42,
+        "replayed_contracts": 42,
+        "abi": {
+          "true_positive": 1288,
+          "false_positive": 183,
+          "ground_truth": 7625,
+          "precision": 0.8755948334466349,
+          "recall": 0.16891803278688525,
+          "f1": 0.2832014072119613,
+          "conditional_recall": 0.8598130841121495,
+          "conditional_f1": 0.8676321993937353
+        },
+        "semantic": {
+          "equivalent": 413,
+          "ground_truth": 7694,
+          "rate": 0.05367819079802443,
+          "reached": 1288,
+          "conditional_rate": 0.32065217391304346
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 371,
+        "format_rate": 0.6183333333333333,
+        "compile_ok": 177,
+        "compile_rate": 0.295,
+        "semantic_eligible_contracts": 177,
+        "replayed_contracts": 177,
+        "abi": {
+          "true_positive": 3261,
+          "false_positive": 329,
+          "ground_truth": 14381,
+          "precision": 0.9083565459610028,
+          "recall": 0.22675752729295598,
+          "f1": 0.36291803461131816,
+          "conditional_recall": 0.913957399103139,
+          "conditional_f1": 0.9111483654652136
+        },
+        "semantic": {
+          "equivalent": 1271,
+          "ground_truth": 14578,
+          "rate": 0.08718617094251611,
+          "reached": 3261,
+          "conditional_rate": 0.3897577430236124
+        },
+        "perfect": {
+          "contracts": 11,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-043",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-061",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-187",
+            "scdbench-holdout-medium-046"
+          ]
+        }
+      }
+    },
+    "repaired": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 116,
+        "format_rate": 0.58,
+        "compile_ok": 104,
+        "compile_rate": 0.52,
+        "semantic_eligible_contracts": 104,
+        "replayed_contracts": 104,
+        "abi": {
+          "true_positive": 1011,
+          "false_positive": 65,
+          "ground_truth": 2201,
+          "precision": 0.9395910780669146,
+          "recall": 0.45933666515220356,
+          "f1": 0.6170277693011902,
+          "conditional_recall": 0.959203036053131,
+          "conditional_f1": 0.9492957746478874
+        },
+        "semantic": {
+          "equivalent": 440,
+          "ground_truth": 2261,
+          "rate": 0.19460415745245466,
+          "reached": 1011,
+          "conditional_rate": 0.4352126607319486
+        },
+        "perfect": {
+          "contracts": 13,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-006",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-043",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-061",
+            "scdbench-holdout-easy-071",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-187"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 120,
+        "format_rate": 0.6,
+        "compile_ok": 95,
+        "compile_rate": 0.475,
+        "semantic_eligible_contracts": 94,
+        "replayed_contracts": 94,
+        "abi": {
+          "true_positive": 2036,
+          "false_positive": 212,
+          "ground_truth": 4555,
+          "precision": 0.905693950177936,
+          "recall": 0.44698133918770583,
+          "f1": 0.5985594590621784,
+          "conditional_recall": 0.9250340754202635,
+          "conditional_f1": 0.9152618565969881
+        },
+        "semantic": {
+          "equivalent": 880,
+          "ground_truth": 4623,
+          "rate": 0.19035258490157905,
+          "reached": 2036,
+          "conditional_rate": 0.43222003929273084
+        },
+        "perfect": {
+          "contracts": 2,
+          "benchmark_ids": [
+            "scdbench-holdout-medium-046",
+            "scdbench-holdout-medium-173"
+          ]
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 135,
+        "format_rate": 0.675,
+        "compile_ok": 89,
+        "compile_rate": 0.445,
+        "semantic_eligible_contracts": 89,
+        "replayed_contracts": 89,
+        "abi": {
+          "true_positive": 2737,
+          "false_positive": 374,
+          "ground_truth": 7625,
+          "precision": 0.8797814207650273,
+          "recall": 0.35895081967213116,
+          "f1": 0.5098733233979136,
+          "conditional_recall": 0.8846153846153846,
+          "conditional_f1": 0.8821917808219178
+        },
+        "semantic": {
+          "equivalent": 929,
+          "ground_truth": 7694,
+          "rate": 0.12074343644398232,
+          "reached": 2737,
+          "conditional_rate": 0.33942272561198394
+        },
+        "perfect": {
+          "contracts": 1,
+          "benchmark_ids": [
+            "scdbench-holdout-hard-106"
+          ]
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 371,
+        "format_rate": 0.6183333333333333,
+        "compile_ok": 288,
+        "compile_rate": 0.48,
+        "semantic_eligible_contracts": 287,
+        "replayed_contracts": 287,
+        "abi": {
+          "true_positive": 5784,
+          "false_positive": 651,
+          "ground_truth": 14381,
+          "precision": 0.8988344988344988,
+          "recall": 0.4021973437174049,
+          "f1": 0.5557263643351268,
+          "conditional_recall": 0.9110096078122539,
+          "conditional_f1": 0.9048811013767208
+        },
+        "semantic": {
+          "equivalent": 2249,
+          "ground_truth": 14578,
+          "rate": 0.15427356290300454,
+          "reached": 5784,
+          "conditional_rate": 0.38883125864453666
+        },
+        "perfect": {
+          "contracts": 16,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-003",
+            "scdbench-holdout-easy-005",
+            "scdbench-holdout-easy-006",
+            "scdbench-holdout-easy-012",
+            "scdbench-holdout-easy-015",
+            "scdbench-holdout-easy-028",
+            "scdbench-holdout-easy-043",
+            "scdbench-holdout-easy-051",
+            "scdbench-holdout-easy-061",
+            "scdbench-holdout-easy-071",
+            "scdbench-holdout-easy-135",
+            "scdbench-holdout-easy-155",
+            "scdbench-holdout-easy-187",
+            "scdbench-holdout-hard-106",
+            "scdbench-holdout-medium-046",
+            "scdbench-holdout-medium-173"
+          ]
+        }
+      }
+    }
+  },
+  "glm5_instruct": {
+    "repair_validation": {
+      "contracts": 600,
+      "repair_candidates": 379,
+      "unrepaired_contracts_verified_unchanged": 221,
+      "repair_rows_whose_re_evaluated_format_status_differed": 7,
+      "format_stage_policy": "Original stage-1 format result is preserved for every repair candidate; stages 2-4 use the after-repair artifact."
+    },
+    "initial": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 184,
+        "format_rate": 0.92,
+        "compile_ok": 80,
+        "compile_rate": 0.4,
+        "semantic_eligible_contracts": 78,
+        "replayed_contracts": 78,
+        "abi": {
+          "true_positive": 795,
+          "false_positive": 59,
+          "ground_truth": 2201,
+          "precision": 0.9309133489461359,
+          "recall": 0.3611994547932758,
+          "f1": 0.5204582651391163,
+          "conditional_recall": 0.9408284023668639,
+          "conditional_f1": 0.9358446144791054
+        },
+        "semantic": {
+          "equivalent": 305,
+          "ground_truth": 2261,
+          "rate": 0.13489606368863336,
+          "reached": 795,
+          "conditional_rate": 0.3836477987421384
+        },
+        "perfect": {
+          "contracts": 1,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-135"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 178,
+        "format_rate": 0.89,
+        "compile_ok": 40,
+        "compile_rate": 0.2,
+        "semantic_eligible_contracts": 40,
+        "replayed_contracts": 40,
+        "abi": {
+          "true_positive": 812,
+          "false_positive": 100,
+          "ground_truth": 4555,
+          "precision": 0.8903508771929824,
+          "recall": 0.17826564215148188,
+          "f1": 0.2970550576184379,
+          "conditional_recall": 0.9042316258351893,
+          "conditional_f1": 0.8972375690607735
+        },
+        "semantic": {
+          "equivalent": 222,
+          "ground_truth": 4623,
+          "rate": 0.048020765736534715,
+          "reached": 812,
+          "conditional_rate": 0.2733990147783251
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 164,
+        "format_rate": 0.82,
+        "compile_ok": 27,
+        "compile_rate": 0.135,
+        "semantic_eligible_contracts": 26,
+        "replayed_contracts": 26,
+        "abi": {
+          "true_positive": 880,
+          "false_positive": 223,
+          "ground_truth": 7625,
+          "precision": 0.7978241160471442,
+          "recall": 0.11540983606557377,
+          "f1": 0.2016498625114574,
+          "conditional_recall": 0.8286252354048964,
+          "conditional_f1": 0.812933025404157
+        },
+        "semantic": {
+          "equivalent": 242,
+          "ground_truth": 7694,
+          "rate": 0.03145308032232909,
+          "reached": 880,
+          "conditional_rate": 0.275
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 526,
+        "format_rate": 0.8766666666666667,
+        "compile_ok": 147,
+        "compile_rate": 0.245,
+        "semantic_eligible_contracts": 144,
+        "replayed_contracts": 144,
+        "abi": {
+          "true_positive": 2487,
+          "false_positive": 382,
+          "ground_truth": 14381,
+          "precision": 0.8668525618682468,
+          "recall": 0.17293651345525346,
+          "f1": 0.2883478260869565,
+          "conditional_recall": 0.8866310160427807,
+          "conditional_f1": 0.8766302432146633
+        },
+        "semantic": {
+          "equivalent": 769,
+          "ground_truth": 14578,
+          "rate": 0.05275072026341062,
+          "reached": 2487,
+          "conditional_rate": 0.30920788098110175
+        },
+        "perfect": {
+          "contracts": 1,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-135"
+          ]
+        }
+      }
+    },
+    "repaired": {
+      "easy": {
+        "contracts": 200,
+        "format_ok": 184,
+        "format_rate": 0.92,
+        "compile_ok": 157,
+        "compile_rate": 0.785,
+        "semantic_eligible_contracts": 153,
+        "replayed_contracts": 153,
+        "abi": {
+          "true_positive": 1616,
+          "false_positive": 217,
+          "ground_truth": 2201,
+          "precision": 0.8816148390616476,
+          "recall": 0.7342117219445706,
+          "f1": 0.8011898859692614,
+          "conditional_recall": 0.9244851258581236,
+          "conditional_f1": 0.9025411896118403
+        },
+        "semantic": {
+          "equivalent": 611,
+          "ground_truth": 2261,
+          "rate": 0.27023440955329503,
+          "reached": 1616,
+          "conditional_rate": 0.3780940594059406
+        },
+        "perfect": {
+          "contracts": 3,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-056",
+            "scdbench-holdout-easy-129",
+            "scdbench-holdout-easy-135"
+          ]
+        }
+      },
+      "medium": {
+        "contracts": 200,
+        "format_ok": 178,
+        "format_rate": 0.89,
+        "compile_ok": 117,
+        "compile_rate": 0.585,
+        "semantic_eligible_contracts": 115,
+        "replayed_contracts": 115,
+        "abi": {
+          "true_positive": 2442,
+          "false_positive": 423,
+          "ground_truth": 4555,
+          "precision": 0.8523560209424084,
+          "recall": 0.5361141602634467,
+          "f1": 0.6582210242587601,
+          "conditional_recall": 0.9021056520132988,
+          "conditional_f1": 0.8765254845656855
+        },
+        "semantic": {
+          "equivalent": 721,
+          "ground_truth": 4623,
+          "rate": 0.15595933376595283,
+          "reached": 2442,
+          "conditional_rate": 0.2952497952497953
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "hard": {
+        "contracts": 200,
+        "format_ok": 164,
+        "format_rate": 0.82,
+        "compile_ok": 85,
+        "compile_rate": 0.425,
+        "semantic_eligible_contracts": 84,
+        "replayed_contracts": 84,
+        "abi": {
+          "true_positive": 2892,
+          "false_positive": 518,
+          "ground_truth": 7625,
+          "precision": 0.8480938416422288,
+          "recall": 0.3792786885245902,
+          "f1": 0.5241504304485728,
+          "conditional_recall": 0.8515901060070671,
+          "conditional_f1": 0.8498383779018515
+        },
+        "semantic": {
+          "equivalent": 809,
+          "ground_truth": 7694,
+          "rate": 0.1051468676891084,
+          "reached": 2892,
+          "conditional_rate": 0.2797372060857538
+        },
+        "perfect": {
+          "contracts": 0,
+          "benchmark_ids": []
+        }
+      },
+      "all": {
+        "contracts": 600,
+        "format_ok": 526,
+        "format_rate": 0.8766666666666667,
+        "compile_ok": 359,
+        "compile_rate": 0.5983333333333334,
+        "semantic_eligible_contracts": 352,
+        "replayed_contracts": 352,
+        "abi": {
+          "true_positive": 6950,
+          "false_positive": 1158,
+          "ground_truth": 14381,
+          "precision": 0.8571780957079428,
+          "recall": 0.4832765454419025,
+          "f1": 0.6180799501978745,
+          "conditional_recall": 0.8852375493567698,
+          "conditional_f1": 0.8709818910959333
+        },
+        "semantic": {
+          "equivalent": 2141,
+          "ground_truth": 14578,
+          "rate": 0.14686513925092606,
+          "reached": 6950,
+          "conditional_rate": 0.30805755395683454
+        },
+        "perfect": {
+          "contracts": 3,
+          "benchmark_ids": [
+            "scdbench-holdout-easy-056",
+            "scdbench-holdout-easy-129",
+            "scdbench-holdout-easy-135"
+          ]
+        }
+      }
+    }
+  }
+}

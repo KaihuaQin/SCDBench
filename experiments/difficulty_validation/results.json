@@ -1,0 +1,1483 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 2000,
+    "contracts": 600,
+    "difficulty_components": [
+      "bytecode_scale",
+      "control_flow",
+      "interface_source",
+      "state_interaction",
+      "low_level"
+    ],
+    "joined_contract_model_rows": 2400,
+    "models": 4,
+    "primary_outcomes": [
+      "format_pass",
+      "compile_pass",
+      "abi_f1_cumulative",
+      "semantic_rate_cumulative"
+    ],
+    "robustness_outcomes": [
+      "abi_exact_cumulative",
+      "semantic_perfect_cumulative"
+    ],
+    "seed": 20260724
+  },
+  "descriptive": {
+    "glm5_instruct": {
+      "abi_exact_contracts": 122,
+      "compilation_passes": 386,
+      "contracts": 600,
+      "format_passes": 540,
+      "label": "GLM-5 (instruct)",
+      "mean_contract_outcomes": {
+        "abi_exact_cumulative": 0.20333333333333334,
+        "abi_f1_cumulative": 0.5621402679827352,
+        "compile_pass": 0.6433333333333333,
+        "format_pass": 0.9,
+        "semantic_perfect_cumulative": 0.01,
+        "semantic_rate_cumulative": 0.19601658014089016
+      },
+      "prompt_char_length": {
+        "maximum": 137932.0,
+        "median": 42637.5
+      },
+      "semantic_micro": {
+        "entries": 14553,
+        "equivalent": 2570,
+        "rate": 0.17659589088160516
+      },
+      "semantic_perfect_contracts": 6
+    },
+    "glm5_reasoning": {
+      "abi_exact_contracts": 174,
+      "compilation_passes": 403,
+      "contracts": 600,
+      "format_passes": 520,
+      "label": "GLM-5",
+      "mean_contract_outcomes": {
+        "abi_exact_cumulative": 0.29,
+        "abi_f1_cumulative": 0.601336993125641,
+        "compile_pass": 0.6716666666666666,
+        "format_pass": 0.8666666666666667,
+        "semantic_perfect_cumulative": 0.03,
+        "semantic_rate_cumulative": 0.2356605945362592
+      },
+      "prompt_char_length": {
+        "maximum": 137932.0,
+        "median": 42637.5
+      },
+      "semantic_micro": {
+        "entries": 14553,
+        "equivalent": 3015,
+        "rate": 0.20717377860235003
+      },
+      "semantic_perfect_contracts": 18
+    },
+    "gpt53_codex": {
+      "abi_exact_contracts": 389,
+      "compilation_passes": 542,
+      "contracts": 600,
+      "format_passes": 564,
+      "label": "GPT-5.3-Codex",
+      "mean_contract_outcomes": {
+        "abi_exact_cumulative": 0.6483333333333333,
+        "abi_f1_cumulative": 0.8512983016502864,
+        "compile_pass": 0.9033333333333333,
+        "format_pass": 0.94,
+        "semantic_perfect_cumulative": 0.06833333333333333,
+        "semantic_rate_cumulative": 0.31925534168629705
+      },
+      "prompt_char_length": {
+        "maximum": 137932.0,
+        "median": 42637.5
+      },
+      "semantic_micro": {
+        "entries": 14553,
+        "equivalent": 4078,
+        "rate": 0.2802171373599945
+      },
+      "semantic_perfect_contracts": 41
+    },
+    "opus47": {
+      "abi_exact_contracts": 236,
+      "compilation_passes": 415,
+      "contracts": 600,
+      "format_passes": 435,
+      "label": "Opus 4.7",
+      "mean_contract_outcomes": {
+        "abi_exact_cumulative": 0.3933333333333333,
+        "abi_f1_cumulative": 0.6442687178762044,
+        "compile_pass": 0.6916666666666667,
+        "format_pass": 0.725,
+        "semantic_perfect_cumulative": 0.07,
+        "semantic_rate_cumulative": 0.3356980487151597
+      },
+      "prompt_char_length": {
+        "maximum": 137932.0,
+        "median": 42637.5
+      },
+      "semantic_micro": {
+        "entries": 14553,
+        "equivalent": 4284,
+        "rate": 0.2943722943722944
+      },
+      "semantic_perfect_contracts": 42
+    }
+  },
+  "difficulty_component_associations": {
+    "analysis_type": "unadjusted Spearman rank association",
+    "bootstrap": "Deterministic percentile bootstrap resampling complete contracts.",
+    "components": [
+      {
+        "definition": "Mean of robust-normalized metadata-stripped bytecode bytes and opcode count.",
+        "key": "bytecode_scale",
+        "label": "Bytecode scale",
+        "maximum": 1.0,
+        "mean": 0.5972828216666667,
+        "median": 0.6316660000000001,
+        "minimum": 0.0,
+        "population_standard_deviation": 0.2824887641329826,
+        "unique_values": 557,
+        "weight_in_composite": 0.3,
+        "zero_values": 26
+      },
+      {
+        "definition": "Mean of robust-normalized cyclomatic proxy, block-count proxy, and control-flow opcode count.",
+        "key": "control_flow",
+        "label": "Control flow",
+        "maximum": 1.0,
+        "mean": 0.5657312149999999,
+        "median": 0.601693,
+        "minimum": 0.0,
+        "population_standard_deviation": 0.2765604221924969,
+        "unique_values": 567,
+        "weight_in_composite": 0.2,
+        "zero_values": 22
+      },
+      {
+        "definition": "Mean of robust-normalized signature count, source declaration count, and nonblank source lines.",
+        "key": "interface_source",
+        "label": "Interface/source",
+        "maximum": 1.0,
+        "mean": 0.5623639266666667,
+        "median": 0.58162,
+        "minimum": 0.0,
+        "population_standard_deviation": 0.25548481926697975,
+        "unique_values": 567,
+        "weight_in_composite": 0.2,
+        "zero_values": 15
+      },
+      {
+        "definition": "Mean of robust-normalized storage operations, external calls, create operations, and log operations.",
+        "key": "state_interaction",
+        "label": "State interaction",
+        "maximum": 1.0,
+        "mean": 0.46925769500000003,
+        "median": 0.4685945,
+        "minimum": 0.0,
+        "population_standard_deviation": 0.1856137886828867,
+        "unique_values": 570,
+        "weight_in_composite": 0.15,
+        "zero_values": 4
+      },
+      {
+        "definition": "Weighted indicators for inline assembly, delegatecall, fallback, receive, create2, and selfdestruct.",
+        "key": "low_level",
+        "label": "Low-level Solidity",
+        "maximum": 0.9,
+        "mean": 0.3075833333333333,
+        "median": 0.3,
+        "minimum": 0.0,
+        "population_standard_deviation": 0.24376558354743647,
+        "unique_values": 16,
+        "weight_in_composite": 0.15,
+        "zero_values": 150
+      }
+    ],
+    "contracts": 600,
+    "interpretation": "Descriptive associations with across-model mean cumulative success outcomes; not adjusted, causal, or independent component importance.",
+    "label": "Descriptive difficulty-component associations",
+    "model_keys_averaged": [
+      "glm5_instruct",
+      "glm5_reasoning",
+      "gpt53_codex",
+      "opus47"
+    ],
+    "multiple_testing": "Benjamini-Hochberg correction jointly across the five components and four primary outcomes (20 tests).",
+    "outcome_aggregation": "Arithmetic mean of each cumulative outcome across all model rows for the same contract.",
+    "records": [
+      {
+        "analytic_p_value": 2.1244749725079855e-05,
+        "bh_q_value_across_20_component_outcome_tests": 2.655593715634982e-05,
+        "bootstrap_95_ci": [
+          -0.24719410730612126,
+          -0.09077434562923097
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "bytecode_scale",
+        "component_label": "Bytecode scale",
+        "n": 600,
+        "outcome": "format_pass",
+        "outcome_label": "Format pass",
+        "rho": -0.17261774575236763
+      },
+      {
+        "analytic_p_value": 1.7718415312669407e-16,
+        "bh_q_value_across_20_component_outcome_tests": 7.087366125067763e-16,
+        "bootstrap_95_ci": [
+          -0.39419377827236196,
+          -0.25522349848072146
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "bytecode_scale",
+        "component_label": "Bytecode scale",
+        "n": 600,
+        "outcome": "compile_pass",
+        "outcome_label": "Compilation pass",
+        "rho": -0.3276165952177881
+      },
+      {
+        "analytic_p_value": 2.5791338644147037e-18,
+        "bh_q_value_across_20_component_outcome_tests": 1.2895669322073518e-17,
+        "bootstrap_95_ci": [
+          -0.4122672071546937,
+          -0.2669744999766041
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "bytecode_scale",
+        "component_label": "Bytecode scale",
+        "n": 600,
+        "outcome": "abi_f1_cumulative",
+        "outcome_label": "ABI F1 (cumulative)",
+        "rho": -0.3459991157795036
+      },
+      {
+        "analytic_p_value": 3.255899891008101e-13,
+        "bh_q_value_across_20_component_outcome_tests": 7.235333091129113e-13,
+        "bootstrap_95_ci": [
+          -0.36341202399910827,
+          -0.21118141952783975
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "bytecode_scale",
+        "component_label": "Bytecode scale",
+        "n": 600,
+        "outcome": "semantic_rate_cumulative",
+        "outcome_label": "Semantic rate (cumulative)",
+        "rho": -0.2914699417451116
+      },
+      {
+        "analytic_p_value": 5.520737525016596e-05,
+        "bh_q_value_across_20_component_outcome_tests": 6.494985323548936e-05,
+        "bootstrap_95_ci": [
+          -0.2429066001073785,
+          -0.08471035942316218
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "control_flow",
+        "component_label": "Control flow",
+        "n": 600,
+        "outcome": "format_pass",
+        "outcome_label": "Format pass",
+        "rho": -0.16385036209338769
+      },
+      {
+        "analytic_p_value": 2.7556207715480463e-16,
+        "bh_q_value_across_20_component_outcome_tests": 9.185402571826822e-16,
+        "bootstrap_95_ci": [
+          -0.39599349503041625,
+          -0.2549899041053037
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "control_flow",
+        "component_label": "Control flow",
+        "n": 600,
+        "outcome": "compile_pass",
+        "outcome_label": "Compilation pass",
+        "rho": -0.32562385709241104
+      },
+      {
+        "analytic_p_value": 1.27072358941899e-18,
+        "bh_q_value_across_20_component_outcome_tests": 8.4714905961266e-18,
+        "bootstrap_95_ci": [
+          -0.4156867398009858,
+          -0.2738991874481272
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "control_flow",
+        "component_label": "Control flow",
+        "n": 600,
+        "outcome": "abi_f1_cumulative",
+        "outcome_label": "ABI F1 (cumulative)",
+        "rho": -0.3489592845125479
+      },
+      {
+        "analytic_p_value": 1.2124659980290417e-13,
+        "bh_q_value_across_20_component_outcome_tests": 3.0311649950726044e-13,
+        "bootstrap_95_ci": [
+          -0.37204379119452735,
+          -0.21309146510679688
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "control_flow",
+        "component_label": "Control flow",
+        "n": 600,
+        "outcome": "semantic_rate_cumulative",
+        "outcome_label": "Semantic rate (cumulative)",
+        "rho": -0.2965169275270699
+      },
+      {
+        "analytic_p_value": 2.3157433025351684e-07,
+        "bh_q_value_across_20_component_outcome_tests": 3.8595721708919475e-07,
+        "bootstrap_95_ci": [
+          -0.28427269566201585,
+          -0.12752810026406292
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "interface_source",
+        "component_label": "Interface/source",
+        "n": 600,
+        "outcome": "format_pass",
+        "outcome_label": "Format pass",
+        "rho": -0.2092415899871456
+      },
+      {
+        "analytic_p_value": 5.873534609056802e-21,
+        "bh_q_value_across_20_component_outcome_tests": 5.873534609056802e-20,
+        "bootstrap_95_ci": [
+          -0.4407274394329956,
+          -0.2997414812236905
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "interface_source",
+        "component_label": "Interface/source",
+        "n": 600,
+        "outcome": "compile_pass",
+        "outcome_label": "Compilation pass",
+        "rho": -0.3704808428564955
+      },
+      {
+        "analytic_p_value": 3.6952786773623805e-22,
+        "bh_q_value_across_20_component_outcome_tests": 7.390557354724761e-21,
+        "bootstrap_95_ci": [
+          -0.45033551319749776,
+          -0.30952815297190345
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "interface_source",
+        "component_label": "Interface/source",
+        "n": 600,
+        "outcome": "abi_f1_cumulative",
+        "outcome_label": "ABI F1 (cumulative)",
+        "rho": -0.3809493962379957
+      },
+      {
+        "analytic_p_value": 2.7167843785296516e-15,
+        "bh_q_value_across_20_component_outcome_tests": 7.76224108151329e-15,
+        "bootstrap_95_ci": [
+          -0.3888385928036175,
+          -0.23686671564702877
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "interface_source",
+        "component_label": "Interface/source",
+        "n": 600,
+        "outcome": "semantic_rate_cumulative",
+        "outcome_label": "Semantic rate (cumulative)",
+        "rho": -0.3150540679464269
+      },
+      {
+        "analytic_p_value": 0.00020223635894908127,
+        "bh_q_value_across_20_component_outcome_tests": 0.00021288037784113816,
+        "bootstrap_95_ci": [
+          -0.22352640433791057,
+          -0.06737295237556251
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "state_interaction",
+        "component_label": "State interaction",
+        "n": 600,
+        "outcome": "format_pass",
+        "outcome_label": "Format pass",
+        "rho": -0.15115614118809167
+      },
+      {
+        "analytic_p_value": 6.8508807390229945e-09,
+        "bh_q_value_across_20_component_outcome_tests": 1.2456146798223626e-08,
+        "bootstrap_95_ci": [
+          -0.3171161233906027,
+          -0.1525393044583377
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "state_interaction",
+        "component_label": "State interaction",
+        "n": 600,
+        "outcome": "compile_pass",
+        "outcome_label": "Compilation pass",
+        "rho": -0.2337633018594774
+      },
+      {
+        "analytic_p_value": 1.409223140472217e-11,
+        "bh_q_value_across_20_component_outcome_tests": 2.818446280944434e-11,
+        "bootstrap_95_ci": [
+          -0.34838546384540203,
+          -0.18626474726097134
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "state_interaction",
+        "component_label": "State interaction",
+        "n": 600,
+        "outcome": "abi_f1_cumulative",
+        "outcome_label": "ABI F1 (cumulative)",
+        "rho": -0.27122974191484034
+      },
+      {
+        "analytic_p_value": 4.3448100567379555e-07,
+        "bh_q_value_across_20_component_outcome_tests": 6.684323164212239e-07,
+        "bootstrap_95_ci": [
+          -0.2851596748343638,
+          -0.12376626290511691
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "state_interaction",
+        "component_label": "State interaction",
+        "n": 600,
+        "outcome": "semantic_rate_cumulative",
+        "outcome_label": "Semantic rate (cumulative)",
+        "rho": -0.20453746673651102
+      },
+      {
+        "analytic_p_value": 0.20779899340875452,
+        "bh_q_value_across_20_component_outcome_tests": 0.20779899340875452,
+        "bootstrap_95_ci": [
+          -0.12827401918356526,
+          0.025506911051432803
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "low_level",
+        "component_label": "Low-level Solidity",
+        "n": 600,
+        "outcome": "format_pass",
+        "outcome_label": "Format pass",
+        "rho": -0.051497881844404556
+      },
+      {
+        "analytic_p_value": 1.3042238253719266e-05,
+        "bh_q_value_across_20_component_outcome_tests": 1.7389651004959022e-05,
+        "bootstrap_95_ci": [
+          -0.25418977987927754,
+          -0.09600492256404235
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "low_level",
+        "component_label": "Low-level Solidity",
+        "n": 600,
+        "outcome": "compile_pass",
+        "outcome_label": "Compilation pass",
+        "rho": -0.17693451363302923
+      },
+      {
+        "analytic_p_value": 7.36689752845386e-05,
+        "bh_q_value_across_20_component_outcome_tests": 8.185441698282066e-05,
+        "bootstrap_95_ci": [
+          -0.24100332598529103,
+          -0.08146563617018215
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "low_level",
+        "component_label": "Low-level Solidity",
+        "n": 600,
+        "outcome": "abi_f1_cumulative",
+        "outcome_label": "ABI F1 (cumulative)",
+        "rho": -0.1611118622506378
+      },
+      {
+        "analytic_p_value": 1.0811849552656163e-06,
+        "bh_q_value_across_20_component_outcome_tests": 1.5445499360937376e-06,
+        "bootstrap_95_ci": [
+          -0.2704172711687829,
+          -0.11292724167777
+        ],
+        "bootstrap_failures": 0,
+        "bootstrap_successes": 2000,
+        "component": "low_level",
+        "component_label": "Low-level Solidity",
+        "n": 600,
+        "outcome": "semantic_rate_cumulative",
+        "outcome_label": "Semantic rate (cumulative)",
+        "rho": -0.1975197007791511
+      }
+    ],
+    "unit_of_analysis": "benchmark contract"
+  },
+  "input_files": [
+    {
+      "bytes": 2287317,
+      "path": "experiments/difficulty_validation/inputs/observations.json"
+    }
+  ],
+  "integrity": {
+    "model_results": {
+      "glm5_instruct": {
+        "contracts": 600,
+        "semantic_equivalent": 2570,
+        "semantic_result_contracts": 380,
+        "semantic_summary": {
+          "calls_matched": 38584,
+          "calls_total": 119014,
+          "contracts": 380,
+          "functions_equivalent": 2570,
+          "functions_total": 7757,
+          "valid_contracts": 380
+        },
+        "stage_totals": {
+          "compilation_passes": 386,
+          "format_passes": 540,
+          "semantic_equivalent": 2570,
+          "semantic_perfect": 6
+        }
+      },
+      "glm5_reasoning": {
+        "contracts": 600,
+        "semantic_equivalent": 3015,
+        "semantic_result_contracts": 397,
+        "semantic_summary": {
+          "calls_matched": 44185,
+          "calls_total": 126976,
+          "contracts": 397,
+          "functions_equivalent": 3015,
+          "functions_total": 8302,
+          "valid_contracts": 397
+        },
+        "stage_totals": {
+          "compilation_passes": 403,
+          "format_passes": 520,
+          "semantic_equivalent": 3015,
+          "semantic_perfect": 18
+        }
+      },
+      "gpt53_codex": {
+        "contracts": 600,
+        "semantic_equivalent": 4078,
+        "semantic_result_contracts": 536,
+        "semantic_summary": {
+          "calls_matched": 66535,
+          "calls_total": 187666,
+          "contracts": 536,
+          "functions_equivalent": 4078,
+          "functions_total": 12227,
+          "valid_contracts": 536
+        },
+        "stage_totals": {
+          "compilation_passes": 542,
+          "format_passes": 564,
+          "semantic_equivalent": 4078,
+          "semantic_perfect": 41
+        }
+      },
+      "opus47": {
+        "contracts": 600,
+        "semantic_equivalent": 4284,
+        "semantic_result_contracts": 410,
+        "semantic_summary": {
+          "calls_matched": 70902,
+          "calls_total": 130605,
+          "contracts": 410,
+          "functions_equivalent": 4284,
+          "functions_total": 8498,
+          "valid_contracts": 410
+        },
+        "stage_totals": {
+          "compilation_passes": 415,
+          "format_passes": 435,
+          "semantic_equivalent": 4284,
+          "semantic_perfect": 42
+        }
+      }
+    },
+    "public_functions": 14346,
+    "semantic_entries": 14553
+  },
+  "model_specs": [
+    {
+      "key": "opus47",
+      "label": "Opus 4.7"
+    },
+    {
+      "key": "gpt53_codex",
+      "label": "GPT-5.3-Codex"
+    },
+    {
+      "key": "glm5_reasoning",
+      "label": "GLM-5"
+    },
+    {
+      "key": "glm5_instruct",
+      "label": "GLM-5 (instruct)"
+    }
+  ],
+  "outcome_definitions": {
+    "abi_exact_cumulative": "One when ABI evaluation has no false-positive or false-negative signatures; zero when recovery is inexact or a prerequisite fails.",
+    "abi_f1_cumulative": "Per-contract ABI F1 from the evaluator, with zero assigned when format or compilation failure prevents ABI evaluation.",
+    "compile_pass": "One when the final artifact after repair compiles; zero otherwise.",
+    "format_pass": "One when the original decompilation output passes the output format protocol; zero otherwise. Repair is downstream and cannot erase an original format success.",
+    "semantic_perfect_cumulative": "One when the contract has at least one ABI function, ABI recovery has no false positives or false negatives, and every ground-truth ABI function passes all semantic cases; zero otherwise.",
+    "semantic_rate_cumulative": "Number of ground-truth public-function signatures that pass every stored semantic case divided by all benchmark semantic entries for the contract, including fallback and receive entries; missing or ineligible entries contribute zero."
+  },
+  "predictor_diagnostics": {
+    "n_contracts": 600,
+    "pearson_correlation_matrix": [
+      [
+        1.0,
+        0.9313520348716453,
+        0.7223715322487861
+      ],
+      [
+        0.9313520348716453,
+        1.0,
+        0.7357028386264912
+      ],
+      [
+        0.7223715322487861,
+        0.7357028386264912,
+        1.0
+      ]
+    ],
+    "predictor_order": [
+      "difficulty_score",
+      "log1p_prompt_char_length",
+      "log1p_public_function_count"
+    ],
+    "variance_inflation_factor": {
+      "difficulty_score": 7.717768568938058,
+      "log1p_prompt_char_length": 8.044790037564038,
+      "log1p_public_function_count": 2.2305552691660404
+    }
+  },
+  "regression": {
+    "outcomes": {
+      "abi_exact_cumulative": {
+        "coefficients": {
+          "difficulty_score_z": {
+            "bh_q_value_across_adjusted_outcomes": 0.0007741466735312935,
+            "bootstrap_failures": 0,
+            "bootstrap_successes": 2000,
+            "cluster_bootstrap_95_ci": [
+              -0.1829176257682699,
+              -0.048784196843029044
+            ],
+            "cluster_robust_95_ci": [
+              -0.18097854588177076,
+              -0.0503817031968668
+            ],
+            "cluster_robust_standard_error": 0.03331552109308775,
+            "estimate": -0.11568012453931878,
+            "normal_p_value": 0.0005160977823541957
+          },
+          "intercept": {
+            "cluster_robust_95_ci": [
+              0.3565693586793231,
+              0.43009730798734386
+            ],
+            "cluster_robust_standard_error": 0.018757129925515505,
+            "estimate": 0.3933333333333335,
+            "normal_p_value": 1.237735294296324e-97
+          },
+          "log_prompt_char_length_z": {
+            "cluster_robust_95_ci": [
+              -0.1181350249887463,
+              0.017079206290169277
+            ],
+            "cluster_robust_standard_error": 0.03449342634666214,
+            "estimate": -0.05052790934928851,
+            "normal_p_value": 0.14296015568319476
+          },
+          "log_public_function_count_z": {
+            "cluster_robust_95_ci": [
+              -0.018893426831233264,
+              0.0539371249728208
+            ],
+            "cluster_robust_standard_error": 0.018579222398993386,
+            "estimate": 0.01752184907079377,
+            "normal_p_value": 0.3456356900829166
+          },
+          "model_fe[glm5_instruct]": {
+            "cluster_robust_95_ci": [
+              -0.23040338810745992,
+              -0.1495966118925401
+            ],
+            "cluster_robust_standard_error": 0.020613973524214246,
+            "estimate": -0.19,
+            "normal_p_value": 3.053895598040265e-20
+          },
+          "model_fe[glm5_reasoning]": {
+            "cluster_robust_95_ci": [
+              -0.14442745765326462,
+              -0.062239209013401804
+            ],
+            "cluster_robust_standard_error": 0.020966389959148676,
+            "estimate": -0.10333333333333321,
+            "normal_p_value": 8.285361879612186e-07
+          },
+          "model_fe[gpt53_codex]": {
+            "cluster_robust_95_ci": [
+              0.21282595753006214,
+              0.29717404246993784
+            ],
+            "cluster_robust_standard_error": 0.02151736860711115,
+            "estimate": 0.255,
+            "normal_p_value": 2.1291364409504413e-32
+          }
+        },
+        "n_contract_clusters": 600,
+        "n_observations": 2400,
+        "r_squared": 0.2146317239903418,
+        "rank": 7
+      },
+      "abi_f1_cumulative": {
+        "coefficients": {
+          "difficulty_score_z": {
+            "bh_q_value_across_adjusted_outcomes": 0.00017313195542717412,
+            "bootstrap_failures": 0,
+            "bootstrap_successes": 2000,
+            "cluster_bootstrap_95_ci": [
+              -0.178699959518226,
+              -0.06503489834455516
+            ],
+            "cluster_robust_95_ci": [
+              -0.1741981050016221,
+              -0.06302563183604606
+            ],
+            "cluster_robust_standard_error": 0.028360324787136747,
+            "estimate": -0.11861186841883409,
+            "normal_p_value": 2.885532590452902e-05
+          },
+          "intercept": {
+            "cluster_robust_95_ci": [
+              0.609249178268424,
+              0.6792882574839851
+            ],
+            "cluster_robust_standard_error": 0.017867112044786013,
+            "estimate": 0.6442687178762045,
+            "normal_p_value": 9.996903052706783e-285
+          },
+          "log_prompt_char_length_z": {
+            "cluster_robust_95_ci": [
+              -0.07733058360349152,
+              0.03982305212272854
+            ],
+            "cluster_robust_standard_error": 0.02988613156281124,
+            "estimate": -0.018753765740381484,
+            "normal_p_value": 0.5303267521794292
+          },
+          "log_public_function_count_z": {
+            "cluster_robust_95_ci": [
+              0.034964188100443785,
+              0.10096435512488099
+            ],
+            "cluster_robust_standard_error": 0.01683677730215235,
+            "estimate": 0.06796427161266239,
+            "normal_p_value": 5.42185674017431e-05
+          },
+          "model_fe[glm5_instruct]": {
+            "cluster_robust_95_ci": [
+              -0.12682152726312465,
+              -0.03743537252381379
+            ],
+            "cluster_robust_standard_error": 0.022802590494722157,
+            "estimate": -0.08212844989346922,
+            "normal_p_value": 0.0003161238809857121
+          },
+          "model_fe[glm5_reasoning]": {
+            "cluster_robust_95_ci": [
+              -0.08847148163313615,
+              0.002608032132009462
+            ],
+            "cluster_robust_standard_error": 0.02323456983804735,
+            "estimate": -0.042931724750563345,
+            "normal_p_value": 0.0646382160548379
+          },
+          "model_fe[gpt53_codex]": {
+            "cluster_robust_95_ci": [
+              0.16913777206773528,
+              0.24492139548042863
+            ],
+            "cluster_robust_standard_error": 0.019332556993034017,
+            "estimate": 0.20702958377408195,
+            "normal_p_value": 9.249697435210948e-27
+          }
+        },
+        "n_contract_clusters": 600,
+        "n_observations": 2400,
+        "r_squared": 0.11780654050006922,
+        "rank": 7
+      },
+      "compile_pass": {
+        "coefficients": {
+          "difficulty_score_z": {
+            "bh_q_value_across_adjusted_outcomes": 0.0005745281502015838,
+            "bootstrap_failures": 0,
+            "bootstrap_successes": 2000,
+            "cluster_bootstrap_95_ci": [
+              -0.14846033031471467,
+              -0.04722602539414755
+            ],
+            "cluster_robust_95_ci": [
+              -0.14770219611080804,
+              -0.04406122187732656
+            ],
+            "cluster_robust_standard_error": 0.026439024039153436,
+            "estimate": -0.0958817089940673,
+            "normal_p_value": 0.0002872640751007919
+          },
+          "intercept": {
+            "cluster_robust_95_ci": [
+              0.6557853472890075,
+              0.7275479860443247
+            ],
+            "cluster_robust_standard_error": 0.018306795600846217,
+            "estimate": 0.6916666666666661,
+            "normal_p_value": 0.0
+          },
+          "log_prompt_char_length_z": {
+            "cluster_robust_95_ci": [
+              -0.061007138248391594,
+              0.046731743532591206
+            ],
+            "cluster_robust_standard_error": 0.027484408617597655,
+            "estimate": -0.007137697357900196,
+            "normal_p_value": 0.7950952925636401
+          },
+          "log_public_function_count_z": {
+            "cluster_robust_95_ci": [
+              -0.008718202852451038,
+              0.05094350459499963
+            ],
+            "cluster_robust_standard_error": 0.015219823328431295,
+            "estimate": 0.0211126508712743,
+            "normal_p_value": 0.16538655501833777
+          },
+          "model_fe[glm5_instruct]": {
+            "cluster_robust_95_ci": [
+              -0.09750090427464467,
+              0.0008342376079782041
+            ],
+            "cluster_robust_standard_error": 0.02508549537822012,
+            "estimate": -0.048333333333333235,
+            "normal_p_value": 0.054011513527740716
+          },
+          "model_fe[glm5_reasoning]": {
+            "cluster_robust_95_ci": [
+              -0.0691851848430839,
+              0.029185184843084074
+            ],
+            "cluster_robust_standard_error": 0.025094482062797956,
+            "estimate": -0.019999999999999917,
+            "normal_p_value": 0.4254580253956134
+          },
+          "model_fe[gpt53_codex]": {
+            "cluster_robust_95_ci": [
+              0.17076530535585513,
+              0.2525680279774781
+            ],
+            "cluster_robust_standard_error": 0.020868041485107902,
+            "estimate": 0.21166666666666661,
+            "normal_p_value": 3.556251168614478e-24
+          }
+        },
+        "n_contract_clusters": 600,
+        "n_observations": 2400,
+        "r_squared": 0.09291148984803732,
+        "rank": 7
+      },
+      "format_pass": {
+        "coefficients": {
+          "difficulty_score_z": {
+            "bh_q_value_across_adjusted_outcomes": 0.2913941389283685,
+            "bootstrap_failures": 0,
+            "bootstrap_successes": 2000,
+            "cluster_bootstrap_95_ci": [
+              -0.05955531190674225,
+              0.014338081347611921
+            ],
+            "cluster_robust_95_ci": [
+              -0.05786560833770867,
+              0.014652640696840101
+            ],
+            "cluster_robust_standard_error": 0.018499553325139993,
+            "estimate": -0.021606483820434286,
+            "normal_p_value": 0.24282844910697376
+          },
+          "intercept": {
+            "cluster_robust_95_ci": [
+              0.6896224070175275,
+              0.7603775929824711
+            ],
+            "cluster_robust_standard_error": 0.0180497923379958,
+            "estimate": 0.7249999999999993,
+            "normal_p_value": 0.0
+          },
+          "log_prompt_char_length_z": {
+            "cluster_robust_95_ci": [
+              -0.05463013120285413,
+              0.020150172621946037
+            ],
+            "cluster_robust_standard_error": 0.01907660811857147,
+            "estimate": -0.017239979290454045,
+            "normal_p_value": 0.3661420284232211
+          },
+          "log_public_function_count_z": {
+            "cluster_robust_95_ci": [
+              -0.008498127104194017,
+              0.03114985452817759
+            ],
+            "cluster_robust_standard_error": 0.010114281028666227,
+            "estimate": 0.011325863711991785,
+            "normal_p_value": 0.26280355837900415
+          },
+          "model_fe[glm5_instruct]": {
+            "cluster_robust_95_ci": [
+              0.13199067215100618,
+              0.21800932784899407
+            ],
+            "cluster_robust_standard_error": 0.02194353461683364,
+            "estimate": 0.17500000000000013,
+            "normal_p_value": 1.5236331173475768e-15
+          },
+          "model_fe[glm5_reasoning]": {
+            "cluster_robust_95_ci": [
+              0.09812086208426106,
+              0.18521247124907225
+            ],
+            "cluster_robust_standard_error": 0.022217247235921226,
+            "estimate": 0.14166666666666666,
+            "normal_p_value": 1.8126647645251975e-10
+          },
+          "model_fe[gpt53_codex]": {
+            "cluster_robust_95_ci": [
+              0.1755459760508374,
+              0.25445402394916256
+            ],
+            "cluster_robust_standard_error": 0.020129604055695194,
+            "estimate": 0.215,
+            "normal_p_value": 1.2520655612114865e-26
+          }
+        },
+        "n_contract_clusters": 600,
+        "n_observations": 2400,
+        "r_squared": 0.061596551694129476,
+        "rank": 7
+      },
+      "semantic_perfect_cumulative": {
+        "coefficients": {
+          "difficulty_score_z": {
+            "bh_q_value_across_adjusted_outcomes": 0.7426343660122833,
+            "bootstrap_failures": 0,
+            "bootstrap_successes": 2000,
+            "cluster_bootstrap_95_ci": [
+              -0.041173038104168044,
+              0.028898967912666957
+            ],
+            "cluster_robust_95_ci": [
+              -0.04283292189435849,
+              0.03054039226421413
+            ],
+            "cluster_robust_standard_error": 0.018717682183309343,
+            "estimate": -0.006146264815072182,
+            "normal_p_value": 0.7426343660122833
+          },
+          "intercept": {
+            "cluster_robust_95_ci": [
+              0.05066855973538927,
+              0.08933144026461082
+            ],
+            "cluster_robust_standard_error": 0.009862979726842233,
+            "estimate": 0.07000000000000005,
+            "normal_p_value": 1.2726679594845338e-12
+          },
+          "log_prompt_char_length_z": {
+            "cluster_robust_95_ci": [
+              -0.07352303241020008,
+              0.012887848555784419
+            ],
+            "cluster_robust_standard_error": 0.02204359208315931,
+            "estimate": -0.03031759192720783,
+            "normal_p_value": 0.16902384003119908
+          },
+          "log_public_function_count_z": {
+            "cluster_robust_95_ci": [
+              -0.05417093219788985,
+              -0.012149646734668729
+            ],
+            "cluster_robust_standard_error": 0.010719715679393144,
+            "estimate": -0.03316028946627929,
+            "normal_p_value": 0.001978821437519613
+          },
+          "model_fe[glm5_instruct]": {
+            "cluster_robust_95_ci": [
+              -0.08066191042950203,
+              -0.0393380895704981
+            ],
+            "cluster_robust_standard_error": 0.010541791035460189,
+            "estimate": -0.06000000000000007,
+            "normal_p_value": 1.2583048663438451e-08
+          },
+          "model_fe[glm5_reasoning]": {
+            "cluster_robust_95_ci": [
+              -0.0609707752446524,
+              -0.019029224755347667
+            ],
+            "cluster_robust_standard_error": 0.010699375124822637,
+            "estimate": -0.040000000000000036,
+            "normal_p_value": 0.00018509492761880839
+          },
+          "model_fe[gpt53_codex]": {
+            "cluster_robust_95_ci": [
+              -0.02410817473951224,
+              0.020774841406178753
+            ],
+            "cluster_robust_standard_error": 0.011449749016757906,
+            "estimate": -0.001666666666666745,
+            "normal_p_value": 0.8842659061697672
+          }
+        },
+        "n_contract_clusters": 600,
+        "n_observations": 2400,
+        "r_squared": 0.11343973742312863,
+        "rank": 7
+      },
+      "semantic_rate_cumulative": {
+        "coefficients": {
+          "difficulty_score_z": {
+            "bh_q_value_across_adjusted_outcomes": 0.0003282304465687044,
+            "bootstrap_failures": 0,
+            "bootstrap_successes": 2000,
+            "cluster_bootstrap_95_ci": [
+              -0.13393393101780787,
+              -0.04439444719348768
+            ],
+            "cluster_robust_95_ci": [
+              -0.13372132146788268,
+              -0.04378940294845507
+            ],
+            "cluster_robust_standard_error": 0.022941815948833575,
+            "estimate": -0.08875536220816888,
+            "normal_p_value": 0.0001094101488562348
+          },
+          "intercept": {
+            "cluster_robust_95_ci": [
+              0.3077213914616864,
+              0.36367470596863316
+            ],
+            "cluster_robust_standard_error": 0.014273804721159872,
+            "estimate": 0.3356980487151598,
+            "normal_p_value": 2.6400227621654037e-122
+          },
+          "log_prompt_char_length_z": {
+            "cluster_robust_95_ci": [
+              -0.05301044376376013,
+              0.04702871752555206
+            ],
+            "cluster_robust_standard_error": 0.02552019420645719,
+            "estimate": -0.002990863119104037,
+            "normal_p_value": 0.9067047850887422
+          },
+          "log_public_function_count_z": {
+            "cluster_robust_95_ci": [
+              -0.0013383537082637988,
+              0.051004124422430575
+            ],
+            "cluster_robust_standard_error": 0.013352672992524075,
+            "estimate": 0.024832885357083386,
+            "normal_p_value": 0.06291823562599157
+          },
+          "model_fe[glm5_instruct]": {
+            "cluster_robust_95_ci": [
+              -0.17177064736205025,
+              -0.10759228978648891
+            ],
+            "cluster_robust_standard_error": 0.016372029993765646,
+            "estimate": -0.13968146857426958,
+            "normal_p_value": 1.4419585753987136e-17
+          },
+          "model_fe[glm5_reasoning]": {
+            "cluster_robust_95_ci": [
+              -0.13162906408511338,
+              -0.06844584427268752
+            ],
+            "cluster_robust_standard_error": 0.01611816831949639,
+            "estimate": -0.10003745417890045,
+            "normal_p_value": 5.417671220811302e-10
+          },
+          "model_fe[gpt53_codex]": {
+            "cluster_robust_95_ci": [
+              -0.04833107136487523,
+              0.015445657307149877
+            ],
+            "cluster_robust_standard_error": 0.01626957364082273,
+            "estimate": -0.016442707028862677,
+            "normal_p_value": 0.3121880243573172
+          }
+        },
+        "n_contract_clusters": 600,
+        "n_observations": 2400,
+        "r_squared": 0.09582664754795878,
+        "rank": 7
+      }
+    },
+    "specification": {
+      "cluster": "benchmark_id",
+      "coefficient_order": [
+        "intercept",
+        "difficulty_score_z",
+        "log_prompt_char_length_z",
+        "log_public_function_count_z",
+        "model_fe[gpt53_codex]",
+        "model_fe[glm5_reasoning]",
+        "model_fe[glm5_instruct]"
+      ],
+      "difficulty_effect_unit": "one population standard deviation",
+      "estimator": "ordinary least squares score/linear-probability model",
+      "formula": "outcome ~ difficulty_score_z + log1p(prompt_char_length)_z + log1p(n_public_functions)_z + model fixed effects",
+      "inference": "contract-clustered sandwich standard errors and deterministic contract-cluster percentile bootstrap",
+      "predictor_scaling": {
+        "difficulty_score": {
+          "mean": 52.133002485,
+          "standard_deviation": 21.332815870313127
+        },
+        "log1p_prompt_char_length": {
+          "mean": 10.558044343984514,
+          "standard_deviation": 0.7625991592034495
+        },
+        "log1p_public_function_count": {
+          "mean": 2.9510279932029286,
+          "standard_deviation": 0.8092735486432273
+        },
+        "reference_model": "opus47"
+      }
+    }
+  },
+  "schema": "scdbench-rebuttal-difficulty-validation-v1",
+  "spearman": [
+    {
+      "analytic_p_value": 7.729065607687505e-08,
+      "bh_q_value_across_primary_spearman_tests": 1.2881776012812507e-07,
+      "bootstrap_95_ci": [
+        -0.29533976016771324,
+        -0.13549937114215344
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "opus47",
+      "model_label": "Opus 4.7",
+      "n": 600,
+      "outcome": "format_pass",
+      "rho": -0.21719472601899867
+    },
+    {
+      "analytic_p_value": 0.024510101087811178,
+      "bh_q_value_across_primary_spearman_tests": 0.027233445653123533,
+      "bootstrap_95_ci": [
+        -0.1617572111909327,
+        -0.017974043570383697
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "gpt53_codex",
+      "model_label": "GPT-5.3-Codex",
+      "n": 600,
+      "outcome": "format_pass",
+      "rho": -0.09181403605686893
+    },
+    {
+      "analytic_p_value": 0.585065177608351,
+      "bh_q_value_across_primary_spearman_tests": 0.585065177608351,
+      "bootstrap_95_ci": [
+        -0.06062660352189877,
+        0.10461313206084395
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_reasoning",
+      "model_label": "GLM-5",
+      "n": 600,
+      "outcome": "format_pass",
+      "rho": 0.022334195518239692
+    },
+    {
+      "analytic_p_value": 0.527361144393977,
+      "bh_q_value_across_primary_spearman_tests": 0.5551169940989231,
+      "bootstrap_95_ci": [
+        -0.10447507475787544,
+        0.052208072208177615
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_instruct",
+      "model_label": "GLM-5 (instruct)",
+      "n": 600,
+      "outcome": "format_pass",
+      "rho": -0.025852497959985347
+    },
+    {
+      "analytic_p_value": 6.213058122585482e-06,
+      "bh_q_value_across_primary_spearman_tests": 8.875797317979259e-06,
+      "bootstrap_95_ci": [
+        -0.25905651180664085,
+        -0.10193568040636879
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "across_model_mean",
+      "model_label": "Across-model mean",
+      "n": 600,
+      "outcome": "format_pass",
+      "rho": -0.18330449953587266
+    },
+    {
+      "analytic_p_value": 8.844636537803563e-11,
+      "bh_q_value_across_primary_spearman_tests": 2.527039010801018e-10,
+      "bootstrap_95_ci": [
+        -0.33370822283737855,
+        -0.1825956467484953
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "opus47",
+      "model_label": "Opus 4.7",
+      "n": 600,
+      "outcome": "compile_pass",
+      "rho": -0.2607198837164205
+    },
+    {
+      "analytic_p_value": 0.0020377350103807394,
+      "bh_q_value_across_primary_spearman_tests": 0.002397335306330282,
+      "bootstrap_95_ci": [
+        -0.1959814783317577,
+        -0.0519333004940421
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "gpt53_codex",
+      "model_label": "GPT-5.3-Codex",
+      "n": 600,
+      "outcome": "compile_pass",
+      "rho": -0.1256937375834537
+    },
+    {
+      "analytic_p_value": 7.27568184969762e-06,
+      "bh_q_value_across_primary_spearman_tests": 9.700909132930161e-06,
+      "bootstrap_95_ci": [
+        -0.2610078160711249,
+        -0.10225625675970373
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_reasoning",
+      "model_label": "GLM-5",
+      "n": 600,
+      "outcome": "compile_pass",
+      "rho": -0.1819666326018279
+    },
+    {
+      "analytic_p_value": 8.422592962654021e-09,
+      "bh_q_value_across_primary_spearman_tests": 1.871687325034227e-08,
+      "bootstrap_95_ci": [
+        -0.3110011926033621,
+        -0.15596376463488784
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_instruct",
+      "model_label": "GLM-5 (instruct)",
+      "n": 600,
+      "outcome": "compile_pass",
+      "rho": -0.23239953667820057
+    },
+    {
+      "analytic_p_value": 1.3393886995381436e-19,
+      "bh_q_value_across_primary_spearman_tests": 1.3393886995381436e-18,
+      "bootstrap_95_ci": [
+        -0.42959859141892043,
+        -0.2874936330412856
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "across_model_mean",
+      "model_label": "Across-model mean",
+      "n": 600,
+      "outcome": "compile_pass",
+      "rho": -0.3581653179545474
+    },
+    {
+      "analytic_p_value": 6.134563372978404e-16,
+      "bh_q_value_across_primary_spearman_tests": 3.067281686489202e-15,
+      "bootstrap_95_ci": [
+        -0.3965886595490667,
+        -0.24589989307566784
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "opus47",
+      "model_label": "Opus 4.7",
+      "n": 600,
+      "outcome": "abi_f1_cumulative",
+      "rho": -0.32197468143728925
+    },
+    {
+      "analytic_p_value": 1.2990828240770413e-07,
+      "bh_q_value_across_primary_spearman_tests": 1.9985889601185252e-07,
+      "bootstrap_95_ci": [
+        -0.291324787241771,
+        -0.13843905030751708
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "gpt53_codex",
+      "model_label": "GPT-5.3-Codex",
+      "n": 600,
+      "outcome": "abi_f1_cumulative",
+      "rho": -0.21346942956481094
+    },
+    {
+      "analytic_p_value": 3.3987789888457366e-13,
+      "bh_q_value_across_primary_spearman_tests": 1.1329263296152455e-12,
+      "bootstrap_95_ci": [
+        -0.3626333817654618,
+        -0.21334520729207984
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_reasoning",
+      "model_label": "GLM-5",
+      "n": 600,
+      "outcome": "abi_f1_cumulative",
+      "rho": -0.2912482238288985
+    },
+    {
+      "analytic_p_value": 2.1670364075089395e-13,
+      "bh_q_value_across_primary_spearman_tests": 8.668145630035758e-13,
+      "bootstrap_95_ci": [
+        -0.3668538727796602,
+        -0.21699353086859224
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_instruct",
+      "model_label": "GLM-5 (instruct)",
+      "n": 600,
+      "outcome": "abi_f1_cumulative",
+      "rho": -0.2935620872704127
+    },
+    {
+      "analytic_p_value": 1.1066216672181089e-21,
+      "bh_q_value_across_primary_spearman_tests": 2.2132433344362178e-20,
+      "bootstrap_95_ci": [
+        -0.4453061761564429,
+        -0.30202006474540094
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "across_model_mean",
+      "model_label": "Across-model mean",
+      "n": 600,
+      "outcome": "abi_f1_cumulative",
+      "rho": -0.376843585750234
+    },
+    {
+      "analytic_p_value": 1.809538397987761e-08,
+      "bh_q_value_across_primary_spearman_tests": 3.619076795975522e-08,
+      "bootstrap_95_ci": [
+        -0.30291002325275135,
+        -0.1513807783322697
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "opus47",
+      "model_label": "Opus 4.7",
+      "n": 600,
+      "outcome": "semantic_rate_cumulative",
+      "rho": -0.2272746011737042
+    },
+    {
+      "analytic_p_value": 0.00014409356836332941,
+      "bh_q_value_across_primary_spearman_tests": 0.00018011696045416175,
+      "bootstrap_95_ci": [
+        -0.23554025200459883,
+        -0.07457731946973757
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "gpt53_codex",
+      "model_label": "GPT-5.3-Codex",
+      "n": 600,
+      "outcome": "semantic_rate_cumulative",
+      "rho": -0.15456539864829436
+    },
+    {
+      "analytic_p_value": 2.5837241431241566e-09,
+      "bh_q_value_across_primary_spearman_tests": 6.459310357810391e-09,
+      "bootstrap_95_ci": [
+        -0.31719706960857535,
+        -0.15983882102354247
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_reasoning",
+      "model_label": "GLM-5",
+      "n": 600,
+      "outcome": "semantic_rate_cumulative",
+      "rho": -0.24009089966758057
+    },
+    {
+      "analytic_p_value": 7.136550376084519e-08,
+      "bh_q_value_across_primary_spearman_tests": 1.2881776012812507e-07,
+      "bootstrap_95_ci": [
+        -0.2989789883811721,
+        -0.13679498645477467
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "glm5_instruct",
+      "model_label": "GLM-5 (instruct)",
+      "n": 600,
+      "outcome": "semantic_rate_cumulative",
+      "rho": -0.21776108694637947
+    },
+    {
+      "analytic_p_value": 2.1640295520411395e-16,
+      "bh_q_value_across_primary_spearman_tests": 1.4426863680274263e-15,
+      "bootstrap_95_ci": [
+        -0.3979930127048229,
+        -0.24779931248182696
+      ],
+      "bootstrap_failures": 0,
+      "bootstrap_successes": 2000,
+      "model_key": "across_model_mean",
+      "model_label": "Across-model mean",
+      "n": 600,
+      "outcome": "semantic_rate_cumulative",
+      "rho": -0.3267161698672512
+    }
+  ]
+}

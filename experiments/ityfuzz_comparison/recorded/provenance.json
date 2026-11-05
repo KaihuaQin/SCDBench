@@ -1,0 +1,15 @@
+{
+  "budgeted_prefix_coverage_sha256": {
+    "scdbench-easy-154": "08235df49852636b98146279843658d2dad6a787a5ee9f4acd8ff6665838477c",
+    "scdbench-hard-142": "a1c439c5011cd9c01d29fa8b593eaed2923c64904e3f005648c4a29a354cc4a7",
+    "scdbench-medium-120": "1226794788b763a25603eb7b40d7ed485ba8a9eb6af23863315e220b3e372075",
+    "scdbench-medium-164": "ba1602d6d2812de8a7eccd514a981048794261b730230c4adda39e140418f0ef"
+  },
+  "projection": "Only fields used by coverage/timing analyses and deployment preparation are retained. Coverage line sets, measured timings, baseline validation and status labels are unchanged. Logs, RPC endpoints, paths and vulnerability outputs are omitted.",
+  "source_sha256": {
+    "ityfuzz_results": "afee3a7444e14276ba7671e003a0fb5844976a309603de87b9da939d4d292201",
+    "original_complete_dataset": "9a7e328916376cdf452518be225966983c57f24a3e9ebd2f3c2a9f493007e221",
+    "sequential_timing_manifest": "b8763c1fd577eedd793f1161931b058f6c59bdd4490620a70b78bc3e087ed114",
+    "sequential_timing_results": "00cefe9e6d596d47d3dadbeae00e5e67258265759a6958d7f8c8903bfcd4a307"
+  }
+}

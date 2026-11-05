@@ -1,0 +1,591 @@
+{
+  "design": {
+    "contracts": 60,
+    "difficulty_bins": {
+      "easy": 20,
+      "hard": 20,
+      "medium": 20
+    },
+    "intervention": "Remove top-level external function-selector and event-topic candidate mappings only.",
+    "model": "openai/gpt-5.3-codex",
+    "reasoning_effort": "high",
+    "unchanged_inputs": "EVM assembly, intrinsic selectors/topics, system prompt, decoding settings, ground truth, and semantic checkpoints."
+  },
+  "schema": "scdbench-no-external-signature-hints-ablation-v1",
+  "validation": {
+    "all_evaluation_id_sets_exact": true,
+    "all_replay_id_sets_exact": true,
+    "all_semantic_replays_error_free": true,
+    "all_target_id_sets_exact": true,
+    "paper_cumulative_denominators": {
+      "abi_functions": 1286,
+      "contracts": 60,
+      "semantic_functions": 1308
+    }
+  },
+  "with_hints": {
+    "initial": {
+      "by_difficulty": {
+        "easy": {
+          "abi": {
+            "conditional_f1": 0.9080459770114941,
+            "conditional_recall": 0.9132947976878613,
+            "f1": 0.8610354223433241,
+            "false_positive": 17,
+            "ground_truth": 192,
+            "precision": 0.9028571428571428,
+            "recall": 0.8229166666666666,
+            "true_positive": 158
+          },
+          "compile_ok": 17,
+          "compile_rate": 0.85,
+          "contracts": 20,
+          "format_ok": 19,
+          "format_rate": 0.95,
+          "replayed_contracts": 17,
+          "semantic": {
+            "conditional_rate": 0.7215189873417721,
+            "equivalent": 114,
+            "ground_truth": 199,
+            "rate": 0.5728643216080402,
+            "reached": 158
+          },
+          "semantic_eligible_contracts": 17
+        },
+        "hard": {
+          "abi": {
+            "conditional_f1": 0.8522920203735144,
+            "conditional_recall": 0.8655172413793103,
+            "f1": 0.5154004106776181,
+            "false_positive": 48,
+            "ground_truth": 675,
+            "precision": 0.8394648829431438,
+            "recall": 0.3718518518518519,
+            "true_positive": 251
+          },
+          "compile_ok": 8,
+          "compile_rate": 0.4,
+          "contracts": 20,
+          "format_ok": 18,
+          "format_rate": 0.9,
+          "replayed_contracts": 8,
+          "semantic": {
+            "conditional_rate": 0.3426294820717131,
+            "equivalent": 86,
+            "ground_truth": 679,
+            "rate": 0.12665684830633284,
+            "reached": 251
+          },
+          "semantic_eligible_contracts": 8
+        },
+        "medium": {
+          "abi": {
+            "conditional_f1": 0.9853372434017595,
+            "conditional_recall": 0.9911504424778761,
+            "f1": 0.8818897637795275,
+            "false_positive": 7,
+            "ground_truth": 419,
+            "precision": 0.9795918367346939,
+            "recall": 0.801909307875895,
+            "true_positive": 336
+          },
+          "compile_ok": 15,
+          "compile_rate": 0.75,
+          "contracts": 20,
+          "format_ok": 18,
+          "format_rate": 0.9,
+          "replayed_contracts": 15,
+          "semantic": {
+            "conditional_rate": 0.38392857142857145,
+            "equivalent": 129,
+            "ground_truth": 430,
+            "rate": 0.3,
+            "reached": 336
+          },
+          "semantic_eligible_contracts": 15
+        }
+      },
+      "overall": {
+        "abi": {
+          "conditional_f1": 0.9203211859172329,
+          "conditional_recall": 0.928927680798005,
+          "f1": 0.7085116500237755,
+          "false_positive": 72,
+          "ground_truth": 1286,
+          "precision": 0.9118727050183598,
+          "recall": 0.5793157076205288,
+          "true_positive": 745
+        },
+        "compile_ok": 40,
+        "compile_rate": 0.6666666666666666,
+        "contracts": 60,
+        "format_ok": 55,
+        "format_rate": 0.9166666666666666,
+        "replayed_contracts": 40,
+        "semantic": {
+          "conditional_rate": 0.44161073825503355,
+          "equivalent": 329,
+          "ground_truth": 1308,
+          "rate": 0.2515290519877676,
+          "reached": 745
+        },
+        "semantic_eligible_contracts": 40
+      },
+      "perfect": {
+        "benchmark_ids": [
+          "scdbench-easy-018",
+          "scdbench-easy-053",
+          "scdbench-easy-114"
+        ],
+        "by_difficulty": {
+          "easy": 3,
+          "hard": 0,
+          "medium": 0
+        },
+        "contracts": 3
+      }
+    },
+    "provenance": {
+      "initial_responses": {
+        "completion_tokens": 1033059,
+        "latest_successes": 58,
+        "prompt_tokens": 1194517,
+        "raw_records": 60,
+        "response_models": {
+          "null": 2,
+          "openai/gpt-5.3-codex-20260224": 58
+        },
+        "response_reported_cost_usd": 16.51965875,
+        "transport_failure_records": 2,
+        "unique_contracts": 60
+      }
+    },
+    "repair": {
+      "candidates": 15,
+      "compilation_fixed": 11
+    },
+    "repaired": {
+      "by_difficulty": {
+        "easy": {
+          "abi": {
+            "conditional_f1": 0.9166666666666667,
+            "conditional_recall": 0.9214659685863874,
+            "f1": 0.9142857142857143,
+            "false_positive": 17,
+            "ground_truth": 192,
+            "precision": 0.9119170984455959,
+            "recall": 0.9166666666666666,
+            "true_positive": 176
+          },
+          "compile_ok": 19,
+          "compile_rate": 0.95,
+          "contracts": 20,
+          "format_ok": 19,
+          "format_rate": 0.95,
+          "replayed_contracts": 19,
+          "semantic": {
+            "conditional_rate": 0.6590909090909091,
+            "equivalent": 116,
+            "ground_truth": 199,
+            "rate": 0.5829145728643216,
+            "reached": 176
+          },
+          "semantic_eligible_contracts": 19
+        },
+        "hard": {
+          "abi": {
+            "conditional_f1": 0.891640866873065,
+            "conditional_recall": 0.9094736842105263,
+            "f1": 0.7390932420872542,
+            "false_positive": 62,
+            "ground_truth": 675,
+            "precision": 0.8744939271255061,
+            "recall": 0.64,
+            "true_positive": 432
+          },
+          "compile_ok": 14,
+          "compile_rate": 0.7,
+          "contracts": 20,
+          "format_ok": 18,
+          "format_rate": 0.9,
+          "replayed_contracts": 14,
+          "semantic": {
+            "conditional_rate": 0.3449074074074074,
+            "equivalent": 149,
+            "ground_truth": 679,
+            "rate": 0.21944035346097202,
+            "reached": 432
+          },
+          "semantic_eligible_contracts": 14
+        },
+        "medium": {
+          "abi": {
+            "conditional_f1": 0.9655172413793104,
+            "conditional_recall": 0.9706666666666667,
+            "f1": 0.912280701754386,
+            "false_positive": 15,
+            "ground_truth": 419,
+            "precision": 0.9604221635883905,
+            "recall": 0.8687350835322196,
+            "true_positive": 364
+          },
+          "compile_ok": 18,
+          "compile_rate": 0.9,
+          "contracts": 20,
+          "format_ok": 18,
+          "format_rate": 0.9,
+          "replayed_contracts": 18,
+          "semantic": {
+            "conditional_rate": 0.39285714285714285,
+            "equivalent": 143,
+            "ground_truth": 430,
+            "rate": 0.3325581395348837,
+            "reached": 364
+          },
+          "semantic_eligible_contracts": 18
+        }
+      },
+      "overall": {
+        "abi": {
+          "conditional_f1": 0.9226388229710488,
+          "conditional_recall": 0.9337175792507204,
+          "f1": 0.826530612244898,
+          "false_positive": 94,
+          "ground_truth": 1286,
+          "precision": 0.9118198874296435,
+          "recall": 0.7558320373250389,
+          "true_positive": 972
+        },
+        "compile_ok": 51,
+        "compile_rate": 0.85,
+        "contracts": 60,
+        "format_ok": 55,
+        "format_rate": 0.9166666666666666,
+        "replayed_contracts": 51,
+        "semantic": {
+          "conditional_rate": 0.41975308641975306,
+          "equivalent": 408,
+          "ground_truth": 1308,
+          "rate": 0.3119266055045872,
+          "reached": 972
+        },
+        "semantic_eligible_contracts": 51
+      },
+      "perfect": {
+        "benchmark_ids": [
+          "scdbench-easy-018",
+          "scdbench-easy-053",
+          "scdbench-easy-114"
+        ],
+        "by_difficulty": {
+          "easy": 3,
+          "hard": 0,
+          "medium": 0
+        },
+        "contracts": 3
+      }
+    }
+  },
+  "without_hints": {
+    "cost": {
+      "initial": {
+        "completion_tokens": 1289497,
+        "latest_successes": 60,
+        "prompt_tokens": 1217983,
+        "raw_records": 60,
+        "response_models": {
+          "openai/gpt-5.3-codex": 60
+        },
+        "response_reported_cost_usd": 20.18442825,
+        "transport_failure_records": 0,
+        "unique_contracts": 60
+      },
+      "repair": {
+        "completion_tokens": 40298,
+        "latest_successes": 10,
+        "prompt_tokens": 38752,
+        "raw_records": 18,
+        "response_models": {
+          "openai/gpt-5.3-codex": 10
+        },
+        "response_reported_cost_usd": 0.631988,
+        "transport_failure_records": 8,
+        "unique_contracts": 10
+      }
+    },
+    "initial": {
+      "by_difficulty": {
+        "easy": {
+          "abi": {
+            "conditional_f1": 0.40114613180515757,
+            "conditional_recall": 0.3825136612021858,
+            "f1": 0.39106145251396646,
+            "false_positive": 96,
+            "ground_truth": 192,
+            "precision": 0.42168674698795183,
+            "recall": 0.3645833333333333,
+            "true_positive": 70
+          },
+          "compile_ok": 18,
+          "compile_rate": 0.9,
+          "contracts": 20,
+          "format_ok": 19,
+          "format_rate": 0.95,
+          "replayed_contracts": 13,
+          "semantic": {
+            "conditional_rate": 0.5285714285714286,
+            "equivalent": 37,
+            "ground_truth": 199,
+            "rate": 0.18592964824120603,
+            "reached": 70
+          },
+          "semantic_eligible_contracts": 13
+        },
+        "hard": {
+          "abi": {
+            "conditional_f1": 0.3705263157894737,
+            "conditional_recall": 0.3752665245202559,
+            "f1": 0.3044982698961938,
+            "false_positive": 305,
+            "ground_truth": 675,
+            "precision": 0.3659043659043659,
+            "recall": 0.2607407407407407,
+            "true_positive": 176
+          },
+          "compile_ok": 13,
+          "compile_rate": 0.65,
+          "contracts": 20,
+          "format_ok": 20,
+          "format_rate": 1.0,
+          "replayed_contracts": 12,
+          "semantic": {
+            "conditional_rate": 0.3693181818181818,
+            "equivalent": 65,
+            "ground_truth": 679,
+            "rate": 0.09572901325478646,
+            "reached": 176
+          },
+          "semantic_eligible_contracts": 12
+        },
+        "medium": {
+          "abi": {
+            "conditional_f1": 0.5645161290322581,
+            "conditional_recall": 0.5737704918032787,
+            "f1": 0.5269761606022585,
+            "false_positive": 168,
+            "ground_truth": 419,
+            "precision": 0.5555555555555556,
+            "recall": 0.5011933174224343,
+            "true_positive": 210
+          },
+          "compile_ok": 17,
+          "compile_rate": 0.85,
+          "contracts": 20,
+          "format_ok": 19,
+          "format_rate": 0.95,
+          "replayed_contracts": 16,
+          "semantic": {
+            "conditional_rate": 0.35714285714285715,
+            "equivalent": 75,
+            "ground_truth": 430,
+            "rate": 0.1744186046511628,
+            "reached": 210
+          },
+          "semantic_eligible_contracts": 16
+        }
+      },
+      "overall": {
+        "abi": {
+          "conditional_f1": 0.44640234948604995,
+          "conditional_recall": 0.44793713163064836,
+          "f1": 0.39463435742102987,
+          "false_positive": 569,
+          "ground_truth": 1286,
+          "precision": 0.4448780487804878,
+          "recall": 0.3545878693623639,
+          "true_positive": 456
+        },
+        "compile_ok": 48,
+        "compile_rate": 0.8,
+        "contracts": 60,
+        "format_ok": 58,
+        "format_rate": 0.9666666666666667,
+        "replayed_contracts": 41,
+        "semantic": {
+          "conditional_rate": 0.3881578947368421,
+          "equivalent": 177,
+          "ground_truth": 1308,
+          "rate": 0.1353211009174312,
+          "reached": 456
+        },
+        "semantic_eligible_contracts": 41
+      },
+      "perfect": {
+        "benchmark_ids": [
+          "scdbench-easy-114",
+          "scdbench-easy-123"
+        ],
+        "by_difficulty": {
+          "easy": 2,
+          "hard": 0,
+          "medium": 0
+        },
+        "contracts": 2
+      }
+    },
+    "repair": {
+      "candidate_ids": [
+        "scdbench-easy-013",
+        "scdbench-hard-021",
+        "scdbench-hard-044",
+        "scdbench-hard-049",
+        "scdbench-hard-087",
+        "scdbench-hard-104",
+        "scdbench-hard-142",
+        "scdbench-hard-172",
+        "scdbench-medium-142",
+        "scdbench-medium-164"
+      ],
+      "candidates": 10,
+      "compilation_fixed": 7
+    },
+    "repaired": {
+      "by_difficulty": {
+        "easy": {
+          "abi": {
+            "conditional_f1": 0.3988603988603988,
+            "conditional_recall": 0.3804347826086957,
+            "f1": 0.38997214484679665,
+            "false_positive": 97,
+            "ground_truth": 192,
+            "precision": 0.41916167664670656,
+            "recall": 0.3645833333333333,
+            "true_positive": 70
+          },
+          "compile_ok": 19,
+          "compile_rate": 0.95,
+          "contracts": 20,
+          "format_ok": 19,
+          "format_rate": 0.95,
+          "replayed_contracts": 13,
+          "semantic": {
+            "conditional_rate": 0.5285714285714286,
+            "equivalent": 37,
+            "ground_truth": 199,
+            "rate": 0.18592964824120603,
+            "reached": 70
+          },
+          "semantic_eligible_contracts": 13
+        },
+        "hard": {
+          "abi": {
+            "conditional_f1": 0.41007194244604317,
+            "conditional_recall": 0.41007194244604317,
+            "f1": 0.37043054427294886,
+            "false_positive": 328,
+            "ground_truth": 675,
+            "precision": 0.41007194244604317,
+            "recall": 0.3377777777777778,
+            "true_positive": 228
+          },
+          "compile_ok": 17,
+          "compile_rate": 0.85,
+          "contracts": 20,
+          "format_ok": 20,
+          "format_rate": 1.0,
+          "replayed_contracts": 15,
+          "semantic": {
+            "conditional_rate": 0.3508771929824561,
+            "equivalent": 80,
+            "ground_truth": 679,
+            "rate": 0.11782032400589101,
+            "reached": 228
+          },
+          "semantic_eligible_contracts": 15
+        },
+        "medium": {
+          "abi": {
+            "conditional_f1": 0.5413173652694611,
+            "conditional_recall": 0.5566502463054187,
+            "f1": 0.5330188679245282,
+            "false_positive": 203,
+            "ground_truth": 419,
+            "precision": 0.5268065268065268,
+            "recall": 0.5393794749403341,
+            "true_positive": 226
+          },
+          "compile_ok": 19,
+          "compile_rate": 0.95,
+          "contracts": 20,
+          "format_ok": 19,
+          "format_rate": 0.95,
+          "replayed_contracts": 18,
+          "semantic": {
+            "conditional_rate": 0.3805309734513274,
+            "equivalent": 86,
+            "ground_truth": 430,
+            "rate": 0.2,
+            "reached": 226
+          },
+          "semantic_eligible_contracts": 18
+        }
+      },
+      "overall": {
+        "abi": {
+          "conditional_f1": 0.4560487380330722,
+          "conditional_recall": 0.4572425828970332,
+          "f1": 0.4298605414273995,
+          "false_positive": 628,
+          "ground_truth": 1286,
+          "precision": 0.4548611111111111,
+          "recall": 0.40746500777604977,
+          "true_positive": 524
+        },
+        "compile_ok": 55,
+        "compile_rate": 0.9166666666666666,
+        "contracts": 60,
+        "format_ok": 58,
+        "format_rate": 0.9666666666666667,
+        "replayed_contracts": 46,
+        "semantic": {
+          "conditional_rate": 0.38740458015267176,
+          "equivalent": 203,
+          "ground_truth": 1308,
+          "rate": 0.1551987767584098,
+          "reached": 524
+        },
+        "semantic_eligible_contracts": 46
+      },
+      "perfect": {
+        "benchmark_ids": [
+          "scdbench-easy-114",
+          "scdbench-easy-123"
+        ],
+        "by_difficulty": {
+          "easy": 2,
+          "hard": 0,
+          "medium": 0
+        },
+        "contracts": 2
+      }
+    }
+  },
+  "without_hints_minus_with_hints": {
+    "initial": {
+      "abi_f1": -0.3138772926027456,
+      "abi_precision": -0.466994656237872,
+      "abi_recall": -0.22472783825816484,
+      "compile_rate_pp": 13.333333333333341,
+      "format_rate_pp": 5.000000000000004,
+      "semantic_rate_pp": -11.62079510703364
+    },
+    "repaired": {
+      "abi_f1": -0.3966700708174985,
+      "abi_precision": -0.4569587763185324,
+      "abi_recall": -0.3483670295489891,
+      "compile_rate_pp": 6.666666666666665,
+      "format_rate_pp": 5.000000000000004,
+      "semantic_rate_pp": -15.672782874617738
+    }
+  }
+}

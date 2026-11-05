@@ -1,0 +1,36 @@
+{
+  "schema": "scdbench-semantic-analysis-input-v1",
+  "projection": "Case identity, test family, original archived coverage, comparison modality flags, and call success flags. Full returned bytes, logs, storage values, source, and execution logs are not duplicated.",
+  "files": [
+    {
+      "source_name": "scdbench_complete.jsonl",
+      "source_sha256": "9a7e328916376cdf452518be225966983c57f24a3e9ebd2f3c2a9f493007e221",
+      "name": "benchmark.jsonl.gz",
+      "sha256": "ace3bc28a175887f1b735eebb4c80ff6c62aa5898d2217ecf8e523f90cb9ba44"
+    },
+    {
+      "source_name": "semantic_replay_claude_opus47_reasoning_high_after_repair.json",
+      "source_sha256": "fb09c8bcf28ee27451abe9f6c3ca36e07737987d01fb0a87039ca5c575d573b3",
+      "name": "semantic_replay_claude_opus47_reasoning_high_after_repair.json.gz",
+      "sha256": "38d0e52fa96d2daff1813a6102ace10d2b8c382b38b489dd865949dd99f2b26f"
+    },
+    {
+      "source_name": "semantic_replay_gpt53_codex_reasoning_high_after_repair.json",
+      "source_sha256": "af85bec000bc1f02e53cc756e4b0aaa635cf1d9da11c176cfa5e3f45b979a253",
+      "name": "semantic_replay_gpt53_codex_reasoning_high_after_repair.json.gz",
+      "sha256": "b40ca849e32ce3ee2e138da8d95f222077141022f795b4bcb64785ef57680d8b"
+    },
+    {
+      "source_name": "semantic_replay_glm5_reasoning_high_after_repair.json",
+      "source_sha256": "862980aee0aa4b1f687df1e1d017495824a87a0fe37e1306f4233946df5bbf38",
+      "name": "semantic_replay_glm5_reasoning_high_after_repair.json.gz",
+      "sha256": "f9571f3aa02b7dd9e3a2804133d45dfb1c483bb1b2aa8cce52b907ba2d2cab8b"
+    },
+    {
+      "source_name": "semantic_replay_glm5_reasoning_none_after_repair.json",
+      "source_sha256": "fe103af22d4ea22a6103acac670d0c2375df6971422fab2912de3b05c117153c",
+      "name": "semantic_replay_glm5_reasoning_none_after_repair.json.gz",
+      "sha256": "140a24f35c40735ca2c7b9fb3e69d7914ee9e3a4b48326ac64d51286b13a6654"
+    }
+  ]
+}

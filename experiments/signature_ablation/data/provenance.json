@@ -1,0 +1,65 @@
+{
+  "schema": "scdbench-signature-ablation-public-inputs-v1",
+  "source_files": {
+    "subset_dataset": {
+      "name": "scdbench_no_signature_hints_60.jsonl",
+      "sha256": "0b7f5e6b787ad740cd3de35d8c98808fbe85ee7f95ac809f10151026ac08c58e"
+    },
+    "no_hints_evaluation": {
+      "name": "no_hints_eval.jsonl",
+      "sha256": "b896a53f34eb470294d26945c4d39f6085d82026825d4b2d383b14a4697fe322"
+    },
+    "no_hints_replay": {
+      "name": "no_hints_semantic.json",
+      "sha256": "146519767529cf2175e8b47caab9560c709bff6694eced713c6b9ea45c4d4e1d"
+    },
+    "no_hints_targets": {
+      "name": "no_hints_targets.json",
+      "sha256": "04fb9d3da520a22513c25b9dea6eb84f9f45d029927f8e8384c406dd33f57d25"
+    },
+    "with_hints_evaluation": {
+      "name": "eval_semanticprep_gpt53_codex_reasoning_high_before.jsonl",
+      "sha256": "bb7af4df8cf8167465f504e4a7fb057a78e6ed9bde1cef95114312f05f097ddd"
+    },
+    "with_hints_replay": {
+      "name": "semantic_replay_gpt53_codex_reasoning_high_before.json",
+      "sha256": "205fc2d7f57f0abf004296dda8caf772b5ea629ca36523f1731704dadac360bc"
+    },
+    "no_hints_after_repair_evaluation": {
+      "name": "no_hints_after_repair_eval.jsonl",
+      "sha256": "5f3bfdac626b0f75a855e20292286611e9bf76c77165d0877d232a1ece4d0ea5"
+    },
+    "no_hints_after_repair_replay": {
+      "name": "no_hints_after_repair_semantic.json",
+      "sha256": "c4fd2b4737dd6966f8bc1bdfdf7a41507670048fef3d5d30bc0ead5679f7581d"
+    },
+    "no_hints_after_repair_targets": {
+      "name": "no_hints_after_repair_targets.json",
+      "sha256": "820dac489c556f5ba0844253fd47043a89a86bbea0bda3da7ea49a8c7ca26a6f"
+    },
+    "with_hints_after_repair_evaluation": {
+      "name": "eval_semanticprep_gpt53_codex_reasoning_high_after_repair.jsonl",
+      "sha256": "5f9af41bcbc763e1c5666e6a54125e972e73c1878f02ae30910216625ab03db8"
+    },
+    "with_hints_after_repair_replay": {
+      "name": "semantic_replay_gpt53_codex_reasoning_high_after_repair.json",
+      "sha256": "af85bec000bc1f02e53cc756e4b0aaa635cf1d9da11c176cfa5e3f45b979a253"
+    },
+    "no_hints_predictions.jsonl": {
+      "name": "no_hints_predictions.canonical.jsonl",
+      "sha256": "28d854cb174877ea5a97a14e0372cc486ae29a4bf794b99f66918887711207c3"
+    },
+    "no_hints_repair_predictions.jsonl": {
+      "name": "no_hints_repair_predictions.jsonl",
+      "sha256": "50d46ae0219ec950023b83751cd41b0438f5852a844726775491246cbeaa8757"
+    },
+    "with_hints_predictions.jsonl": {
+      "name": "openrouter_gpt53_codex_reasoning_high.jsonl",
+      "sha256": "be805f9e41a7e4b6161fec8bc99d3bd3410e57fbe7c371733adeb6d5549924c0"
+    },
+    "with_hints_repair_predictions.jsonl": {
+      "name": "openrouter_repair_gpt53_codex_reasoning_high.jsonl",
+      "sha256": "a33c0b01ed7e3bcde3a8804abd8b455b2346861005a7deee77d5b53637e5f344"
+    }
+  }
+}

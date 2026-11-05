@@ -1,0 +1,28 @@
+{
+  "available": true,
+  "kind": "foundry_source_lcov",
+  "lines": {
+    "covered": 3,
+    "covered_line_numbers": [
+      371,
+      372,
+      385
+    ],
+    "ratio": 0.2,
+    "total": 15,
+    "uncovered_line_numbers": [
+      363,
+      364,
+      367,
+      368,
+      375,
+      376,
+      377,
+      380,
+      382,
+      386,
+      387,
+      388
+    ]
+  }
+}

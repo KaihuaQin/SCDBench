@@ -1,0 +1,3187 @@
+{
+  "by_difficulty": {
+    "all": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.02126151905270619,
+        "mean_per_contract": 7.2250185327604415,
+        "median_per_contract": 3.8023906499147415,
+        "p90_per_contract": 9.337462726980448,
+        "total": 433.5011119656265
+      },
+      "checkpoints": 20389,
+      "contracts": 60,
+      "coverage": {
+        "field": "submitted_coverage",
+        "lines_covered": 3638,
+        "lines_total": 5226,
+        "mean_contract_ratio": 0.6935308456759295,
+        "measurable_contracts": 52,
+        "median_contract_ratio": 0.8139386189258312,
+        "pooled_ratio": 0.6961347110600842
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 60
+    },
+    "easy": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.01351235734945369,
+        "mean_per_contract": 1.7653894877061247,
+        "median_per_contract": 1.5850897636264563,
+        "p90_per_contract": 2.8111018538475037,
+        "total": 35.307789754122496
+      },
+      "checkpoints": 2613,
+      "contracts": 20,
+      "coverage": {
+        "field": "submitted_coverage",
+        "lines_covered": 895,
+        "lines_total": 1006,
+        "mean_contract_ratio": 0.8033735774398092,
+        "measurable_contracts": 20,
+        "median_contract_ratio": 0.9282051282051282,
+        "pooled_ratio": 0.889662027833002
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 20
+    },
+    "hard": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.013228773501882308,
+        "mean_per_contract": 7.467642641812563,
+        "median_per_contract": 7.13467625901103,
+        "p90_per_contract": 11.553694941103458,
+        "total": 149.35285283625126
+      },
+      "checkpoints": 11290,
+      "contracts": 20,
+      "coverage": {
+        "field": "submitted_coverage",
+        "lines_covered": 2092,
+        "lines_total": 2797,
+        "mean_contract_ratio": 0.6953153235206548,
+        "measurable_contracts": 17,
+        "median_contract_ratio": 0.9787234042553191,
+        "pooled_ratio": 0.7479442259563819
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 20
+    },
+    "medium": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.038365783129086145,
+        "mean_per_contract": 12.442023468762637,
+        "median_per_contract": 4.080902602523565,
+        "p90_per_contract": 9.622167557477951,
+        "total": 248.84046937525272
+      },
+      "checkpoints": 6486,
+      "contracts": 20,
+      "coverage": {
+        "field": "submitted_coverage",
+        "lines_covered": 651,
+        "lines_total": 1423,
+        "mean_contract_ratio": 0.5450514617667345,
+        "measurable_contracts": 15,
+        "median_contract_ratio": 0.5416666666666666,
+        "pooled_ratio": 0.45748418833450455
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 20
+    }
+  },
+  "completed_contracts": 60,
+  "diagnostic_lcov_by_difficulty": {
+    "all": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.02126151905270619,
+        "mean_per_contract": 7.2250185327604415,
+        "median_per_contract": 3.8023906499147415,
+        "p90_per_contract": 9.337462726980448,
+        "total": 433.5011119656265
+      },
+      "checkpoints": 20389,
+      "contracts": 60,
+      "coverage": {
+        "field": "coverage",
+        "lines_covered": 1339,
+        "lines_total": 3371,
+        "mean_contract_ratio": 0.5277901947460496,
+        "measurable_contracts": 45,
+        "median_contract_ratio": 0.5714285714285714,
+        "pooled_ratio": 0.39721150993770393
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 60
+    },
+    "easy": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.01351235734945369,
+        "mean_per_contract": 1.7653894877061247,
+        "median_per_contract": 1.5850897636264563,
+        "p90_per_contract": 2.8111018538475037,
+        "total": 35.307789754122496
+      },
+      "checkpoints": 2613,
+      "contracts": 20,
+      "coverage": {
+        "field": "coverage",
+        "lines_covered": 211,
+        "lines_total": 338,
+        "mean_contract_ratio": 0.6553651091331953,
+        "measurable_contracts": 14,
+        "median_contract_ratio": 0.7175716440422323,
+        "pooled_ratio": 0.6242603550295858
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 20
+    },
+    "hard": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.013228773501882308,
+        "mean_per_contract": 7.467642641812563,
+        "median_per_contract": 7.13467625901103,
+        "p90_per_contract": 11.553694941103458,
+        "total": 149.35285283625126
+      },
+      "checkpoints": 11290,
+      "contracts": 20,
+      "coverage": {
+        "field": "coverage",
+        "lines_covered": 509,
+        "lines_total": 1507,
+        "mean_contract_ratio": 0.44912975907552377,
+        "measurable_contracts": 14,
+        "median_contract_ratio": 0.4838280903854675,
+        "pooled_ratio": 0.33775713337757135
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 20
+    },
+    "medium": {
+      "checkpoint_execution_seconds": {
+        "mean_per_checkpoint": 0.038365783129086145,
+        "mean_per_contract": 12.442023468762637,
+        "median_per_contract": 4.080902602523565,
+        "p90_per_contract": 9.622167557477951,
+        "total": 248.84046937525272
+      },
+      "checkpoints": 6486,
+      "contracts": 20,
+      "coverage": {
+        "field": "coverage",
+        "lines_covered": 619,
+        "lines_total": 1526,
+        "mean_contract_ratio": 0.48750768286177454,
+        "measurable_contracts": 17,
+        "median_contract_ratio": 0.5416666666666666,
+        "pooled_ratio": 0.4056356487549148
+      },
+      "max_transaction_sequence_depth": 2,
+      "successful_contracts": 20
+    }
+  },
+  "expected_contracts": 60,
+  "results": [
+    {
+      "benchmark_id": "scdbench-easy-013",
+      "checkpoint_count": 14,
+      "checkpoint_validation": {
+        "matched": 14,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 14,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 1,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 1,
+        "functions_total": 1,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 135,
+        "lines_total": 135,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 0.436837125569582,
+        "coverage_measurement": 0.12192206457257271,
+        "forge_process_sum": 0.4359602928161621,
+        "ground_truth_compile": 0.013267841190099716,
+        "total": 0.5726839601993561
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-018",
+      "checkpoint_count": 89,
+      "checkpoint_validation": {
+        "matched": 89,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 89,
+        "function_ratio": 1.0,
+        "functions_covered": 4,
+        "functions_total": 4,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.9090909090909091,
+        "lines_covered": 10,
+        "lines_total": 11,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 9,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 4,
+        "functions_total": 4,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.9090909090909091,
+        "lines_covered": 10,
+        "lines_total": 11,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.157310888171196,
+        "coverage_measurement": 0.27995822578668594,
+        "forge_process_sum": 1.152806282043457,
+        "ground_truth_compile": 0.02544475346803665,
+        "total": 1.4647062234580517
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-022",
+      "checkpoint_count": 17,
+      "checkpoint_validation": {
+        "matched": 17,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 17,
+        "function_ratio": 1.0,
+        "functions_covered": 3,
+        "functions_total": 3,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8666666666666667,
+        "lines_covered": 13,
+        "lines_total": 15,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 4,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 3,
+        "functions_total": 3,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.9333333333333333,
+        "lines_covered": 14,
+        "lines_total": 15,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 0.24863756820559502,
+        "coverage_measurement": 0.1976536437869072,
+        "forge_process_sum": 0.24770069122314453,
+        "ground_truth_compile": 0.02488582581281662,
+        "total": 0.47235095500946045
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-048",
+      "checkpoint_count": 39,
+      "checkpoint_validation": {
+        "matched": 39,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 39,
+        "function_ratio": 0.75,
+        "functions_covered": 3,
+        "functions_total": 4,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5714285714285714,
+        "lines_covered": 8,
+        "lines_total": 14,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 4,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 4,
+        "functions_total": 4,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 14,
+        "lines_total": 14,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 0.48571452870965004,
+        "coverage_measurement": 0.23373103886842728,
+        "forge_process_sum": 0.4838423728942871,
+        "ground_truth_compile": 0.028544772416353226,
+        "total": 0.7490381747484207
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-053",
+      "checkpoint_count": 100,
+      "checkpoint_validation": {
+        "matched": 100,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 100,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 4,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 4,
+        "functions_total": 4,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 89,
+        "lines_total": 89,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.675657745450735,
+        "coverage_measurement": 0.18215491250157356,
+        "forge_process_sum": 1.6709675788879395,
+        "ground_truth_compile": 0.034049343317747116,
+        "total": 1.893381331115961
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-071",
+      "checkpoint_count": 198,
+      "checkpoint_validation": {
+        "matched": 198,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 198,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 14,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 8,
+        "functions_total": 8,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 91,
+        "lines_total": 91,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.670051448047161,
+        "coverage_measurement": 0.16977043449878693,
+        "forge_process_sum": 2.6577324867248535,
+        "ground_truth_compile": 0.05433041602373123,
+        "total": 2.896260194480419
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-076",
+      "checkpoint_count": 98,
+      "checkpoint_validation": {
+        "matched": 98,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 98,
+        "function_ratio": 1.0,
+        "functions_covered": 4,
+        "functions_total": 4,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.42105263157894735,
+        "lines_covered": 8,
+        "lines_total": 19,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 8,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 4,
+        "functions_total": 4,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.42105263157894735,
+        "lines_covered": 8,
+        "lines_total": 19,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.1417889259755611,
+        "coverage_measurement": 0.26312557235360146,
+        "forge_process_sum": 1.1369726657867432,
+        "ground_truth_compile": 0.10042938962578773,
+        "total": 1.5074653066694736
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-081",
+      "checkpoint_count": 155,
+      "checkpoint_validation": {
+        "matched": 155,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 155,
+        "function_ratio": 1.0,
+        "functions_covered": 8,
+        "functions_total": 8,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8076923076923077,
+        "lines_covered": 21,
+        "lines_total": 26,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 11,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 8,
+        "functions_total": 8,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.9230769230769231,
+        "lines_covered": 24,
+        "lines_total": 26,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.1281144991517067,
+        "coverage_measurement": 0.2521759495139122,
+        "forge_process_sum": 2.1188783645629883,
+        "ground_truth_compile": 0.10390888527035713,
+        "total": 2.486871939152479
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-091",
+      "checkpoint_count": 109,
+      "checkpoint_validation": {
+        "matched": 109,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 109,
+        "function_ratio": 0.8,
+        "functions_covered": 4,
+        "functions_total": 5,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8571428571428571,
+        "lines_covered": 12,
+        "lines_total": 14,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 8,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.8,
+        "functions_covered": 4,
+        "functions_total": 5,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8571428571428571,
+        "lines_covered": 12,
+        "lines_total": 14,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.4705424159765244,
+        "coverage_measurement": 0.21005013585090637,
+        "forge_process_sum": 1.4659059047698975,
+        "ground_truth_compile": 0.03766276314854622,
+        "total": 1.720325157046318
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-092",
+      "checkpoint_count": 98,
+      "checkpoint_validation": {
+        "matched": 98,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 98,
+        "function_ratio": 0.7,
+        "functions_covered": 7,
+        "functions_total": 10,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5961538461538461,
+        "lines_covered": 31,
+        "lines_total": 52,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 10,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.7,
+        "functions_covered": 7,
+        "functions_total": 10,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5961538461538461,
+        "lines_covered": 31,
+        "lines_total": 52,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.2377134449779987,
+        "coverage_measurement": 0.2840849235653877,
+        "forge_process_sum": 1.2330882549285889,
+        "ground_truth_compile": 0.06878640502691269,
+        "total": 1.5926966555416584
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-096",
+      "checkpoint_count": 102,
+      "checkpoint_validation": {
+        "matched": 102,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 102,
+        "function_ratio": 0.14285714285714285,
+        "functions_covered": 1,
+        "functions_total": 7,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.14285714285714285,
+        "lines_covered": 2,
+        "lines_total": 14,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 7,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.14285714285714285,
+        "functions_covered": 1,
+        "functions_total": 7,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.14285714285714285,
+        "lines_covered": 2,
+        "lines_total": 14,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.3461759835481644,
+        "coverage_measurement": 0.27622389420866966,
+        "forge_process_sum": 1.3420014381408691,
+        "ground_truth_compile": 0.16936925053596497,
+        "total": 1.7940731383860111
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-104",
+      "checkpoint_count": 219,
+      "checkpoint_validation": {
+        "matched": 219,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 219,
+        "function_ratio": 0.45454545454545453,
+        "functions_covered": 5,
+        "functions_total": 11,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.3877551020408163,
+        "lines_covered": 19,
+        "lines_total": 49,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 15,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.5454545454545454,
+        "functions_covered": 6,
+        "functions_total": 11,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4489795918367347,
+        "lines_covered": 22,
+        "lines_total": 49,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.8111018538475037,
+        "coverage_measurement": 0.28657954931259155,
+        "forge_process_sum": 2.7980153560638428,
+        "ground_truth_compile": 0.1255011148750782,
+        "total": 3.226151902228594
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-114",
+      "checkpoint_count": 148,
+      "checkpoint_validation": {
+        "matched": 148,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 148,
+        "function_ratio": 1.0,
+        "functions_covered": 1,
+        "functions_total": 1,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 5,
+        "lines_total": 5,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 9,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 1,
+        "functions_total": 1,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 5,
+        "lines_total": 5,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.8627944104373455,
+        "coverage_measurement": 0.24552210792899132,
+        "forge_process_sum": 1.855433702468872,
+        "ground_truth_compile": 0.04587738960981369,
+        "total": 2.156684335321188
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-119",
+      "checkpoint_count": 76,
+      "checkpoint_validation": {
+        "matched": 76,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 76,
+        "function_ratio": 1.0,
+        "functions_covered": 7,
+        "functions_total": 7,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.875,
+        "lines_covered": 35,
+        "lines_total": 40,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 6,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 7,
+        "functions_total": 7,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.875,
+        "lines_covered": 35,
+        "lines_total": 40,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 0.9462365061044693,
+        "coverage_measurement": 0.2300592064857483,
+        "forge_process_sum": 0.9425439834594727,
+        "ground_truth_compile": 0.10634704306721687,
+        "total": 1.2846342697739601
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-123",
+      "checkpoint_count": 153,
+      "checkpoint_validation": {
+        "matched": 153,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 153,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 10,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 9,
+        "functions_total": 9,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 92,
+        "lines_total": 92,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.2663061283528805,
+        "coverage_measurement": 0.19012277945876122,
+        "forge_process_sum": 2.2556064128875732,
+        "ground_truth_compile": 0.039775531738996506,
+        "total": 2.4984600096940994
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-145",
+      "checkpoint_count": 234,
+      "checkpoint_validation": {
+        "matched": 234,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 234,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 15,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 13,
+        "functions_total": 13,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 134,
+        "lines_total": 134,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.918188288807869,
+        "coverage_measurement": 0.21163057535886765,
+        "forge_process_sum": 2.9075679779052734,
+        "ground_truth_compile": 0.03918293118476868,
+        "total": 3.1713162064552307
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-154",
+      "checkpoint_count": 296,
+      "checkpoint_validation": {
+        "matched": 296,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 296,
+        "function_ratio": 0.5,
+        "functions_covered": 3,
+        "functions_total": 6,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.26666666666666666,
+        "lines_covered": 4,
+        "lines_total": 15,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 17,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.6666666666666666,
+        "functions_covered": 4,
+        "functions_total": 6,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.3333333333333333,
+        "lines_covered": 5,
+        "lines_total": 15,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 4.070979107171297,
+        "coverage_measurement": 0.2972596473991871,
+        "forge_process_sum": 4.055030107498169,
+        "ground_truth_compile": 0.09870405495166779,
+        "total": 4.470954071730375
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-158",
+      "checkpoint_count": 165,
+      "checkpoint_validation": {
+        "matched": 165,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 165,
+        "function_ratio": 1.0,
+        "functions_covered": 5,
+        "functions_total": 5,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8461538461538461,
+        "lines_covered": 11,
+        "lines_total": 13,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 14,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 5,
+        "functions_total": 5,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 13,
+        "lines_total": 13,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.29607492685318,
+        "coverage_measurement": 0.276644516736269,
+        "forge_process_sum": 2.288344144821167,
+        "ground_truth_compile": 0.09161970391869545,
+        "total": 2.666720226407051
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-160",
+      "checkpoint_count": 200,
+      "checkpoint_validation": {
+        "matched": 200,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 200,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "easy",
+      "function_group_count": 20,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 9,
+        "functions_total": 9,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 127,
+        "lines_total": 127,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.643042176961899,
+        "coverage_measurement": 0.1904693879187107,
+        "forge_process_sum": 2.633169651031494,
+        "ground_truth_compile": 0.07411330938339233,
+        "total": 2.9096702486276627
+      }
+    },
+    {
+      "benchmark_id": "scdbench-easy-176",
+      "checkpoint_count": 103,
+      "checkpoint_validation": {
+        "matched": 103,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 103,
+        "function_ratio": 0.9,
+        "functions_covered": 9,
+        "functions_total": 10,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6274509803921569,
+        "lines_covered": 32,
+        "lines_total": 51,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "easy",
+      "function_group_count": 13,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.9,
+        "functions_covered": 9,
+        "functions_total": 10,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6274509803921569,
+        "lines_covered": 32,
+        "lines_total": 51,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.4945217818021774,
+        "coverage_measurement": 0.27897145226597786,
+        "forge_process_sum": 1.489140272140503,
+        "ground_truth_compile": 0.13605941832065582,
+        "total": 1.9118885360658169
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-011",
+      "checkpoint_count": 250,
+      "checkpoint_validation": {
+        "matched": 250,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 250,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 19,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 10,
+        "functions_total": 10,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 102,
+        "lines_total": 102,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 3.0460670478641987,
+        "coverage_measurement": 0.2580532841384411,
+        "forge_process_sum": 3.032820463180542,
+        "ground_truth_compile": 0.06528142467141151,
+        "total": 3.372562278062105
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-020",
+      "checkpoint_count": 481,
+      "checkpoint_validation": {
+        "matched": 481,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 481,
+        "function_ratio": 1.0,
+        "functions_covered": 13,
+        "functions_total": 13,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 61,
+        "lines_total": 61,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 33,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 13,
+        "functions_total": 13,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 61,
+        "lines_total": 61,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 5.897302180528641,
+        "coverage_measurement": 0.4606199152767658,
+        "forge_process_sum": 5.873282432556152,
+        "ground_truth_compile": 0.10232910513877869,
+        "total": 6.465741615742445
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-032",
+      "checkpoint_count": 399,
+      "checkpoint_validation": {
+        "matched": 399,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 399,
+        "function_ratio": 0.875,
+        "functions_covered": 28,
+        "functions_total": 32,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6666666666666666,
+        "lines_covered": 100,
+        "lines_total": 150,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 27,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.09375,
+        "functions_covered": 3,
+        "functions_total": 32,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.18,
+        "lines_covered": 27,
+        "lines_total": 150,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 5.897047143429518,
+        "coverage_measurement": 0.45984743908047676,
+        "forge_process_sum": 5.86613392829895,
+        "ground_truth_compile": 0.2913794368505478,
+        "total": 6.654583927243948
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-057",
+      "checkpoint_count": 215,
+      "checkpoint_validation": {
+        "matched": 215,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 215,
+        "function_ratio": 0.75,
+        "functions_covered": 6,
+        "functions_total": 8,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.25333333333333335,
+        "lines_covered": 19,
+        "lines_total": 75,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 14,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.75,
+        "functions_covered": 6,
+        "functions_total": 8,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.25333333333333335,
+        "lines_covered": 19,
+        "lines_total": 75,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.829826656728983,
+        "coverage_measurement": 0.3118496425449848,
+        "forge_process_sum": 2.8193869590759277,
+        "ground_truth_compile": 0.15419310331344604,
+        "total": 3.2993593961000443
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-060",
+      "checkpoint_count": 181,
+      "checkpoint_validation": {
+        "matched": 181,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 181,
+        "function_ratio": 0.875,
+        "functions_covered": 7,
+        "functions_total": 8,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5869565217391305,
+        "lines_covered": 27,
+        "lines_total": 46,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 16,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 8,
+        "functions_total": 8,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8043478260869565,
+        "lines_covered": 37,
+        "lines_total": 46,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.3586833849549294,
+        "coverage_measurement": 0.3408847413957119,
+        "forge_process_sum": 2.3498246669769287,
+        "ground_truth_compile": 0.14212443679571152,
+        "total": 2.8447246216237545
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-065",
+      "checkpoint_count": 210,
+      "checkpoint_validation": {
+        "matched": 210,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 210,
+        "function_ratio": 1.0,
+        "functions_covered": 3,
+        "functions_total": 3,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 15,
+        "lines_total": 15,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 17,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "forge_coverage_failed"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.6556482911109924,
+        "coverage_measurement": 0.45197366550564766,
+        "forge_process_sum": 2.6449928283691406,
+        "ground_truth_compile": 0.1023806557059288,
+        "total": 3.213047679513693
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-069",
+      "checkpoint_count": 245,
+      "checkpoint_validation": {
+        "matched": 245,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 245,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 25,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "legacy_solidity_0_4_coverage_skipped"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 3.267716098576784,
+        "coverage_measurement": 0.2598414272069931,
+        "forge_process_sum": 3.2514808177948,
+        "ground_truth_compile": 0.1048680804669857,
+        "total": 3.6351358257234097
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-086",
+      "checkpoint_count": 340,
+      "checkpoint_validation": {
+        "matched": 340,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 340,
+        "function_ratio": 1.0,
+        "functions_covered": 13,
+        "functions_total": 13,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4946236559139785,
+        "lines_covered": 46,
+        "lines_total": 93,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 28,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 13,
+        "functions_total": 13,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4946236559139785,
+        "lines_covered": 46,
+        "lines_total": 93,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 4.088452931493521,
+        "coverage_measurement": 0.41558288037776947,
+        "forge_process_sum": 4.071520805358887,
+        "ground_truth_compile": 0.2808198556303978,
+        "total": 4.789053600281477
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-103",
+      "checkpoint_count": 323,
+      "checkpoint_validation": {
+        "matched": 323,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 323,
+        "function_ratio": 0.625,
+        "functions_covered": 5,
+        "functions_total": 8,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5671641791044776,
+        "lines_covered": 76,
+        "lines_total": 134,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 34,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.625,
+        "functions_covered": 5,
+        "functions_total": 8,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5746268656716418,
+        "lines_covered": 77,
+        "lines_total": 134,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 4.529368221759796,
+        "coverage_measurement": 0.46134818717837334,
+        "forge_process_sum": 4.4138243198394775,
+        "ground_truth_compile": 0.3989320993423462,
+        "total": 5.394743923097849
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-105",
+      "checkpoint_count": 82,
+      "checkpoint_validation": {
+        "matched": 82,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 82,
+        "function_ratio": 1.0,
+        "functions_covered": 3,
+        "functions_total": 3,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5,
+        "lines_covered": 11,
+        "lines_total": 22,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 3,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 3,
+        "functions_total": 3,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5,
+        "lines_covered": 11,
+        "lines_total": 22,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.112197034060955,
+        "coverage_measurement": 0.3764002099633217,
+        "forge_process_sum": 1.1081786155700684,
+        "ground_truth_compile": 0.6122122146189213,
+        "total": 2.1037622839212418
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-110",
+      "checkpoint_count": 354,
+      "checkpoint_validation": {
+        "matched": 354,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 354,
+        "function_ratio": 0.8709677419354839,
+        "functions_covered": 27,
+        "functions_total": 31,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6944444444444444,
+        "lines_covered": 100,
+        "lines_total": 144,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 21,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.9032258064516129,
+        "functions_covered": 28,
+        "functions_total": 31,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.7152777777777778,
+        "lines_covered": 103,
+        "lines_total": 144,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 5.068927269428968,
+        "coverage_measurement": 0.38817906752228737,
+        "forge_process_sum": 5.045787334442139,
+        "ground_truth_compile": 0.0942559540271759,
+        "total": 5.557056114077568
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-117",
+      "checkpoint_count": 250,
+      "checkpoint_validation": {
+        "matched": 250,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 250,
+        "function_ratio": 0.25,
+        "functions_covered": 3,
+        "functions_total": 12,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.07692307692307693,
+        "lines_covered": 8,
+        "lines_total": 104,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 10,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "forge_coverage_failed"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 3.1118523068726063,
+        "coverage_measurement": 0.35432471707463264,
+        "forge_process_sum": 3.1001086235046387,
+        "ground_truth_compile": 0.15521930158138275,
+        "total": 3.625017698854208
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-120",
+      "checkpoint_count": 343,
+      "checkpoint_validation": {
+        "matched": 343,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 343,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 18,
+      "max_transaction_sequence_depth": 1,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 50.339848946779966,
+        "coverage_measurement": 0.29862548038363457,
+        "forge_process_sum": 50.30528235435486,
+        "ground_truth_compile": 0.20640746876597404,
+        "total": 50.8477909527719
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-130",
+      "checkpoint_count": 147,
+      "checkpoint_validation": {
+        "matched": 147,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 147,
+        "function_ratio": 0.75,
+        "functions_covered": 6,
+        "functions_total": 8,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.234375,
+        "lines_covered": 15,
+        "lines_total": 64,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 14,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.75,
+        "functions_covered": 6,
+        "functions_total": 8,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.296875,
+        "lines_covered": 19,
+        "lines_total": 64,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 1.8782082237303257,
+        "coverage_measurement": 0.3199714496731758,
+        "forge_process_sum": 1.871265172958374,
+        "ground_truth_compile": 0.19990816712379456,
+        "total": 2.4008381441235542
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-132",
+      "checkpoint_count": 526,
+      "checkpoint_validation": {
+        "matched": 526,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 526,
+        "function_ratio": 0.05263157894736842,
+        "functions_covered": 1,
+        "functions_total": 19,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.023255813953488372,
+        "lines_covered": 2,
+        "lines_total": 86,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 42,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "legacy_solidity_0_4_coverage_skipped"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 6.63853221014142,
+        "coverage_measurement": 0.5465295799076557,
+        "forge_process_sum": 6.609673023223877,
+        "ground_truth_compile": 0.13037389889359474,
+        "total": 7.321937210857868
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-142",
+      "checkpoint_count": 174,
+      "checkpoint_validation": {
+        "matched": 174,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 174,
+        "function_ratio": 0.9090909090909091,
+        "functions_covered": 10,
+        "functions_total": 11,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6041666666666666,
+        "lines_covered": 29,
+        "lines_total": 48,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 9,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.9090909090909091,
+        "functions_covered": 10,
+        "functions_total": 11,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6666666666666666,
+        "lines_covered": 32,
+        "lines_total": 48,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.1390647552907467,
+        "coverage_measurement": 0.45700161904096603,
+        "forge_process_sum": 2.130998134613037,
+        "ground_truth_compile": 0.4792807064950466,
+        "total": 3.0820853523910046
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-163",
+      "checkpoint_count": 534,
+      "checkpoint_validation": {
+        "matched": 534,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 534,
+        "function_ratio": 0.8,
+        "functions_covered": 8,
+        "functions_total": 10,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.7352941176470589,
+        "lines_covered": 25,
+        "lines_total": 34,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 29,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.9,
+        "functions_covered": 9,
+        "functions_total": 10,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8235294117647058,
+        "lines_covered": 28,
+        "lines_total": 34,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 123.60560317337513,
+        "coverage_measurement": 0.49444430321455,
+        "forge_process_sum": 123.19015884399414,
+        "ground_truth_compile": 0.29721440002322197,
+        "total": 124.41668155044317
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-164",
+      "checkpoint_count": 675,
+      "checkpoint_validation": {
+        "matched": 675,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 675,
+        "function_ratio": 0.15384615384615385,
+        "functions_covered": 4,
+        "functions_total": 26,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.06779661016949153,
+        "lines_covered": 12,
+        "lines_total": 177,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "medium",
+      "function_group_count": 31,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.15384615384615385,
+        "functions_covered": 4,
+        "functions_total": 26,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.06779661016949153,
+        "lines_covered": 12,
+        "lines_total": 177,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 9.622167557477951,
+        "coverage_measurement": 3.5729715265333652,
+        "forge_process_sum": 9.58017349243164,
+        "ground_truth_compile": 0.27371446415781975,
+        "total": 13.476967740803957
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-174",
+      "checkpoint_count": 292,
+      "checkpoint_validation": {
+        "matched": 292,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 292,
+        "function_ratio": 0.7037037037037037,
+        "functions_covered": 19,
+        "functions_total": 27,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.24096385542168675,
+        "lines_covered": 60,
+        "lines_total": 249,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 16,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.7037037037037037,
+        "functions_covered": 19,
+        "functions_total": 27,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.2570281124497992,
+        "lines_covered": 64,
+        "lines_total": 249,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 4.07335227355361,
+        "coverage_measurement": 0.41066569089889526,
+        "forge_process_sum": 4.056645631790161,
+        "ground_truth_compile": 0.2892727702856064,
+        "total": 4.7773111537098885
+      }
+    },
+    {
+      "benchmark_id": "scdbench-medium-183",
+      "checkpoint_count": 465,
+      "checkpoint_validation": {
+        "matched": 465,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 465,
+        "function_ratio": 1.0,
+        "functions_covered": 5,
+        "functions_total": 5,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5416666666666666,
+        "lines_covered": 13,
+        "lines_total": 24,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "medium",
+      "function_group_count": 24,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 5,
+        "functions_total": 5,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5416666666666666,
+        "lines_covered": 13,
+        "lines_total": 24,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 6.680603668093681,
+        "coverage_measurement": 0.6099936775863171,
+        "forge_process_sum": 6.655963659286499,
+        "ground_truth_compile": 0.3144046887755394,
+        "total": 7.610889162868261
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-014",
+      "checkpoint_count": 426,
+      "checkpoint_validation": {
+        "matched": 426,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 426,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 28,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 5.149528678506613,
+        "coverage_measurement": 0.49600715935230255,
+        "forge_process_sum": 5.1272218227386475,
+        "ground_truth_compile": 0.14188696444034576,
+        "total": 5.791025873273611
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-018",
+      "checkpoint_count": 529,
+      "checkpoint_validation": {
+        "matched": 529,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 529,
+        "function_ratio": 1.0,
+        "functions_covered": 5,
+        "functions_total": 5,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6666666666666666,
+        "lines_covered": 12,
+        "lines_total": 18,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 28,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 5,
+        "functions_total": 5,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 43,
+        "lines_total": 43,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 6.706632811576128,
+        "coverage_measurement": 0.5447578951716423,
+        "forge_process_sum": 6.6795477867126465,
+        "ground_truth_compile": 0.3419343829154968,
+        "total": 7.600163850933313
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-021",
+      "checkpoint_count": 223,
+      "checkpoint_validation": {
+        "matched": 223,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 223,
+        "function_ratio": 0.6666666666666666,
+        "functions_covered": 6,
+        "functions_total": 9,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.061855670103092786,
+        "lines_covered": 6,
+        "lines_total": 97,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 16,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.6666666666666666,
+        "functions_covered": 6,
+        "functions_total": 9,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.1958762886597938,
+        "lines_covered": 19,
+        "lines_total": 97,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 2.6714375726878643,
+        "coverage_measurement": 0.4875483624637127,
+        "forge_process_sum": 2.661919355392456,
+        "ground_truth_compile": 1.0996754951775074,
+        "total": 4.26561427116394
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-044",
+      "checkpoint_count": 736,
+      "checkpoint_validation": {
+        "matched": 736,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 736,
+        "function_ratio": 0.8333333333333334,
+        "functions_covered": 15,
+        "functions_total": 18,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.5081967213114754,
+        "lines_covered": 31,
+        "lines_total": 61,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 38,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 17,
+        "functions_total": 17,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 151,
+        "lines_total": 151,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 9.337462726980448,
+        "coverage_measurement": 0.7477156780660152,
+        "forge_process_sum": 9.298063278198242,
+        "ground_truth_compile": 0.6614245511591434,
+        "total": 10.755625899881124
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-046",
+      "checkpoint_count": 305,
+      "checkpoint_validation": {
+        "matched": 305,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 305,
+        "function_ratio": 0.7368421052631579,
+        "functions_covered": 14,
+        "functions_total": 19,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6587301587301587,
+        "lines_covered": 83,
+        "lines_total": 126,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 16,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.631578947368421,
+        "functions_covered": 12,
+        "functions_total": 19,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4603174603174603,
+        "lines_covered": 58,
+        "lines_total": 126,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 3.883225943893194,
+        "coverage_measurement": 0.7418617196381092,
+        "forge_process_sum": 3.8679351806640625,
+        "ground_truth_compile": 0.944671668112278,
+        "total": 5.574770752340555
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-049",
+      "checkpoint_count": 307,
+      "checkpoint_validation": {
+        "matched": 307,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 307,
+        "function_ratio": 0.42857142857142855,
+        "functions_covered": 6,
+        "functions_total": 14,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4594594594594595,
+        "lines_covered": 34,
+        "lines_total": 74,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 12,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.42857142857142855,
+        "functions_covered": 6,
+        "functions_total": 14,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4594594594594595,
+        "lines_covered": 34,
+        "lines_total": 74,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 4.767916493117809,
+        "coverage_measurement": 0.524667140096426,
+        "forge_process_sum": 4.75296425819397,
+        "ground_truth_compile": 0.4082212410867214,
+        "total": 5.706271447241306
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-073",
+      "checkpoint_count": 523,
+      "checkpoint_validation": {
+        "matched": 523,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 523,
+        "function_ratio": 0.047619047619047616,
+        "functions_covered": 1,
+        "functions_total": 21,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.030303030303030304,
+        "lines_covered": 5,
+        "lines_total": 165,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 46,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.047619047619047616,
+        "functions_covered": 1,
+        "functions_total": 21,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.030303030303030304,
+        "lines_covered": 5,
+        "lines_total": 165,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 6.425199147313833,
+        "coverage_measurement": 0.6596550084650517,
+        "forge_process_sum": 6.399956941604614,
+        "ground_truth_compile": 0.3434263654053211,
+        "total": 7.435470961034298
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-087",
+      "checkpoint_count": 393,
+      "checkpoint_validation": {
+        "matched": 393,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 393,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 20,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": null,
+        "functions_covered": 0,
+        "functions_total": 0,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 10,
+        "lines_total": 10,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 5.105614446103573,
+        "coverage_measurement": 0.5809550397098064,
+        "forge_process_sum": 5.086033821105957,
+        "ground_truth_compile": 0.2021409533917904,
+        "total": 5.8931304812431335
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-092",
+      "checkpoint_count": 950,
+      "checkpoint_validation": {
+        "matched": 950,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 950,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 47,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 35,
+        "functions_total": 35,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 667,
+        "lines_total": 667,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 12.153138529509306,
+        "coverage_measurement": 0.6325372792780399,
+        "forge_process_sum": 12.101489067077637,
+        "ground_truth_compile": 0.29390832409262657,
+        "total": 13.088557355105877
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-103",
+      "checkpoint_count": 634,
+      "checkpoint_validation": {
+        "matched": 634,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 634,
+        "function_ratio": 0.8947368421052632,
+        "functions_covered": 17,
+        "functions_total": 19,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8679245283018868,
+        "lines_covered": 46,
+        "lines_total": 53,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 36,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 19,
+        "functions_total": 19,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 1.0,
+        "lines_covered": 53,
+        "lines_total": 53,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 8.354401871562004,
+        "coverage_measurement": 0.8336421214044094,
+        "forge_process_sum": 8.320738554000854,
+        "ground_truth_compile": 4.139612689614296,
+        "total": 13.334792122244835
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-104",
+      "checkpoint_count": 497,
+      "checkpoint_validation": {
+        "matched": 497,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 497,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 49,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "forge_coverage_failed"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 6.00590081885457,
+        "coverage_measurement": 0.6088812872767448,
+        "forge_process_sum": 5.981884002685547,
+        "ground_truth_compile": 0.4875507093966007,
+        "total": 7.107324108481407
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-112",
+      "checkpoint_count": 565,
+      "checkpoint_validation": {
+        "matched": 565,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 565,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 37,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 9,
+        "functions_total": 9,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 107,
+        "lines_total": 107,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 6.818363469094038,
+        "coverage_measurement": 0.5539652854204178,
+        "forge_process_sum": 6.790333986282349,
+        "ground_truth_compile": 0.21900418773293495,
+        "total": 7.595736335963011
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-122",
+      "checkpoint_count": 601,
+      "checkpoint_validation": {
+        "matched": 601,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 601,
+        "function_ratio": 0.3157894736842105,
+        "functions_covered": 12,
+        "functions_total": 38,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.08629441624365482,
+        "lines_covered": 17,
+        "lines_total": 197,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 36,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.47368421052631576,
+        "functions_covered": 18,
+        "functions_total": 38,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.27918781725888325,
+        "lines_covered": 55,
+        "lines_total": 197,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 8.569620445370674,
+        "coverage_measurement": 0.6927970796823502,
+        "forge_process_sum": 8.532206058502197,
+        "ground_truth_compile": 0.406683798879385,
+        "total": 9.676117110997438
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-135",
+      "checkpoint_count": 590,
+      "checkpoint_validation": {
+        "matched": 590,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 590,
+        "function_ratio": 0.9230769230769231,
+        "functions_covered": 12,
+        "functions_total": 13,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8085106382978723,
+        "lines_covered": 38,
+        "lines_total": 47,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 29,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.9230769230769231,
+        "functions_covered": 12,
+        "functions_total": 13,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.9787234042553191,
+        "lines_covered": 46,
+        "lines_total": 47,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 8.228836718946695,
+        "coverage_measurement": 0.6526901535689831,
+        "forge_process_sum": 8.19504976272583,
+        "ground_truth_compile": 0.7238323800265789,
+        "total": 9.613147728145123
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-142",
+      "checkpoint_count": 1184,
+      "checkpoint_validation": {
+        "matched": 1184,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": false,
+        "checkpoint_call_count": 1184,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "foundry_coverage_parser_failed",
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 51,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 24,
+        "functions_total": 24,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 266,
+        "lines_total": 266,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 16.30372680351138,
+        "coverage_measurement": 0.908947080373764,
+        "forge_process_sum": 16.228843450546265,
+        "ground_truth_compile": 0.9208009988069534,
+        "total": 18.143427833914757
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-143",
+      "checkpoint_count": 602,
+      "checkpoint_validation": {
+        "matched": 602,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 602,
+        "function_ratio": 0.84,
+        "functions_covered": 21,
+        "functions_total": 25,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.21256038647342995,
+        "lines_covered": 44,
+        "lines_total": 207,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 33,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.88,
+        "functions_covered": 22,
+        "functions_total": 25,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.24154589371980675,
+        "lines_covered": 50,
+        "lines_total": 207,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 7.450989048928022,
+        "coverage_measurement": 0.9417461715638638,
+        "forge_process_sum": 7.421647071838379,
+        "ground_truth_compile": 0.5879070088267326,
+        "total": 8.99213544651866
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-162",
+      "checkpoint_count": 531,
+      "checkpoint_validation": {
+        "matched": 531,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 531,
+        "function_ratio": 0.047619047619047616,
+        "functions_covered": 1,
+        "functions_total": 21,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.005434782608695652,
+        "lines_covered": 1,
+        "lines_total": 184,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 45,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": false,
+        "function_ratio": null,
+        "functions_covered": null,
+        "functions_total": null,
+        "kind": "foundry_source_lcov",
+        "line_ratio": null,
+        "lines_covered": null,
+        "lines_total": null,
+        "reason": "forge_coverage_failed"
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 7.900698140263557,
+        "coverage_measurement": 0.7119501978158951,
+        "forge_process_sum": 7.870948791503906,
+        "ground_truth_compile": 0.5113143920898438,
+        "total": 9.131416860967875
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-164",
+      "checkpoint_count": 633,
+      "checkpoint_validation": {
+        "matched": 633,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 633,
+        "function_ratio": 0.7272727272727273,
+        "functions_covered": 8,
+        "functions_total": 11,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6511627906976745,
+        "lines_covered": 28,
+        "lines_total": 43,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 35,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.8181818181818182,
+        "functions_covered": 9,
+        "functions_total": 11,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.6976744186046512,
+        "lines_covered": 30,
+        "lines_total": 43,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 8.2449088729918,
+        "coverage_measurement": 0.73305868729949,
+        "forge_process_sum": 8.211844682693481,
+        "ground_truth_compile": 0.5798558704555035,
+        "total": 9.56453225389123
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-172",
+      "checkpoint_count": 279,
+      "checkpoint_validation": {
+        "matched": 279,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 279,
+        "function_ratio": 0.8235294117647058,
+        "functions_covered": 14,
+        "functions_total": 17,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.38636363636363635,
+        "lines_covered": 34,
+        "lines_total": 88,
+        "reason": null,
+        "source_deployment_mode": "synthetic_constructor_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "input_runtime_wrapper",
+      "difficulty": "hard",
+      "function_group_count": 22,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 0.8823529411764706,
+        "functions_covered": 15,
+        "functions_total": 17,
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.4772727272727273,
+        "lines_covered": 42,
+        "lines_total": 88,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 3.721555355936289,
+        "coverage_measurement": 0.7878282591700554,
+        "forge_process_sum": 3.7056031227111816,
+        "ground_truth_compile": 1.357922688126564,
+        "total": 5.873335245996714
+      }
+    },
+    {
+      "benchmark_id": "scdbench-hard-183",
+      "checkpoint_count": 782,
+      "checkpoint_validation": {
+        "matched": 782,
+        "mismatched": [],
+        "missing": [],
+        "skipped": [],
+        "valid": true
+      },
+      "coverage": {
+        "available": true,
+        "checkpoint_call_count": 782,
+        "function_ratio": 0.9767441860465116,
+        "functions_covered": 42,
+        "functions_total": 43,
+        "instrumentation_schema": "scdbench-source-coverage-v4",
+        "kind": "foundry_source_lcov",
+        "line_ratio": 0.8843537414965986,
+        "lines_covered": 130,
+        "lines_total": 147,
+        "reason": null,
+        "source_deployment_mode": "exact_source_creation",
+        "supplemental_call_count": 0
+      },
+      "deployment_mode": "ground_truth_source_creation",
+      "difficulty": "hard",
+      "function_group_count": 55,
+      "max_transaction_sequence_depth": 2,
+      "schema": "scdbench-sequential-checkpoint-timing-v1",
+      "submitted_coverage": {
+        "available": true,
+        "function_ratio": 1.0,
+        "functions_covered": 41,
+        "functions_total": 41,
+        "kind": "foundry_trace_source_map",
+        "line_ratio": 1.0,
+        "lines_covered": 456,
+        "lines_total": 456,
+        "reason": null
+      },
+      "success": true,
+      "timing_seconds": {
+        "checkpoint_execution": 11.553694941103458,
+        "coverage_measurement": 0.740974634885788,
+        "forge_process_sum": 11.50015926361084,
+        "ground_truth_compile": 0.4765814542770386,
+        "total": 12.781319819390774
+      }
+    }
+  ],
+  "schema": "scdbench-sequential-checkpoint-timing-v1"
+}

@@ -1,0 +1,1254 @@
+{
+  "comparisons": {
+    "deployed_unique_bytecode_vs_verified": {
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "ks_distance": 0.36307911110994673,
+          "log1p_standardized_mean_difference": -0.9370945233454505
+        },
+        "bytecode_raw_byte_length": {
+          "ks_distance": 0.3631662153142691,
+          "log1p_standardized_mean_difference": -0.9463380151134005
+        },
+        "cyclomatic_complexity_proxy": {
+          "ks_distance": 0.37270378740883736,
+          "log1p_standardized_mean_difference": -0.9217307530596458
+        },
+        "external_call_count": {
+          "ks_distance": 0.2270123735257329,
+          "log1p_standardized_mean_difference": -0.288078758044402
+        },
+        "opcode_count": {
+          "ks_distance": 0.3663822387264456,
+          "log1p_standardized_mean_difference": -0.945171218113432
+        },
+        "storage_op_count": {
+          "ks_distance": 0.381561646364232,
+          "log1p_standardized_mean_difference": -0.9115649072388448
+        }
+      },
+      "opcode_distribution": {
+        "deployed_opcode_total": 98382437,
+        "jensen_shannon_divergence_bits": 0.004743049795986416,
+        "largest_absolute_differences": [
+          {
+            "deployed_share": 0.014240905620176903,
+            "difference": 0.01068354015990833,
+            "name": "OTHER",
+            "verified_share": 0.0035573654602685727
+          },
+          {
+            "deployed_share": 0.08654718524608208,
+            "difference": -0.00930198224531073,
+            "name": "PUSH2",
+            "verified_share": 0.09584916749139281
+          },
+          {
+            "deployed_share": 0.040244886391663584,
+            "difference": -0.006724332096861713,
+            "name": "JUMP",
+            "verified_share": 0.0469692184885253
+          },
+          {
+            "deployed_share": 0.06075611849297858,
+            "difference": -0.006119621385268288,
+            "name": "JUMPDEST",
+            "verified_share": 0.06687573987824687
+          },
+          {
+            "deployed_share": 0.0034837417170302458,
+            "difference": 0.002683891006728767,
+            "name": "STOP",
+            "verified_share": 0.0007998507103014785
+          },
+          {
+            "deployed_share": 0.007307107060175792,
+            "difference": -0.002042845177249498,
+            "name": "PUSH0",
+            "verified_share": 0.00934995223742529
+          },
+          {
+            "deployed_share": 0.02159898722573827,
+            "difference": 0.0018013113383312865,
+            "name": "MLOAD",
+            "verified_share": 0.019797675887406982
+          },
+          {
+            "deployed_share": 0.04399449873354936,
+            "difference": 0.0016589473661395987,
+            "name": "ADD",
+            "verified_share": 0.04233555136740976
+          },
+          {
+            "deployed_share": 0.010977396300927167,
+            "difference": -0.0013312569317815125,
+            "name": "SLOAD",
+            "verified_share": 0.01230865323270868
+          },
+          {
+            "deployed_share": 0.05613559867397877,
+            "difference": -0.0012218194952635514,
+            "name": "POP",
+            "verified_share": 0.05735741816924232
+          },
+          {
+            "deployed_share": 0.055361090516592916,
+            "difference": -0.001169309767664814,
+            "name": "SWAP1",
+            "verified_share": 0.05653040028425773
+          },
+          {
+            "deployed_share": 0.004559665461427836,
+            "difference": 0.0011373385194036168,
+            "name": "RETURNDATASIZE",
+            "verified_share": 0.0034223269420242193
+          },
+          {
+            "deployed_share": 0.018845335168918412,
+            "difference": 0.0010826227168104323,
+            "name": "SUB",
+            "verified_share": 0.01776271245210798
+          },
+          {
+            "deployed_share": 0.03409461182588921,
+            "difference": -0.0009944424182181597,
+            "name": "MSTORE",
+            "verified_share": 0.03508905424410737
+          },
+          {
+            "deployed_share": 0.004006609431722046,
+            "difference": 0.000911078405176023,
+            "name": "MUL",
+            "verified_share": 0.0030955310265460226
+          },
+          {
+            "deployed_share": 0.024020120583107735,
+            "difference": 0.0008804393311966051,
+            "name": "AND",
+            "verified_share": 0.02313968125191113
+          },
+          {
+            "deployed_share": 0.0077094451319598845,
+            "difference": -0.000867130267931537,
+            "name": "EQ",
+            "verified_share": 0.008576575399891422
+          },
+          {
+            "deployed_share": 0.026070811805566474,
+            "difference": -0.0008629859170799746,
+            "name": "SWAP2",
+            "verified_share": 0.02693379772264645
+          },
+          {
+            "deployed_share": 0.006922780333241796,
+            "difference": -0.0008216258209023941,
+            "name": "PUSH20",
+            "verified_share": 0.00774440615414419
+          },
+          {
+            "deployed_share": 0.0012810314914236166,
+            "difference": 0.0007992330348591232,
+            "name": "SHR",
+            "verified_share": 0.00048179845656449343
+          }
+        ],
+        "partition": "verified_top80_plus_other",
+        "total_variation": 0.035049781033005545,
+        "verified_opcode_total": 3450156341
+      }
+    },
+    "deployed_weighted_vs_verified": {
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "ks_distance": 0.8554763594500581,
+          "log1p_standardized_mean_difference": -3.4352318982470678
+        },
+        "bytecode_raw_byte_length": {
+          "ks_distance": 0.8557505933410635,
+          "log1p_standardized_mean_difference": -3.4538321138717243
+        },
+        "cyclomatic_complexity_proxy": {
+          "ks_distance": 0.8425009298492628,
+          "log1p_standardized_mean_difference": -3.2590108223304504
+        },
+        "external_call_count": {
+          "ks_distance": 0.5347821966208381,
+          "log1p_standardized_mean_difference": -1.0751774267599454
+        },
+        "opcode_count": {
+          "ks_distance": 0.8534573404836839,
+          "log1p_standardized_mean_difference": -3.3784422489627888
+        },
+        "storage_op_count": {
+          "ks_distance": 0.8107137139307603,
+          "log1p_standardized_mean_difference": -2.870590123191194
+        }
+      },
+      "opcode_distribution": {
+        "deployed_opcode_total": 242346303,
+        "jensen_shannon_divergence_bits": 0.022566377369666386,
+        "largest_absolute_differences": [
+          {
+            "deployed_share": 0.07012783273198932,
+            "difference": -0.025721334759403497,
+            "name": "PUSH2",
+            "verified_share": 0.09584916749139281
+          },
+          {
+            "deployed_share": 0.029058376021523218,
+            "difference": -0.01791084246700208,
+            "name": "JUMP",
+            "verified_share": 0.0469692184885253
+          },
+          {
+            "deployed_share": 0.0191271042414045,
+            "difference": 0.01570477729938028,
+            "name": "RETURNDATASIZE",
+            "verified_share": 0.0034223269420242193
+          },
+          {
+            "deployed_share": 0.016950054319582502,
+            "difference": 0.013392688859313929,
+            "name": "OTHER",
+            "verified_share": 0.0035573654602685727
+          },
+          {
+            "deployed_share": 0.05569009649798536,
+            "difference": -0.011185643380261505,
+            "name": "JUMPDEST",
+            "verified_share": 0.06687573987824687
+          },
+          {
+            "deployed_share": 0.05209673035532133,
+            "difference": 0.007555407930651528,
+            "name": "DUP1",
+            "verified_share": 0.0445413224246698
+          },
+          {
+            "deployed_share": 0.006540912654235951,
+            "difference": -0.006581227482427496,
+            "name": "SHL",
+            "verified_share": 0.013122140136663447
+          },
+          {
+            "deployed_share": 0.00847540471867648,
+            "difference": 0.005973493458186154,
+            "name": "EXP",
+            "verified_share": 0.002501911260490326
+          },
+          {
+            "deployed_share": 0.0291891021749979,
+            "difference": -0.005899952069109468,
+            "name": "MSTORE",
+            "verified_share": 0.03508905424410737
+          },
+          {
+            "deployed_share": 0.0035224304618337835,
+            "difference": -0.005827521775591506,
+            "name": "PUSH0",
+            "verified_share": 0.00934995223742529
+          },
+          {
+            "deployed_share": 0.03694305994839129,
+            "difference": -0.005392491419018472,
+            "name": "ADD",
+            "verified_share": 0.04233555136740976
+          },
+          {
+            "deployed_share": 0.024817036305274275,
+            "difference": 0.005270553672416682,
+            "name": "ISZERO",
+            "verified_share": 0.019546482632857593
+          },
+          {
+            "deployed_share": 0.051977867390863394,
+            "difference": -0.004552532893394336,
+            "name": "SWAP1",
+            "verified_share": 0.05653040028425773
+          },
+          {
+            "deployed_share": 0.024058506062706472,
+            "difference": 0.00426083017529949,
+            "name": "MLOAD",
+            "verified_share": 0.019797675887406982
+          },
+          {
+            "deployed_share": 0.021981787772516588,
+            "difference": 0.004219075320408609,
+            "name": "SUB",
+            "verified_share": 0.01776271245210798
+          },
+          {
+            "deployed_share": 0.007318242440859516,
+            "difference": 0.004179428448198191,
+            "name": "CALLDATASIZE",
+            "verified_share": 0.003138813992661326
+          },
+          {
+            "deployed_share": 0.015107715507424102,
+            "difference": 0.0035936242391756863,
+            "name": "REVERT",
+            "verified_share": 0.011514091268248415
+          },
+          {
+            "deployed_share": 0.004722985190329064,
+            "difference": 0.003566608027767317,
+            "name": "GAS",
+            "verified_share": 0.0011563771625617471
+          },
+          {
+            "deployed_share": 0.031082978806571685,
+            "difference": 0.0035463869510085795,
+            "name": "JUMPI",
+            "verified_share": 0.027536591855563106
+          },
+          {
+            "deployed_share": 0.0265758458877749,
+            "difference": 0.00343616463586377,
+            "name": "AND",
+            "verified_share": 0.02313968125191113
+          }
+        ],
+        "partition": "verified_top80_plus_other",
+        "total_variation": 0.10607237211942334,
+        "verified_opcode_total": 3450156341
+      }
+    },
+    "scdbench_vs_verified": {
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "ks_distance": 0.1057398645850588,
+          "log1p_standardized_mean_difference": 0.2511910968194773
+        },
+        "bytecode_raw_byte_length": {
+          "ks_distance": 0.10563707829495889,
+          "log1p_standardized_mean_difference": 0.24825297071052252
+        },
+        "cyclomatic_complexity_proxy": {
+          "ks_distance": 0.1100093002871183,
+          "log1p_standardized_mean_difference": 0.28669602470217453
+        },
+        "external_call_count": {
+          "ks_distance": 0.15436324954447578,
+          "log1p_standardized_mean_difference": 0.32783492784242574
+        },
+        "opcode_count": {
+          "ks_distance": 0.12128250786814643,
+          "log1p_standardized_mean_difference": 0.27242027253426404
+        },
+        "storage_op_count": {
+          "ks_distance": 0.07377417384462481,
+          "log1p_standardized_mean_difference": 0.017832434112606994
+        }
+      },
+      "opcode_distribution": {
+        "deployed_opcode_total": 3220189,
+        "jensen_shannon_divergence_bits": 0.004119160418069234,
+        "largest_absolute_differences": [
+          {
+            "deployed_share": 0.08643281496831397,
+            "difference": -0.009416352523078847,
+            "name": "PUSH2",
+            "verified_share": 0.09584916749139281
+          },
+          {
+            "deployed_share": 0.03918589871588283,
+            "difference": -0.007783319772642468,
+            "name": "JUMP",
+            "verified_share": 0.0469692184885253
+          },
+          {
+            "deployed_share": 0.05916919783279801,
+            "difference": -0.007706542045448857,
+            "name": "JUMPDEST",
+            "verified_share": 0.06687573987824687
+          },
+          {
+            "deployed_share": 0.0029572798366803935,
+            "difference": -0.006392672400744896,
+            "name": "PUSH0",
+            "verified_share": 0.00934995223742529
+          },
+          {
+            "deployed_share": 0.15074487863911093,
+            "difference": 0.005590724884198511,
+            "name": "PUSH1",
+            "verified_share": 0.14515415375491242
+          },
+          {
+            "deployed_share": 0.04789625702093883,
+            "difference": 0.00556070565352907,
+            "name": "ADD",
+            "verified_share": 0.04233555136740976
+          },
+          {
+            "deployed_share": 0.007665078043555829,
+            "difference": 0.0041077125832872565,
+            "name": "OTHER",
+            "verified_share": 0.0035573654602685727
+          },
+          {
+            "deployed_share": 0.023223171062319633,
+            "difference": 0.003425495174912651,
+            "name": "MLOAD",
+            "verified_share": 0.019797675887406982
+          },
+          {
+            "deployed_share": 0.045827744893234525,
+            "difference": 0.0033016549139398763,
+            "name": "DUP2",
+            "verified_share": 0.04252608997929465
+          },
+          {
+            "deployed_share": 0.04770869039053298,
+            "difference": 0.0031673679658631784,
+            "name": "DUP1",
+            "verified_share": 0.0445413224246698
+          },
+          {
+            "deployed_share": 0.005570480490430841,
+            "difference": -0.002173925663713349,
+            "name": "PUSH20",
+            "verified_share": 0.00774440615414419
+          },
+          {
+            "deployed_share": 0.055457924985148385,
+            "difference": -0.0018994931840939366,
+            "name": "POP",
+            "verified_share": 0.05735741816924232
+          },
+          {
+            "deployed_share": 0.05496323352449189,
+            "difference": -0.0015671667597658423,
+            "name": "SWAP1",
+            "verified_share": 0.05653040028425773
+          },
+          {
+            "deployed_share": 0.010755890415127808,
+            "difference": -0.001552762817580872,
+            "name": "SLOAD",
+            "verified_share": 0.01230865323270868
+          },
+          {
+            "deployed_share": 0.02166239310798217,
+            "difference": -0.0014772881439289592,
+            "name": "AND",
+            "verified_share": 0.02313968125191113
+          },
+          {
+            "deployed_share": 0.004995048427281753,
+            "difference": 0.0013563063648390815,
+            "name": "LT",
+            "verified_share": 0.003638742062442671
+          },
+          {
+            "deployed_share": 0.01693658353593531,
+            "difference": 0.001246573388653121,
+            "name": "DUP4",
+            "verified_share": 0.01569001014728219
+          },
+          {
+            "deployed_share": 0.036298801095215216,
+            "difference": 0.0012097468511078485,
+            "name": "MSTORE",
+            "verified_share": 0.03508905424410737
+          },
+          {
+            "deployed_share": 0.004256582455253403,
+            "difference": 0.001136234002614978,
+            "name": "CALLDATALOAD",
+            "verified_share": 0.003120348452638425
+          },
+          {
+            "deployed_share": 0.025834197930618356,
+            "difference": -0.0010995997920280921,
+            "name": "SWAP2",
+            "verified_share": 0.02693379772264645
+          }
+        ],
+        "partition": "verified_top80_plus_other",
+        "total_variation": 0.045869483033089666,
+        "verified_opcode_total": 3450156341
+      }
+    }
+  },
+  "compiler_comparison": {
+    "unique_deployed_metadata_recovery_rate": 0.5456138953071469,
+    "unique_deployed_v08_share_among_recovered": 0.7546242211838006,
+    "verified_v08_share": 0.774479252940202
+  },
+  "populations": {
+    "deployed_unique_bytecode": {
+      "compiler_counts": {
+        "unknown": 17109,
+        "v0.3": 13,
+        "v0.5": 1275,
+        "v0.6": 2522,
+        "v0.7": 1231,
+        "v0.8": 15503
+      },
+      "compiler_detected_count": 20544,
+      "compiler_detected_rate": 0.5456138953071469,
+      "flag_counts": {
+        "call": 18322,
+        "callcode": 1092,
+        "canonical_eip1167": 6380,
+        "create": 1341,
+        "create2": 1262,
+        "delegatecall": 13918,
+        "eip1967_beacon_pattern": 93,
+        "eip1967_implementation_pattern": 1480,
+        "log": 21032,
+        "mcopy": 2208,
+        "proxy_related_pattern_union": 7947,
+        "selfdestruct": 1953,
+        "sload": 24267,
+        "sstore": 20651,
+        "staticcall": 11645,
+        "tload": 765,
+        "tstore": 811
+      },
+      "flag_prevalence": {
+        "call": 0.4866013332271001,
+        "callcode": 0.029001673173452314,
+        "canonical_eip1167": 0.16944200993280747,
+        "create": 0.035614692056409845,
+        "create2": 0.03351658566382493,
+        "delegatecall": 0.36963854141768254,
+        "eip1967_beacon_pattern": 0.0024699227153214885,
+        "eip1967_implementation_pattern": 0.039306296975008634,
+        "log": 0.5585743499853929,
+        "mcopy": 0.058640745757310174,
+        "proxy_related_pattern_union": 0.21105887977053622,
+        "selfdestruct": 0.051868377021751254,
+        "sload": 0.6444904788463071,
+        "sstore": 0.548455634345205,
+        "staticcall": 0.309271505590524,
+        "tload": 0.02031710620667676,
+        "tstore": 0.021538788409954053
+      },
+      "metadata_valid_count": 25966,
+      "metadata_valid_rate": 0.6896130454412663,
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "mean": 4563.56967572305,
+          "median": 2050.0,
+          "n": 37653,
+          "p10": 45.0,
+          "p25": 173.0,
+          "p75": 6856.0,
+          "p90": 13324.400000000023,
+          "p95": 18328.40000000001,
+          "p99": 23130.44000000001,
+          "stdev": 5866.459974601714
+        },
+        "bytecode_raw_byte_length": {
+          "mean": 4599.6181180782405,
+          "median": 2100.0,
+          "n": 37653,
+          "p10": 45.0,
+          "p25": 195.0,
+          "p75": 6909.0,
+          "p90": 13384.0,
+          "p95": 18386.200000000004,
+          "p99": 23215.44000000001,
+          "stdev": 5879.725060854804
+        },
+        "control_flow_op_count": {
+          "mean": 335.5690383236396,
+          "median": 134.0,
+          "n": 37653,
+          "p10": 2.0,
+          "p25": 3.0,
+          "p75": 514.0,
+          "p90": 1050.0,
+          "p95": 1384.0,
+          "p99": 1863.4800000000032,
+          "stdev": 454.43947235283053
+        },
+        "control_flow_per_1k_opcodes": {
+          "mean": 111.75111481416887,
+          "median": 107.5150850246846,
+          "n": 37653,
+          "p10": 50.63291139240506,
+          "p25": 83.33333333333333,
+          "p75": 142.85714285714286,
+          "p90": 177.15549005158437,
+          "p95": 191.01644892492521,
+          "p99": 215.3409090909091,
+          "stdev": 47.935789657397486
+        },
+        "create_op_count": {
+          "mean": 0.23079170318434122,
+          "median": 0.0,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 0.0,
+          "p95": 1.0,
+          "p99": 3.0,
+          "stdev": 2.489809359241425
+        },
+        "cyclomatic_complexity_proxy": {
+          "mean": 72.66642764188776,
+          "median": 33.0,
+          "n": 37653,
+          "p10": 2.0,
+          "p25": 2.0,
+          "p75": 113.0,
+          "p90": 204.8000000000029,
+          "p95": 280.0,
+          "p99": 381.0,
+          "stdev": 96.40630789162918
+        },
+        "delegatecall_count": {
+          "mean": 0.5408333997291053,
+          "median": 0.0,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 1.0,
+          "p90": 1.0,
+          "p95": 2.0,
+          "p99": 4.0,
+          "stdev": 2.1601924056346062
+        },
+        "external_call_count": {
+          "mean": 4.504421958409688,
+          "median": 1.0,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 1.0,
+          "p75": 5.0,
+          "p90": 10.0,
+          "p95": 18.0,
+          "p99": 42.0,
+          "stdev": 9.198275283232373
+        },
+        "external_calls_per_1k_opcodes": {
+          "mean": 10.541583030348665,
+          "median": 2.176278563656148,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.5452562704471101,
+          "p75": 11.627906976744187,
+          "p90": 41.666666666666664,
+          "p95": 41.666666666666664,
+          "p99": 41.666666666666664,
+          "stdev": 15.600272038540858
+        },
+        "log_op_count": {
+          "mean": 3.1300029214139644,
+          "median": 1.0,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 5.0,
+          "p90": 8.0,
+          "p95": 10.0,
+          "p99": 20.0,
+          "stdev": 7.0777365380285495
+        },
+        "metadata_byte_length": {
+          "mean": 36.04844235519082,
+          "median": 52.0,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 53.0,
+          "p90": 53.0,
+          "p95": 53.0,
+          "p99": 53.0,
+          "stdev": 171.47043336926458
+        },
+        "opcode_count": {
+          "mean": 2612.871139085863,
+          "median": 1204.0,
+          "n": 37653,
+          "p10": 24.0,
+          "p25": 89.0,
+          "p75": 4048.0,
+          "p90": 7300.0,
+          "p95": 10010.800000000003,
+          "p99": 14781.0,
+          "stdev": 3432.672269465928
+        },
+        "storage_op_count": {
+          "mean": 38.123071202825805,
+          "median": 9.0,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 55.0,
+          "p90": 117.0,
+          "p95": 177.0,
+          "p99": 239.4800000000032,
+          "stdev": 58.98511960354749
+        },
+        "storage_per_1k_opcodes": {
+          "mean": 9.740973029966051,
+          "median": 8.77659574468085,
+          "n": 37653,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 16.40449438202247,
+          "p90": 23.05017919622586,
+          "p95": 26.574848330498654,
+          "p99": 35.85576924236724,
+          "stdev": 9.7334863625522
+        }
+      },
+      "opcode_total": 98382437,
+      "scanner_metadata_mismatch_count": 60,
+      "total": 37653
+    },
+    "deployed_weighted": {
+      "compiler_counts": {
+        "unknown": 947710,
+        "v0.3": 13,
+        "v0.5": 14915,
+        "v0.6": 6709,
+        "v0.7": 5854,
+        "v0.8": 24799
+      },
+      "compiler_detected_count": 52290,
+      "compiler_detected_rate": 0.05229,
+      "flag_counts": {
+        "call": 163119,
+        "callcode": 1186,
+        "canonical_eip1167": 446341,
+        "create": 4646,
+        "create2": 1304,
+        "delegatecall": 563863,
+        "eip1967_beacon_pattern": 1152,
+        "eip1967_implementation_pattern": 5079,
+        "log": 119956,
+        "mcopy": 2898,
+        "proxy_related_pattern_union": 452566,
+        "selfdestruct": 308169,
+        "sload": 195366,
+        "sstore": 84434,
+        "staticcall": 24273,
+        "tload": 773,
+        "tstore": 816
+      },
+      "flag_prevalence": {
+        "call": 0.163119,
+        "callcode": 0.001186,
+        "canonical_eip1167": 0.446341,
+        "create": 0.004646,
+        "create2": 0.001304,
+        "delegatecall": 0.563863,
+        "eip1967_beacon_pattern": 0.001152,
+        "eip1967_implementation_pattern": 0.005079,
+        "log": 0.119956,
+        "mcopy": 0.002898,
+        "proxy_related_pattern_union": 0.452566,
+        "selfdestruct": 0.308169,
+        "sload": 0.195366,
+        "sstore": 0.084434,
+        "staticcall": 0.024273,
+        "tload": 0.000773,
+        "tstore": 0.000816
+      },
+      "metadata_valid_count": 232718,
+      "metadata_valid_rate": 0.232718,
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "mean": 426.380991,
+          "median": 45.0,
+          "n": 1000000,
+          "p10": 21.0,
+          "p25": 22.0,
+          "p75": 45.0,
+          "p90": 785.0,
+          "p95": 1147.0,
+          "p99": 11241.0,
+          "stdev": 1739.2541837345034
+        },
+        "bytecode_raw_byte_length": {
+          "mean": 437.096584,
+          "median": 45.0,
+          "n": 1000000,
+          "p10": 21.0,
+          "p25": 23.0,
+          "p75": 45.0,
+          "p90": 828.0,
+          "p95": 1190.0,
+          "p99": 11293.0,
+          "stdev": 1747.9405599938837
+        },
+        "control_flow_op_count": {
+          "mean": 28.071324,
+          "median": 2.0,
+          "n": 1000000,
+          "p10": 1.0,
+          "p25": 1.0,
+          "p75": 2.0,
+          "p90": 50.0,
+          "p95": 94.0,
+          "p99": 557.0,
+          "stdev": 122.58349214963478
+        },
+        "control_flow_per_1k_opcodes": {
+          "mean": 106.9507309549933,
+          "median": 83.33333333333333,
+          "n": 1000000,
+          "p10": 83.33333333333333,
+          "p25": 83.33333333333333,
+          "p75": 142.85714285714286,
+          "p90": 142.85714285714286,
+          "p95": 143.62523076350746,
+          "p99": 226.41509433962264,
+          "stdev": 39.04208133780212
+        },
+        "create_op_count": {
+          "mean": 0.012113,
+          "median": 0.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "stdev": 0.4891221876704373
+        },
+        "cyclomatic_complexity_proxy": {
+          "mean": 8.532845,
+          "median": 2.0,
+          "n": 1000000,
+          "p10": 2.0,
+          "p25": 2.0,
+          "p75": 2.0,
+          "p90": 17.0,
+          "p95": 25.0,
+          "p99": 157.0,
+          "stdev": 27.990792605613112
+        },
+        "delegatecall_count": {
+          "mean": 0.59354,
+          "median": 1.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 2.0,
+          "stdev": 0.6882185278272752
+        },
+        "external_call_count": {
+          "mean": 1.215557,
+          "median": 1.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 1.0,
+          "p90": 2.0,
+          "p95": 4.0,
+          "p99": 12.0,
+          "stdev": 2.5361893880401776
+        },
+        "external_calls_per_1k_opcodes": {
+          "mean": 21.04095328857312,
+          "median": 10.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 41.666666666666664,
+          "p90": 41.666666666666664,
+          "p95": 41.666666666666664,
+          "p99": 41.666666666666664,
+          "stdev": 19.669854029630674
+        },
+        "log_op_count": {
+          "mean": 0.361009,
+          "median": 0.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 1.0,
+          "p95": 2.0,
+          "p99": 8.0,
+          "stdev": 1.7842619441970076
+        },
+        "metadata_byte_length": {
+          "mean": 10.715593,
+          "median": 0.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 43.0,
+          "p95": 52.0,
+          "p99": 57.0,
+          "stdev": 38.48076083482894
+        },
+        "opcode_count": {
+          "mean": 242.346303,
+          "median": 24.0,
+          "n": 1000000,
+          "p10": 7.0,
+          "p25": 7.0,
+          "p75": 24.0,
+          "p90": 534.0,
+          "p95": 743.0,
+          "p99": 5361.0,
+          "stdev": 982.7320925153497
+        },
+        "storage_op_count": {
+          "mean": 3.34778,
+          "median": 0.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 5.0,
+          "p95": 9.0,
+          "p99": 110.0,
+          "stdev": 17.259619027256917
+        },
+        "storage_per_1k_opcodes": {
+          "mean": 2.429127391417749,
+          "median": 0.0,
+          "n": 1000000,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 9.635237439779765,
+          "p95": 16.233766233766232,
+          "p99": 32.214765100671144,
+          "stdev": 6.167179482973975
+        }
+      },
+      "opcode_total": 242346303,
+      "scanner_metadata_mismatch_count": 61,
+      "total": 1000000
+    },
+    "scdbench": {
+      "compiler_counts": {
+        "unknown": 100,
+        "v0.5": 59,
+        "v0.6": 85,
+        "v0.7": 68,
+        "v0.8": 288
+      },
+      "compiler_detected_count": 500,
+      "compiler_detected_rate": 0.8333333333333334,
+      "flag_counts": {
+        "call": 473,
+        "callcode": 23,
+        "create": 28,
+        "create2": 30,
+        "delegatecall": 59,
+        "eip1967_beacon_pattern": 1,
+        "eip1967_implementation_pattern": 24,
+        "log": 515,
+        "mcopy": 16,
+        "proxy_related_pattern_union": 25,
+        "selfdestruct": 23,
+        "sload": 561,
+        "sstore": 539,
+        "staticcall": 343,
+        "tload": 7,
+        "tstore": 4
+      },
+      "flag_prevalence": {
+        "call": 0.7883333333333333,
+        "callcode": 0.03833333333333333,
+        "create": 0.04666666666666667,
+        "create2": 0.05,
+        "delegatecall": 0.09833333333333333,
+        "eip1967_beacon_pattern": 0.0016666666666666668,
+        "eip1967_implementation_pattern": 0.04,
+        "log": 0.8583333333333333,
+        "mcopy": 0.02666666666666667,
+        "proxy_related_pattern_union": 0.041666666666666664,
+        "selfdestruct": 0.03833333333333333,
+        "sload": 0.935,
+        "sstore": 0.8983333333333333,
+        "staticcall": 0.5716666666666667,
+        "tload": 0.011666666666666667,
+        "tstore": 0.006666666666666667
+      },
+      "metadata_valid_count": 595,
+      "metadata_valid_rate": 0.9916666666666667,
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "mean": 9173.203333333333,
+          "median": 7782.0,
+          "n": 600,
+          "p10": 2265.1000000000004,
+          "p25": 4055.5,
+          "p75": 13426.75,
+          "p90": 18143.4,
+          "p95": 20556.44999999999,
+          "p99": 24452.17,
+          "stdev": 6052.2674332679
+        },
+        "bytecode_raw_byte_length": {
+          "mean": 9223.151666666667,
+          "median": 7830.0,
+          "n": 600,
+          "p10": 2317.2,
+          "p25": 4108.5,
+          "p75": 13479.0,
+          "p90": 18196.800000000003,
+          "p95": 20609.449999999993,
+          "p99": 24505.16,
+          "stdev": 6052.726497104023
+        },
+        "control_flow_op_count": {
+          "mean": 676.4333333333333,
+          "median": 542.5,
+          "n": 600,
+          "p10": 145.0,
+          "p25": 279.0,
+          "p75": 989.0,
+          "p90": 1363.1999999999998,
+          "p95": 1665.4499999999996,
+          "p99": 2026.6399999999994,
+          "stdev": 489.81111028826734
+        },
+        "control_flow_per_1k_opcodes": {
+          "mean": 128.16401531623268,
+          "median": 128.2699518842844,
+          "n": 600,
+          "p10": 84.3031819255769,
+          "p25": 100.37152386019704,
+          "p75": 149.15608025623962,
+          "p90": 174.8998896973086,
+          "p95": 188.17794103542812,
+          "p99": 229.07521033816568,
+          "stdev": 36.42439626892156
+        },
+        "create_op_count": {
+          "mean": 0.14,
+          "median": 0.0,
+          "n": 600,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 0.0,
+          "p95": 1.0,
+          "p99": 2.0,
+          "stdev": 0.5008173619694943
+        },
+        "cyclomatic_complexity_proxy": {
+          "mean": 149.56333333333333,
+          "median": 130.5,
+          "n": 600,
+          "p10": 39.0,
+          "p25": 63.0,
+          "p75": 216.25,
+          "p90": 288.0,
+          "p95": 338.39999999999964,
+          "p99": 440.17999999999984,
+          "stdev": 103.92384839871399
+        },
+        "delegatecall_count": {
+          "mean": 0.14833333333333334,
+          "median": 0.0,
+          "n": 600,
+          "p10": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "p90": 0.0,
+          "p95": 1.0,
+          "p99": 3.0,
+          "stdev": 0.5717301354676803
+        },
+        "external_call_count": {
+          "mean": 8.711666666666666,
+          "median": 4.0,
+          "n": 600,
+          "p10": 0.0,
+          "p25": 2.0,
+          "p75": 11.0,
+          "p90": 19.0,
+          "p95": 32.0,
+          "p99": 59.01999999999998,
+          "stdev": 12.265912858513357
+        },
+        "external_calls_per_1k_opcodes": {
+          "mean": 1.705999626500255,
+          "median": 1.2959712022728307,
+          "n": 600,
+          "p10": 0.0,
+          "p25": 0.43866846212953997,
+          "p75": 2.4723963103929707,
+          "p90": 3.959985591691675,
+          "p95": 5.118566592767406,
+          "p99": 6.537254901960783,
+          "stdev": 1.6236740587148688
+        },
+        "log_op_count": {
+          "mean": 6.341666666666667,
+          "median": 5.0,
+          "n": 600,
+          "p10": 0.0,
+          "p25": 2.0,
+          "p75": 8.0,
+          "p90": 12.0,
+          "p95": 15.049999999999955,
+          "p99": 22.0,
+          "stdev": 20.602565537656822
+        },
+        "metadata_byte_length": {
+          "mean": 49.94833333333333,
+          "median": 53.0,
+          "n": 600,
+          "p10": 43.0,
+          "p25": 52.0,
+          "p75": 53.0,
+          "p90": 53.0,
+          "p95": 53.0,
+          "p99": 66.0,
+          "stdev": 8.977192240511174
+        },
+        "opcode_count": {
+          "mean": 5366.981666666667,
+          "median": 4658.5,
+          "n": 600,
+          "p10": 1360.4,
+          "p25": 2349.75,
+          "p75": 7829.0,
+          "p90": 10153.1,
+          "p95": 12040.299999999997,
+          "p99": 15310.399999999998,
+          "stdev": 3592.829552732619
+        },
+        "storage_op_count": {
+          "mean": 77.77666666666667,
+          "median": 60.0,
+          "n": 600,
+          "p10": 4.0,
+          "p25": 22.75,
+          "p75": 115.0,
+          "p90": 169.20000000000005,
+          "p95": 208.0,
+          "p99": 340.0999999999999,
+          "stdev": 71.5434662856726
+        },
+        "storage_per_1k_opcodes": {
+          "mean": 14.341625988513561,
+          "median": 13.766384966004498,
+          "n": 600,
+          "p10": 2.1366992751710248,
+          "p25": 8.36855147607302,
+          "p75": 19.754007710473473,
+          "p90": 25.799869036136535,
+          "p95": 29.78080996300999,
+          "p99": 36.38568349577524,
+          "stdev": 8.840503737947895
+        }
+      },
+      "opcode_total": 3220189,
+      "scanner_metadata_mismatch_count": 0,
+      "total": 600
+    },
+    "verified": {
+      "compiler_counts": {
+        "v0.4": 74135,
+        "v0.5": 40715,
+        "v0.6": 42661,
+        "v0.7": 16757,
+        "v0.8": 598468
+      },
+      "flag_counts": {
+        "call": 532342,
+        "callcode": 17510,
+        "canonical_eip1167": 0,
+        "create": 15082,
+        "create2": 23179,
+        "delegatecall": 88130,
+        "log": 659818,
+        "selfdestruct": 9383,
+        "sload": 745019,
+        "sstore": 676334,
+        "staticcall": 415897
+      },
+      "numeric": {
+        "bytecode_logic_byte_length": {
+          "mean": 7903.85662114875,
+          "median": 6779.0,
+          "n": 772736,
+          "p10": 1179.0,
+          "p25": 3526.0,
+          "p75": 11576.0,
+          "p90": 15883.0,
+          "p95": 19331.0,
+          "p99": 23561.0,
+          "stdev": 5654.671100163069
+        },
+        "bytecode_raw_byte_length": {
+          "mean": 7955.179420914776,
+          "median": 6831.0,
+          "n": 772736,
+          "p10": 1227.5,
+          "p25": 3573.0,
+          "p75": 11628.0,
+          "p90": 15936.0,
+          "p95": 19383.0,
+          "p99": 23612.0,
+          "stdev": 5655.107883804569
+        },
+        "cyclomatic_complexity_proxy": {
+          "mean": 123.94696636367401,
+          "median": 117.0,
+          "n": 772736,
+          "p10": 21.0,
+          "p25": 49.0,
+          "p75": 169.0,
+          "p90": 248.0,
+          "p95": 291.0,
+          "p99": 408.0,
+          "stdev": 90.98712333466686
+        },
+        "external_call_count": {
+          "mean": 5.654465431919828,
+          "median": 3.0,
+          "n": 772736,
+          "p10": 0.0,
+          "p25": 1.0,
+          "p75": 8.0,
+          "p90": 11.0,
+          "p95": 18.0,
+          "p99": 42.0,
+          "stdev": 8.122388982422745
+        },
+        "opcode_count": {
+          "mean": 4464.857779370963,
+          "median": 4099.0,
+          "n": 772736,
+          "p10": 687.0,
+          "p25": 2027.0,
+          "p75": 6406.25,
+          "p90": 8667.0,
+          "p95": 10490.0,
+          "p99": 14254.650000000023,
+          "stdev": 3147.908413879371
+        },
+        "storage_op_count": {
+          "mean": 72.50701662663575,
+          "median": 64.0,
+          "n": 772736,
+          "p10": 2.0,
+          "p25": 24.0,
+          "p75": 103.0,
+          "p90": 150.0,
+          "p95": 195.0,
+          "p99": 280.0,
+          "stdev": 63.283725060450124
+        }
+      },
+      "opcode_total": 3450156341,
+      "total": 772736
+    }
+  },
+  "schema": "scdbench-public-external-validity-v1",
+  "scope": "Deployed-population comparison, not a verification-labeled unverified-contract accuracy set."
+}

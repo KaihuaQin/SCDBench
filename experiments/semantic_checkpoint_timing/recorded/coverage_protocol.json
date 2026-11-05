@@ -1,0 +1,90 @@
+{
+  "profile": "stored-cases-lcov",
+  "schema": "scdbench-holdout-coverage-protocol-v1",
+  "settings": [
+    {
+      "flag": "--fork-block",
+      "value": "24136053"
+    },
+    {
+      "flag": "--compile-timeout",
+      "value": "60"
+    },
+    {
+      "flag": "--coverage-batch-size",
+      "value": "10"
+    },
+    {
+      "flag": "--coverage-call-gas-limit",
+      "value": "5000000"
+    },
+    {
+      "flag": "--coverage-sender-variants",
+      "value": "1"
+    },
+    {
+      "flag": "--coverage-auth-storage-slots",
+      "value": "0"
+    },
+    {
+      "flag": "--coverage-legacy-solidity",
+      "value": null
+    },
+    {
+      "flag": "--coverage-ir-minimum-retry",
+      "value": null
+    },
+    {
+      "flag": "--coverage-allow-failure",
+      "value": null
+    },
+    {
+      "flag": "--coverage-trace-timeout",
+      "value": "90"
+    },
+    {
+      "flag": "--coverage-max-trace-tests",
+      "value": "0"
+    },
+    {
+      "flag": "--no-coverage-augment-calls",
+      "value": null
+    },
+    {
+      "flag": "--no-coverage-augment-fallback-calls",
+      "value": null
+    },
+    {
+      "flag": "--coverage-augment-setup-functions",
+      "value": "0"
+    },
+    {
+      "flag": "--coverage-synthetic-setup-functions",
+      "value": "0"
+    },
+    {
+      "flag": "--timeout",
+      "value": "300"
+    },
+    {
+      "flag": "--seed",
+      "value": "20260504"
+    },
+    {
+      "flag": "--chunk-size",
+      "value": "10"
+    },
+    {
+      "flag": "--value-wei",
+      "value": "0"
+    },
+    {
+      "flag": "--max-msg-value-wei",
+      "value": "100000000000000000"
+    },
+    {
+      "flag": "--retry-errors",
+      "value": null
+    }
+  ]
+}
